@@ -1,0 +1,472 @@
+.healthcare-section {
+
+    padding:90px 0;
+
+    background:#fff;
+
+}
+
+
+
+.healthcare-wrapper {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+
+
+/* LEFT */
+
+.healthcare-content {
+
+    width:50%;
+
+}
+
+
+
+.healthcare-badge {
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:8px 15px;
+
+    border:1px solid #dceee5;
+
+    border-radius:8px;
+
+    color:#00a34c;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+
+
+.healthcare-badge i {
+
+    font-size:16px;
+
+}
+
+
+
+.healthcare-content h2 {
+
+    font-family:var(--font-heading);
+
+    
+
+    line-height:1.2;
+
+    color:#10234b;
+
+    margin:25px 0;
+
+    font-size:38px;
+
+    font-weight:800;
+
+}
+
+
+.healthcare-content h2 span {
+
+    color:var(--primary-color);
+       margin:0 8px;
+
+}
+
+
+
+.healthcare-content h4 {
+
+    color:#123b75;
+
+    font-size:17px;
+
+}
+
+
+
+.healthcare-content p {
+
+    color:#667085;
+
+    line-height:1.7;
+
+}
+
+
+
+/* BUTTONS */
+
+
+.healthcare-buttons {
+
+    display:flex;
+
+    gap:15px;
+
+    margin:25px 0;
+
+}
+
+
+.healthcare-primary-btn,
+.healthcare-secondary-btn {
+
+
+    padding:12px 22px;
+
+    border-radius:6px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+
+
+.healthcare-primary-btn {
+
+    background:#00a34c;
+
+    color:white;
+
+    border:none;
+
+}
+
+
+
+.healthcare-secondary-btn {
+
+    background:white;
+
+    color:#123b75;
+
+    border:1px solid #123b75;
+
+}
+
+
+
+
+
+/* CONTACT */
+
+
+.healthcare-contact {
+
+    display:flex;
+
+    gap:30px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 20px #00000010;
+
+}
+
+
+
+.healthcare-contact > div {
+
+    display:flex;
+
+    gap:12px;
+
+    align-items:center;
+
+}
+
+
+
+.healthcare-contact i {
+
+    color:#00a34c;
+
+    font-size:25px;
+
+}
+
+
+
+.healthcare-contact small {
+
+    display:block;
+
+}
+
+
+
+.healthcare-contact strong {
+
+    color:#00a34c;
+
+}
+
+
+
+
+
+/* IMAGE */
+
+
+.healthcare-image-wrapper {
+
+    width:50%;
+
+    position:relative;
+
+}
+
+
+
+.healthcare-main-image {
+
+    width:100%;
+
+}
+
+
+
+
+
+/* FLOATING CARDS */
+
+
+.healthcare-floating-card {
+
+
+    position:absolute;
+
+    right:0;
+
+    background:#fff;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 20px #0002;
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:center;
+
+    width:120px;
+
+    font-size:12px;
+
+}
+
+
+
+.healthcare-floating-card i {
+
+    color:#00a34c;
+
+    font-size:22px;
+
+}
+
+
+
+.healthcare-floating-card small,
+.healthcare-floating-card b {
+
+    display:block;
+
+}
+
+
+
+.card-one{
+
+    top:50px;
+
+}
+
+
+.card-two{
+
+    top:130px;
+
+}
+
+
+.card-three{
+
+    top:210px;
+
+}
+
+
+.card-four{
+
+    top:290px;
+
+}
+
+
+
+
+
+/* FEATURES */
+
+
+.healthcare-features {
+
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    margin-top:50px;
+
+    gap:20px;
+
+}
+
+
+
+.healthcare-feature {
+
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+
+
+.healthcare-feature-icon {
+
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#eaf8f0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#00a34c;
+
+}
+
+
+
+.healthcare-feature h5 {
+
+    color:#00a34c;
+
+    margin:0;
+
+    font-size:14px;
+
+}
+
+
+
+.healthcare-feature p {
+
+    font-size:12px;
+
+    color:#667085;
+
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+
+@media(max-width:992px){
+
+
+    .healthcare-wrapper{
+
+        flex-direction:column;
+
+    }
+
+
+    .healthcare-content,
+    .healthcare-image-wrapper{
+
+        width:100%;
+
+    }
+
+
+    .healthcare-features{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+
+}
+
+
+
+@media(max-width:576px){
+
+
+    .healthcare-content h2{
+
+        font-size:34px;
+
+    }
+
+
+    .healthcare-buttons,
+    .healthcare-contact{
+
+        flex-direction:column;
+
+    }
+
+
+    .healthcare-features{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}

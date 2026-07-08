@@ -1,0 +1,30 @@
+/* ==========================================
+   COLOR THEME
+========================================== */
+
+:root {
+  /* Primary Brand Colors */
+  --primary-color: #00A34C;      /* Green */
+  --secondary-color: #2A3A87;    /* Navy Blue */
+  --accent-color: #50C1EF;       /* Sky Blue */
+
+  /* Neutral Colors */
+  --white: #FFFFFF;
+  --black: #000000;
+
+  /* Text Colors */
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+
+  /* Background Colors */
+  --background: #F8FAFC;
+  --surface: #FFFFFF;
+
+  /* Border */
+  --border-color: #E5E7EB;
+
+  /* Optional Status Colors */
+  --success: #22C55E;
+  --warning: #F59E0B;
+  --error: #EF4444;
+}

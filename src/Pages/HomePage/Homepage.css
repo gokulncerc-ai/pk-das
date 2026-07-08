@@ -1,0 +1,469 @@
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+
+.hero {
+
+    height: 90vh;
+
+    min-height: 700px;
+
+    background-size: cover;
+
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+
+/* ==========================================
+   OVERLAY
+========================================== */
+
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(90deg,
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.20));
+
+}
+
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+
+.hero-container {
+
+    position: relative;
+
+    z-index: 2;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+
+.hero-content {
+
+    max-width: 650px;
+
+    color: white;
+
+}
+
+
+
+.hero-content h1 {
+
+    font-family: var(--font-heading);
+
+    font-size: 64px;
+
+    line-height: 1.15;
+
+    font-weight: 800;
+
+    color: #fff;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.hero-content p {
+
+
+    font-family: var(--font-body);
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.9);
+
+}
+
+
+
+
+
+/* ==========================================
+   BUTTONS
+   BOTTOM CENTER
+========================================== */
+
+
+/* ==========================================
+   HERO BUTTON CONTAINER
+========================================== */
+
+.hero-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    position: absolute;
+
+    bottom: 60px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+}
+
+
+
+/* ==========================================
+   APPOINTMENT BUTTON
+========================================== */
+
+
+.hero-appointment-btn {
+
+    background: var(--primary-color);
+
+    color: #fff;
+
+    border: none;
+
+    padding: 13px 30px;
+
+    border-radius: 30px;
+
+    font-family: var(--font-body);
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    white-space: nowrap;
+
+    transition: .3s;
+
+}
+
+
+.hero-appointment-btn:hover {
+
+    background: #00863d;
+
+}
+
+
+
+/* ==========================================
+   CALL BUTTON
+========================================== */
+
+
+.hero-call-btn {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+
+    background: transparent;
+
+    color: #fff;
+
+
+    border: 1.5px solid rgba(255, 255, 255, .8);
+
+
+    padding: 13px 30px;
+
+
+    border-radius: 30px;
+
+
+    font-family: var(--font-body);
+
+
+    font-size: 15px;
+
+
+    font-weight: 600;
+
+
+    line-height: 1;
+
+
+    height: 48px;
+
+
+    white-space: nowrap;
+
+
+    transition: .3s;
+
+}
+
+
+
+.hero-call-btn i {
+
+    font-size: 14px;
+
+}
+
+
+
+.hero-call-btn:hover {
+
+    background: #fff;
+
+    color: var(--secondary-color);
+
+}
+
+
+
+
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+
+@media(max-width:991px) {
+
+
+    .hero {
+
+
+        min-height: 650px;
+
+    }
+
+
+
+    .hero-buttons {
+
+
+        bottom: 40px;
+
+    }
+
+
+
+    .hero-content h1 {
+
+
+        font-size: 44px;
+
+    }
+
+
+}
+
+
+
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+
+@media(max-width:576px) {
+
+
+    .hero {
+
+
+        height: 80vh;
+
+        min-height: 600px;
+
+    }
+
+
+
+    .hero-content {
+
+
+        text-align: center;
+
+    }
+
+
+
+    .hero-buttons {
+
+
+        width: 90%;
+
+
+        bottom: 30px;
+
+
+        flex-direction: column;
+
+
+        gap: 12px;
+
+
+    }
+
+
+
+    .appointment-btn,
+    .call-btn {
+
+
+        width: 100%;
+
+
+        padding: 13px 20px;
+
+
+    }
+
+
+
+}
+
+/* ------------hero section ends------------ */
+.section-stack {
+
+    position: relative;
+
+}
+
+
+.patient-sticky {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1;
+
+    background: #fff;
+
+}
+
+
+.healthcare-flow {
+
+    position: relative;
+
+    z-index: 2;
+
+    background: #fff;
+
+    margin-top: -40px;
+
+    border-radius: 40px 40px 0 0;
+
+}
+
+@media (max-width: 991px) {
+
+    .patient-sticky {
+
+        position: static;
+
+        top: auto;
+
+        height: auto;
+
+        display: block;
+
+        z-index: auto;
+
+    }
+
+    .healthcare-flow {
+
+        position: static;
+
+        margin-top: 0;
+
+        border-radius: 0;
+
+        z-index: auto;
+
+    }
+
+}
+
+/* ---------network--------- */
+/* .network-animation {
+
+    opacity: 0;
+
+    transform:
+        translateX(220px)
+        scale(.95);
+
+    filter: blur(8px);
+
+    transition:
+        transform 1.9s cubic-bezier(.23,1,.32,1),
+        opacity 1s ease,
+        filter 1s ease;
+
+}
+
+.network-animation.show {
+
+    opacity: 1;
+
+    transform:
+        translateX(0)
+        scale(1);
+
+    filter: blur(0);
+
+} */

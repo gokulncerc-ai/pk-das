@@ -1,0 +1,358 @@
+/* =====================================
+   PATIENT TRUST SECTION
+===================================== */
+
+
+.trust-section {
+
+    padding:80px 0;
+
+    background:#fff;
+
+}
+
+
+
+/* Heading */
+
+
+.trust-heading {
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.trust-small-title {
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#00a34c;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+}
+
+
+
+.trust-small-title span {
+
+    width:22px;
+
+    height:1px;
+
+    background:#00a34c;
+
+}
+
+
+
+.trust-heading h2 {
+
+
+    font-family:var(--font-heading);
+
+    color:#10234b;
+
+    font-size:38px;
+
+    font-weight:800;
+
+    margin:15px 0;
+
+
+}
+
+
+
+.trust-heading p {
+
+    font-family:var(--font-body);
+
+    color:#667085;
+
+    font-size:15px;
+
+    line-height:1.6;
+
+}
+
+
+
+/* =====================================
+   CARD GRID
+===================================== */
+
+
+.trust-grid {
+
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:20px;
+
+}
+
+
+
+
+
+.trust-card {
+
+
+    background:#fff;
+
+    border-radius:14px;
+
+    border:1px solid #eeeeee;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+
+    display:flex;
+
+    overflow:hidden;
+
+    min-height:180px;
+
+}
+
+
+
+
+
+.trust-card:nth-child(1),
+.trust-card:nth-child(2),
+.trust-card:nth-child(3){
+
+    grid-column:span 2;
+
+}
+
+
+
+.trust-card:nth-child(4),
+.trust-card:nth-child(5){
+
+    grid-column:span 3;
+
+}
+
+
+
+
+
+/* Content */
+
+
+.trust-card-content {
+
+
+    width:55%;
+
+    padding:20px;
+
+}
+
+
+
+.trust-icon {
+
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:#edf8f2;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#00a34c;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.trust-icon i {
+
+    font-size:20px;
+
+}
+
+
+
+.trust-card h3 {
+
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:#12234b;
+
+    margin-bottom:8px;
+
+}
+
+
+
+.trust-card p {
+
+
+    font-size:12px;
+
+    line-height:1.6;
+
+    color:#667085;
+
+}
+
+
+
+.trust-card a {
+
+
+    font-size:12px;
+
+    font-weight:600;
+
+    color:#00a34c;
+
+    text-decoration:none;
+
+}
+
+
+
+.trust-card a i {
+
+
+    margin-left:8px;
+
+}
+
+
+
+
+
+/* Image */
+
+
+.trust-image {
+
+
+    width:45%;
+
+    padding:12px;
+
+
+}
+
+
+
+.trust-image img {
+
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:8px;
+
+}
+
+
+
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+
+@media(max-width:992px){
+
+
+    .trust-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .trust-card,
+    .trust-card:nth-child(n){
+
+        grid-column:auto;
+
+    }
+
+
+}
+
+
+
+
+
+@media(max-width:576px){
+
+
+    .trust-heading h2 {
+
+        font-size:28px;
+
+    }
+
+
+
+    .trust-card {
+
+        flex-direction:column;
+
+    }
+
+
+
+    .trust-card-content,
+    .trust-image {
+
+        width:100%;
+
+    }
+
+
+
+    .trust-image {
+
+        height:180px;
+
+    }
+
+
+}
