@@ -169,6 +169,46 @@ const Network = () => {
 
     const activeDepartment = departments[activeIndex];
 
+    // ------About Section----------
+    const hospitalFeatures = [
+        {
+            id: 1,
+            title: "Trauma Care Units 24/7",
+            color: "green",
+            icon: "bi-check-lg",
+        },
+        {
+            id: 2,
+            title: "Automated Labs",
+            color: "green",
+            icon: "bi-check-lg",
+        },
+        {
+            id: 3,
+            title: "Operations Theatres",
+            color: "sky",
+            icon: "bi-check-lg",
+        },
+        {
+            id: 4,
+            title: "Ambulance Services 24/7",
+            color: "sky",
+            icon: "bi-check-lg",
+        },
+        {
+            id: 5,
+            title: "Cath Lab",
+            color: "blue",
+            icon: "bi-check-lg",
+        },
+        {
+            id: 6,
+            title: "Emergency Care 24/7",
+            color: "blue",
+            icon: "bi-check-lg",
+        },
+    ];
+
     return (
         <>
             <section className="dept-section">
@@ -476,17 +516,17 @@ const Network = () => {
             </section>
 
             {/* ------------insurance section--------------- */}
-            <section className="insurance-section">
+            <section className="insurance-section p-4">
 
                 <Container>
 
                     <div className="insurance-header">
 
-                        <span>Insurance Companies</span>
+                        <span className="insurance-company-span">Insurance Companies</span>
 
-                        <h2>Insurance</h2>
+                        <h2 className='insurance-h2-heading'>Insurance</h2>
 
-                        <p>
+                        <p className='text-light'>
                             Secure your peace of mind with our comprehensive
                             hospital insurance – your health, our priority.
                         </p>
@@ -514,7 +554,7 @@ const Network = () => {
                             {/* Logos */}
 
                         </div>
-                            <br />
+                        <br />
                     </div>
 
                     {/* Second Marquee */}
@@ -540,6 +580,143 @@ const Network = () => {
                 </Container>
 
             </section>
+
+
+            {/* --------------About Section------------ */}
+            <section className="about-hospital-section">
+
+                <Container>
+
+                    {/* ==========================
+            Hospital Icon
+        ========================== */}
+
+                    <div className="about-icon-wrapper">
+
+                        <div className="about-icon">
+
+                            <i className="bi bi-hospital-fill"></i>
+
+                        </div>
+
+                    </div>
+
+                    {/* ==========================
+            Heading
+        ========================== */}
+
+                    <Row className="justify-content-center">
+
+                        <Col lg={10}>
+
+                            <div className="about-header">
+
+                                <h5 className="about-subtitle">
+                                    PKDIMS Medical
+                                    <br />
+                                    College Hospital
+                                </h5>
+
+                                <h2 className="about-title">
+                                    About P.K Das Institute of Medical
+                                    <br />
+                                    Science (PKDIMS)
+                                </h2>
+
+                                <p className="about-description">
+                                    PK DAS INSTITUTE OF MEDICAL SCIENCES is a state-of-the-art super- specialty hospital located near the banks of the river Nila at Ottapalam, Kerala.We uphold a steadfast mission to deliver the highest quality medical care to our patients. Our team of experienced doctors, nurses, and support staff are unwavering in their dedication to providing compassionate and personalized treatment to every individual who seeks our care.
+                                </p>
+
+                            </div>
+
+                        </Col>
+
+                    </Row>
+
+                    {/* ==========================
+            Feature Heading
+        ========================== */}
+
+                    <Row className="justify-content-center">
+
+                        <Col lg={10}>
+
+                            <h3 className="feature-heading">
+                                PK Das Special Features
+                            </h3>
+
+                        </Col>
+
+                    </Row>
+
+                    {/* ==========================
+            Feature List
+        ========================== */}
+
+                    <Row className="justify-content-center">
+
+                        <Col lg={10}>
+
+                            <Row>
+
+                                {hospitalFeatures.map((feature) => (
+
+                                    <Col
+                                        lg={6}
+                                        md={6}
+                                        key={feature.id}
+                                        className="mb-4"
+                                    >
+
+                                        <div className="feature-item">
+
+                                            <div
+                                                className={`feature-icon ${feature.color}`}
+                                            >
+
+                                                <i className={`bi ${feature.icon}`}></i>
+
+                                            </div>
+
+                                            <span>
+
+                                                {feature.title}
+
+                                            </span>
+
+                                        </div>
+
+                                    </Col>
+
+                                ))}
+
+                            </Row>
+
+                        </Col>
+
+                    </Row>
+                    {/* ==========================
+            View More Button
+        ========================== */}
+
+                    <Row className="justify-content-center mt-5">
+
+                        <Col lg={12} className="text-center">
+
+                            <Button className="about-view-btn">
+
+                                View More
+
+                            </Button>
+
+                        </Col>
+
+                    </Row>
+
+                </Container>
+
+            </section>
+
         </>
     )
 }

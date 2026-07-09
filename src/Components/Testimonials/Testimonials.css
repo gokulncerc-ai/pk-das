@@ -1,0 +1,907 @@
+/*==================================================
+            TESTIMONIAL SECTION
+==================================================*/
+
+.testimonial-section {
+    /* padding: 100px 0; */
+    background: linear-gradient(180deg, #F8FAFC 0%, #EEF8FC 100%);
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial-section::before {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: rgba(80, 193, 239, .08);
+    border-radius: 50%;
+    top: -180px;
+    right: -180px;
+}
+
+.testimonial-section::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: rgba(0, 163, 76, .08);
+    border-radius: 50%;
+    bottom: -120px;
+    left: -120px;
+}
+
+
+/*==================================================
+                SECTION HEADING
+==================================================*/
+
+.testimonial-heading {
+    text-align: center;
+    margin-bottom: 70px;
+    position: relative;
+    z-index: 2;
+}
+
+.testimonial-heading span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    color: #00A34C;
+
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: .95rem;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+}
+
+.heading-line {
+    width: 60px;
+    height: 2px;
+    background: #00A34C;
+}
+
+.testimonial-heading h2 {
+
+    font-family: "Manrope", sans-serif;
+   
+    font-weight: 800;
+
+    color: #10234B;
+
+    margin-bottom: 20px;
+    
+    font-size:38px;
+
+    font-weight:800;
+}
+
+.testimonial-heading p {
+
+    max-width: 650px;
+    margin: auto;
+
+    color: #667085;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+
+/*==================================================
+              MAIN TESTIMONIAL CARD
+==================================================*/
+
+.testimonial-wrapper {
+
+    position: relative;
+
+    background: #fff;
+
+    border-radius: 35px;
+
+    padding: 20px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, .08);
+
+    overflow: hidden;
+
+    z-index: 2;
+
+}
+
+
+/*==================================================
+              NAVIGATION BUTTONS
+==================================================*/
+
+.testimonial-nav {
+
+    width: 100px;
+    height: 58px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    /* background: #fff; */
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, .12);
+
+    transition: .35s;
+
+    z-index: 20;
+
+}
+
+.testimonial-nav:hover {
+
+    background: #00A34C;
+
+    color: #fff;
+
+    transform:
+        translateY(-50%) scale(1.08);
+
+}
+
+.prev-btn {
+
+    left: -28px;
+
+}
+
+.next-btn {
+
+    right: -28px;
+
+}
+
+.testimonial-nav i {
+
+    font-size: 22px;
+
+}
+
+
+/*==================================================
+                    GRID
+==================================================*/
+
+.testimonial-wrapper .row {
+
+    align-items: center;
+
+}
+
+
+/*==================================================
+                IMAGE CONTAINER
+==================================================*/
+
+.testimonial-image-box {
+
+    position: relative;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    height: 420px;
+
+    background: #f5f5f5;
+
+}
+
+.testimonial-image-box img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .5s;
+
+}
+
+.testimonial-image-box:hover img {
+
+    transform: scale(1.05);
+
+}
+
+/*==================================================
+            FLOATING RECOVERY BADGE
+==================================================*/
+
+.recovery-badge {
+
+    position: absolute;
+
+    bottom: 30px;
+    left: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background: rgba(255, 255, 255, .95);
+
+    backdrop-filter: blur(10px);
+
+    padding: 18px 22px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .12);
+
+    animation: badgeFloat 3s ease-in-out infinite;
+
+}
+
+@keyframes badgeFloat {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+.badge-icon {
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: #00A34C;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+
+    flex-shrink: 0;
+
+}
+
+.badge-icon i {
+
+    font-size: 22px;
+
+}
+
+.recovery-badge h6 {
+
+    margin: 0;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 18px;
+
+    color: #10234B;
+
+    font-weight: 700;
+
+}
+
+.recovery-badge span {
+
+    color: #667085;
+
+    font-size: 14px;
+
+}
+
+
+/*==================================================
+            RIGHT CONTENT
+==================================================*/
+
+.testimonial-content {
+
+    padding-left: 40px;
+
+}
+
+.quote-icon {
+
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    background: #ECFFF4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #00A34C;
+
+    margin-bottom: 30px;
+
+}
+
+.quote-icon i {
+
+    font-size: 38px;
+
+}
+
+.testimonial-content h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 2rem;
+
+    line-height: 1.7;
+
+    font-weight: 700;
+
+    color: #10234B;
+
+    margin-bottom: 30px;
+
+}
+
+.green-divider {
+
+    width: 80px;
+    height: 4px;
+
+    background: #00A34C;
+
+    border-radius: 50px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/*==================================================
+                    STARS
+==================================================*/
+
+.testimonial-stars {
+
+    display: flex;
+
+    gap: 8px;
+
+    margin-bottom: 35px;
+
+}
+
+.testimonial-stars i {
+
+    color: #FFC107;
+
+    font-size: 22px;
+
+}
+
+
+/*==================================================
+                USER DETAILS
+==================================================*/
+
+.testimonial-user {
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 35px;
+
+}
+
+.testimonial-user-info h4 {
+
+    margin: 0;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 24px;
+
+    color: #10234B;
+
+    font-weight: 800;
+
+}
+
+.testimonial-user-info span {
+
+    color: #667085;
+
+    font-size: 15px;
+
+}
+
+
+/*==================================================
+                BUTTONS
+==================================================*/
+
+.testimonial-buttons {
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+.testimonial-primary-btn {
+
+    background: #00A34C !important;
+
+    border: none !important;
+
+    border-radius: 35px !important;
+
+    padding: 14px 28px !important;
+
+    font-weight: 600 !important;
+
+    transition: .35s;
+
+}
+
+.testimonial-primary-btn:hover {
+
+    background: #00863D !important;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 25px rgba(0, 163, 76, .25);
+
+}
+
+.testimonial-secondary-btn {
+
+    border: 2px solid #2A3A87 !important;
+
+    color: #2A3A87 !important;
+
+    border-radius: 35px !important;
+
+    padding: 12px 28px !important;
+
+    background: #fff !important;
+
+    font-weight: 600 !important;
+
+    transition: .35s;
+
+}
+
+.testimonial-secondary-btn:hover {
+
+    background: #2A3A87 !important;
+
+    color: #fff !important;
+
+    transform: translateY(-4px);
+
+}
+
+/*==================================================
+                SLIDER INDICATORS
+==================================================*/
+
+.testimonial-indicators {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 45px;
+
+}
+
+.indicator {
+
+    width: 14px;
+    height: 14px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #D5DDE5;
+
+    transition: .35s;
+
+    cursor: pointer;
+
+}
+
+.indicator:hover {
+
+    background: #00A34C;
+    transform: scale(1.2);
+
+}
+
+.indicator.active {
+
+    width: 38px;
+
+    border-radius: 50px;
+
+    background: #00A34C;
+
+}
+
+
+/*==================================================
+                STATISTICS
+==================================================*/
+
+.testimonial-stat-card {
+
+    background: #fff;
+
+    border-radius: 24px;
+
+    /* padding: 25px 25px; */
+
+    text-align: center;
+
+    height: 100%;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .08);
+
+    transition: .35s ease;
+
+}
+
+.testimonial-stat-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, .12);
+
+}
+
+.stat-icon {
+
+    width: 70px;
+    height: 70px;
+
+    margin: auto;
+
+    margin-bottom: 22px;
+
+    border-radius: 50%;
+
+    background: #ECFFF4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #00A34C;
+
+    transition: .35s;
+
+}
+
+.testimonial-stat-card:hover .stat-icon {
+
+    background: #00A34C;
+
+    color: #fff;
+
+    transform: rotate(10deg);
+
+}
+
+.stat-icon i {
+
+    font-size: 30px;
+
+}
+
+.testimonial-stat-card h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 1.1rem;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    margin-bottom: 10px;
+
+}
+
+.testimonial-stat-card p {
+
+    color: #667085;
+
+    margin: 0;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+}
+
+
+/*==================================================
+                    RESPONSIVE
+==================================================*/
+
+@media (max-width:1200px) {
+
+    .testimonial-wrapper {
+
+        padding: 45px;
+
+    }
+
+    .testimonial-content {
+
+        padding-left: 25px;
+
+    }
+
+}
+
+@media (max-width:992px) {
+
+    .testimonial-wrapper {
+
+        padding: 35px;
+
+    }
+
+    .testimonial-image-box {
+
+        height: 450px;
+
+        margin-bottom: 35px;
+
+    }
+
+    .testimonial-content {
+
+        padding-left: 0;
+
+    }
+
+    .testimonial-heading h2 {
+
+        font-size: 2.4rem;
+
+    }
+
+    .testimonial-content h3 {
+
+        font-size: 1.6rem;
+
+    }
+
+    .prev-btn {
+
+        left: 15px;
+
+    }
+
+    .next-btn {
+
+        right: 15px;
+
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .testimonial-section {
+
+        padding: 80px 0;
+
+    }
+
+    .testimonial-heading h2 {
+
+        font-size: 2rem;
+
+    }
+
+    .testimonial-heading p {
+
+        font-size: 15px;
+
+    }
+
+    .testimonial-wrapper {
+
+        padding: 25px;
+
+        border-radius: 25px;
+
+    }
+
+    .testimonial-image-box {
+
+        height: 350px;
+
+    }
+
+    .quote-icon {
+
+        width: 65px;
+        height: 65px;
+
+    }
+
+    .quote-icon i {
+
+        font-size: 30px;
+
+    }
+
+    .testimonial-content h3 {
+
+        font-size: 1.3rem;
+
+        line-height: 1.8;
+
+    }
+
+    .testimonial-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .testimonial-primary-btn,
+
+    .testimonial-secondary-btn {
+
+        width: 100%;
+
+    }
+
+    .testimonial-nav {
+
+        width: 28px;
+        height: 48px;
+
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .testimonial-heading {
+
+        margin-bottom: 45px;
+
+    }
+
+    .testimonial-heading span {
+
+        font-size: .8rem;
+
+    }
+
+    .heading-line {
+
+        width: 35px;
+
+    }
+
+    .testimonial-heading h2 {
+
+        font-size: 1.7rem;
+
+    }
+
+    .testimonial-wrapper {
+
+        padding: 20px;
+
+    }
+
+    .testimonial-image-box {
+
+        height: 280px;
+
+    }
+
+    .recovery-badge {
+
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+
+        padding: 12px;
+
+        gap: 10px;
+
+    }
+
+    .badge-icon {
+
+        width: 45px;
+        height: 45px;
+
+    }
+
+    .badge-icon i {
+
+        font-size: 18px;
+
+    }
+
+    .recovery-badge h6 {
+
+        font-size: 15px;
+
+    }
+
+    .testimonial-content h3 {
+
+        font-size: 1.15rem;
+
+    }
+
+    .testimonial-user-info h4 {
+
+        font-size: 20px;
+
+    }
+
+    .testimonial-stars i {
+
+        font-size: 18px;
+
+    }
+
+    .testimonial-stat-card {
+
+        padding: 28px 20px;
+
+    }
+
+    .testimonial-stat-card h3 {
+
+        font-size: 1.7rem;
+
+    }
+
+}

@@ -6,6 +6,8 @@ import wideangle from "../../assets/Images/wideangle.jpeg";
 import PatientTrust from "../../Components/PatientTrust/PatientTrust";
 import HealthCare from "../../Components/HealthCare/HealthCare";
 import Network from "../../Components/Network/Network";
+import Testimonials from "../../Components/Testimonials/Testimonials";
+import Faq from "../../Components/Faq/Faq";
 
 
 const Homepage = () => {
@@ -135,10 +137,11 @@ const Homepage = () => {
                 ref={networkRef}
                 className={`network-animation ${isVisible ? "show" : ""}`}
             > */}
-                <Network />
+            <Network />
             {/* </div> */}
-
-
+            <Testimonials />
+            <br /><br />
+            <Faq />
 
 
 

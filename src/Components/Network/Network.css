@@ -399,10 +399,14 @@
 
 .department-hero-content h2 {
     font-family: "Manrope", sans-serif;
-    font-size: 3rem;
+
     font-weight: 800;
     color: #10234B;
     line-height: 1.25;
+
+    font-size: 38px;
+
+
 }
 
 .department-hero-content span {
@@ -447,7 +451,7 @@
     height: 100%;
     object-fit: cover;
     transition: .5s;
-   
+
 }
 
 /* .department-hero:hover img {
@@ -678,80 +682,402 @@
 }
 
 /* ----------insurance section---------- */
-.insurance-section{
-    background:linear-gradient(
+.insurance-company-span {
+    color: var(--white);
+
+}
+
+.insurance-h2-heading {
+    color: var(--white);
+    font-size: 38px;
+
+    font-weight: 800;
+}
+
+.insurance-section {
+    /* background:linear-gradient(
         135deg,
         #F8FAFC 0%,
         #EEF8FC 50%,
         #F6FFFA 100%
-    );
+    ); */
+    background-color: var(--secondary-color);
 }
 
-.marquee{
-    overflow:hidden;
-    white-space:nowrap;
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-.marquee-track{
-    display:flex;
-    gap:30px;
-    width:max-content;
-    animation:scroll 28s linear infinite;
+.marquee-track {
+    display: flex;
+    gap: 30px;
+    width: max-content;
+    animation: scroll 28s linear infinite;
 }
 
-.reverse .marquee-track{
-    animation:scrollReverse 28s linear infinite;
+.reverse .marquee-track {
+    animation: scrollReverse 28s linear infinite;
 }
 
-@keyframes scroll{
+@keyframes scroll {
 
-    from{
-        transform:translateX(0);
+    from {
+        transform: translateX(0);
     }
 
-    to{
-        transform:translateX(-50%);
-    }
-
-}
-
-@keyframes scrollReverse{
-
-    from{
-        transform:translateX(-50%);
-    }
-
-    to{
-        transform:translateX(0);
+    to {
+        transform: translateX(-50%);
     }
 
 }
 
-.insurance-card{
+@keyframes scrollReverse {
 
-    width:220px;
-    height:110px;
+    from {
+        transform: translateX(-50%);
+    }
 
-    background:#fff;
-
-    border-radius:18px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-    transition:.35s;
+    to {
+        transform: translateX(0);
+    }
 
 }
 
-.insurance-card:hover{
+.insurance-card {
 
-    transform:translateY(-8px);
+    width: 220px;
+    height: 110px;
 
-    box-shadow:0 20px 40px rgba(0,0,0,.12);
+    background: #fff;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+
+    transition: .35s;
+
+}
+
+.insurance-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .12);
+
+}
+
+/* -------About section------- */
+/* ==========================================================
+   ABOUT HOSPITAL SECTION
+========================================================== */
+
+.about-hospital-section {
+    padding: 90px 0;
+    background: linear-gradient(135deg, #F8FAFC 0%, #EEF8FC 100%);
+    overflow: hidden;
+}
+
+/* ==========================================================
+   Hospital Icon
+========================================================== */
+
+.about-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.about-icon {
+    width: 90px;
+    height: 90px;
+    background: #00A34C;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 12px 30px rgba(0, 163, 76, .25);
+}
+
+.about-icon i {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+/* ==========================================================
+   Heading
+========================================================== */
+
+.about-header {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.about-subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #00A34C;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-title {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    color: #10234B;
+    line-height: 1.35;
+    margin-bottom: 30px;
+    font-size: 38px;
+
+
+}
+
+.about-description {
+    max-width: 900px;
+    margin: auto;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #667085;
+    text-align: justify;
+}
+
+/* ==========================================================
+   Feature Heading
+========================================================== */
+
+.feature-heading {
+    font-family: "Manrope", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #10234B;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+/* ==========================================================
+   Feature List
+========================================================== */
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 18px 22px;
+
+    /* background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .06);
+
+    transition: .35s ease; */
+}
+
+/* .feature-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .10);
+} */
+
+.feature-item span {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #10234B;
+}
+
+/* ==========================================================
+   Feature Icons
+========================================================== */
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    flex-shrink: 0;
+}
+
+.feature-icon i {
+    font-size: 1.15rem;
+}
+
+/* Green */
+
+.feature-icon.green {
+    background: #00A34C;
+}
+
+/* Sky Blue */
+
+.feature-icon.sky {
+    background: #50C1EF;
+}
+
+/* Blue */
+
+.feature-icon.blue {
+    background: #2A3A87;
+}
+
+/* ==========================================================
+   Button
+========================================================== */
+
+.about-view-btn {
+    background: #00A34C !important;
+    border: none !important;
+
+    padding: 14px !important;
+
+    border-radius: 10px !important;
+
+    font-family: "Inter", sans-serif;
+    font-weight: 600 !important;
+
+    transition: .35s ease;
+}
+
+.about-view-btn:hover {
+    background: #00863D !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 163, 76, .25);
+}
+
+/* ==========================================================
+   Decorative Circles
+========================================================== */
+
+.about-hospital-section {
+    position: relative;
+}
+
+.about-hospital-section::before {
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    background: rgba(80, 193, 239, .08);
+
+    border-radius: 50%;
+
+    top: -120px;
+    left: -120px;
+}
+
+.about-hospital-section::after {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    background: rgba(0, 163, 76, .08);
+
+    border-radius: 50%;
+
+    bottom: -100px;
+    right: -100px;
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media (max-width:1200px) {
+
+    .about-title {
+        font-size: 2.4rem;
+    }
+
+}
+
+@media (max-width:992px) {
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .feature-heading {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .about-hospital-section {
+        padding: 70px 0;
+    }
+
+    .about-icon {
+        width: 75px;
+        height: 75px;
+    }
+
+    .about-icon i {
+        font-size: 2rem;
+    }
+
+    .about-title {
+        font-size: 1.7rem;
+    }
+
+    .about-description {
+        font-size: .95rem;
+    }
+
+    .feature-item {
+        padding: 16px;
+    }
+
+    .feature-item span {
+        font-size: .95rem;
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .about-title {
+        font-size: 1.45rem;
+        line-height: 1.5;
+    }
+
+    .feature-heading {
+        font-size: 1.5rem;
+    }
+
+    .feature-item {
+        gap: 12px;
+    }
+
+    .feature-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .about-view-btn {
+        width: 100%;
+    }
 
 }
