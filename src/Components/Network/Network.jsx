@@ -40,6 +40,8 @@ import s from "../../assets/Images/s.jpg"
 import t from "../../assets/Images/t.jpg"
 import u from "../../assets/Images/u.jpg"
 import v from "../../assets/Images/v.jpg"
+// About Section
+import wideangle from "../../assets/Images/wideangle.jpeg"
 
 
 
@@ -216,12 +218,12 @@ const Network = () => {
 
                     {/* Heading */}
 
-                    <Row className="justify-content-center">
+                    <Row className="justify-content-center bg-light p-3 rounded-4 shadow-lg">
                         <Col lg={10}>
-                            <h2 className="dept-heading">
+                            <h2 className="dept-heading text-center">
                                 Clinical Excellence at <span className="span-dept-heading">PKDIMS</span>  – Palakkad's Premier
                                 <br />
-                                Super-Speciality Healthcare Network
+                                <span className="span-dept-heading"> Super-Speciality </span>Healthcare Network
                             </h2>
 
                             <p className="dept-description">
@@ -236,7 +238,7 @@ const Network = () => {
                                 experience for patients across Kerala.
                             </p>
                         </Col>
-                    </Row>
+                    </Row> <br />
 
                     {/* Department Buttons */}
 
@@ -583,140 +585,179 @@ const Network = () => {
 
 
             {/* --------------About Section------------ */}
-            <section className="about-hospital-section">
+            {/* ==========================================
+        ABOUT SECTION
+========================================== */}
+
+            <section className="about-section-premium">
 
                 <Container>
 
-                    {/* ==========================
-            Hospital Icon
-        ========================== */}
+                    <Row className="align-items-center g-4">
 
-                    <div className="about-icon-wrapper">
 
-                        <div className="about-icon">
+                        {/* IMAGE SIDE */}
 
-                            <i className="bi bi-hospital-fill"></i>
+                        <Col lg={5}>
 
-                        </div>
+                            <div className="about-image-box">
 
-                    </div>
 
-                    {/* ==========================
-            Heading
-        ========================== */}
+                                <img
+                                    src={wideangle}
+                                    alt="PKDIMS Hospital"
+                                />
 
-                    <Row className="justify-content-center">
 
-                        <Col lg={10}>
+                                <div className="about-experience">
 
-                            <div className="about-header">
+                                    <h3>
+                                        15+
+                                    </h3>
 
-                                <h5 className="about-subtitle">
-                                    PKDIMS Medical
-                                    <br />
-                                    College Hospital
-                                </h5>
+                                    <p>
+                                        Years
+                                        <br />
+                                        Healthcare Excellence
+                                    </p>
 
-                                <h2 className="about-title">
-                                    About P.K Das Institute of Medical
-                                    <br />
-                                    Science (PKDIMS)
-                                </h2>
+                                </div>
 
-                                <p className="about-description">
-                                    PK DAS INSTITUTE OF MEDICAL SCIENCES is a state-of-the-art super- specialty hospital located near the banks of the river Nila at Ottapalam, Kerala.We uphold a steadfast mission to deliver the highest quality medical care to our patients. Our team of experienced doctors, nurses, and support staff are unwavering in their dedication to providing compassionate and personalized treatment to every individual who seeks our care.
-                                </p>
 
                             </div>
 
-                        </Col>
-
-                    </Row>
-
-                    {/* ==========================
-            Feature Heading
-        ========================== */}
-
-                    <Row className="justify-content-center">
-
-                        <Col lg={10}>
-
-                            <h3 className="feature-heading">
-                                PK Das Special Features
-                            </h3>
 
                         </Col>
 
-                    </Row>
 
-                    {/* ==========================
-            Feature List
-        ========================== */}
 
-                    <Row className="justify-content-center">
+                        {/* CONTENT SIDE */}
 
-                        <Col lg={10}>
+                        <Col lg={7}>
 
-                            <Row>
 
-                                {hospitalFeatures.map((feature) => (
+                            <div className="about-content-premium">
 
-                                    <Col
-                                        lg={6}
-                                        md={6}
-                                        key={feature.id}
-                                        className="mb-4"
-                                    >
 
-                                        <div className="feature-item">
+                                <span className="about-label">
 
-                                            <div
-                                                className={`feature-icon ${feature.color}`}
-                                            >
+                                    <i className="bi bi-hospital-fill"></i>
 
-                                                <i className={`bi ${feature.icon}`}></i>
+                                    About PKDIMS
 
-                                            </div>
+                                </span>
 
-                                            <span>
 
-                                                {feature.title}
 
-                                            </span>
+                                <h2>
 
-                                        </div>
+                                    Excellence in Healthcare
+                                    <br />
 
-                                    </Col>
+                                    <span>
+                                        With Compassion
+                                    </span>
 
-                                ))}
+                                </h2>
 
-                            </Row>
+
+
+                                <p>
+
+                                    PK DAS INSTITUTE OF MEDICAL SCIENCES is a state-of-the-art super- specialty hospital located near the banks of the river Nila at Ottapalam, Kerala.We uphold a steadfast mission to deliver the highest quality medical care to our patients. Our team of experienced doctors, nurses, and support staff are unwavering in their dedication to providing compassionate and personalized treatment to every individual who seeks our care.
+
+                                </p>
+
+
+
+
+
+
+                                <div className="about-highlights">
+
+
+                                    <div>
+
+                                        <i className="bi bi-heart-pulse-fill"></i>
+
+                                        Trauma Care Units 24/7
+
+                                    </div>
+
+
+                                    <div>
+
+                                        <i className="bi bi-scissors"></i>
+
+                                        Operations Theatres
+
+                                    </div>
+
+
+                                    <div>
+
+                                        <i className="bi bi-activity"></i>
+
+                                        Cath Lab
+
+                                    </div>
+
+
+                                    <div>
+
+                                        <i className="bi bi-cpu-fill"></i>
+
+                                        Automated Labs
+
+                                    </div>
+
+
+                                    <div>
+
+                                        <i className="bi bi-truck-front-fill"></i>
+
+                                        Ambulance Services 24/7
+
+                                    </div>
+
+
+                                    <div>
+
+                                        <i className="bi bi-bandaid-fill"></i>
+
+                                        Emergency Care 24/7
+
+                                    </div>
+
+
+                                </div>
+
+
+
+
+                                <Button className="premium-btn">
+
+                                    Learn More
+
+                                    <i className="bi bi-arrow-right"></i>
+
+                                </Button>
+
+
+
+                            </div>
+
 
                         </Col>
 
-                    </Row>
-                    {/* ==========================
-            View More Button
-        ========================== */}
-
-                    <Row className="justify-content-center mt-5">
-
-                        <Col lg={12} className="text-center">
-
-                            <Button className="about-view-btn">
-
-                                View More
-
-                            </Button>
-
-                        </Col>
 
                     </Row>
+
 
                 </Container>
 
-            </section>
 
+            </section>
         </>
     )
 }

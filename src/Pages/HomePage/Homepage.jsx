@@ -8,6 +8,9 @@ import HealthCare from "../../Components/HealthCare/HealthCare";
 import Network from "../../Components/Network/Network";
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import Faq from "../../Components/Faq/Faq";
+import BlogsComponent from "../../Components/BlogsComponent/BlogsComponent";
+import NewsAndEventComponent from "../../Components/NewsAndEventsComponent/NewsAndEventComponent";
+import Footer from "../../Components/Footer/Footer";
 
 
 const Homepage = () => {
@@ -140,8 +143,24 @@ const Homepage = () => {
             <Network />
             {/* </div> */}
             <Testimonials />
-            <br /><br />
+            <br />
             <Faq />
+
+
+
+
+            <BlogsComponent />
+
+
+
+            <NewsAndEventComponent />
+
+
+
+
+
+
+            <Footer />
 
 
 

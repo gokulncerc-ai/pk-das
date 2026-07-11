@@ -1,0 +1,1432 @@
+/*==================================================
+            FEATURED UPDATES SECTION
+==================================================*/
+
+.featured-updates-section {
+
+    padding: 100px 0;
+
+    background: #F8FAFC;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.featured-updates-section::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    background: rgba(80, 193, 239, .08);
+
+    border-radius: 50%;
+
+    top: -150px;
+
+    right: -150px;
+
+}
+
+.featured-updates-section::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+
+    height: 300px;
+
+    background: rgba(0, 163, 76, .08);
+
+    border-radius: 50%;
+
+    left: -120px;
+
+    bottom: -120px;
+
+}
+
+
+/*==================================================
+                MAIN WRAPPER
+==================================================*/
+
+.featured-wrapper {
+
+    position: relative;
+
+    background: #FFFFFF;
+
+    border-radius: 35px;
+
+    padding: 70px;
+
+    box-shadow:
+
+        0 20px 60px rgba(0, 0, 0, .08);
+
+}
+
+
+/*==================================================
+            LEFT NAVIGATION
+==================================================*/
+
+.featured-navigation {
+
+    position: absolute;
+
+    left: -35px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+    z-index: 5;
+
+}
+
+.featured-nav-btn {
+
+    width: 65px;
+
+    height: 65px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #FFFFFF;
+
+    box-shadow:
+
+        0 10px 30px rgba(0, 0, 0, .10);
+
+    color: #10234B;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: .35s ease;
+
+    cursor: pointer;
+
+}
+
+.featured-nav-btn:hover {
+
+    background: #00A34C;
+
+    color: #FFFFFF;
+
+    transform: translateX(5px);
+
+}
+
+.featured-nav-btn i {
+
+    font-size: 24px;
+
+}
+
+
+/*==================================================
+                HEADER
+==================================================*/
+
+.featured-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 45px;
+
+}
+
+.featured-header h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 2.8rem;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    margin: 0;
+
+}
+
+
+/*==================================================
+            EXPLORE BUTTON
+==================================================*/
+
+.featured-btn {
+
+    border: none !important;
+
+    background: #00A34C !important;
+
+    color: #FFFFFF !important;
+
+    padding: 14px 32px !important;
+
+    border-radius: 35px !important;
+
+    font-family: "Inter", sans-serif;
+
+    font-weight: 600;
+
+    transition: .35s ease;
+
+}
+
+.featured-btn:hover {
+
+    background: #00863D !important;
+
+    transform: translateY(-4px);
+
+    box-shadow:
+
+        0 12px 25px rgba(0, 163, 76, .25);
+
+}
+
+/*==================================================
+                FEATURED CARDS
+==================================================*/
+
+.featured-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    background: #FFFFFF;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+
+    transition: .4s ease;
+
+    cursor: pointer;
+
+    height: 100%;
+
+}
+
+.featured-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 25px 50px rgba(0, 0, 0, .15);
+
+}
+
+
+/*==================================================
+                IMAGE WRAPPER
+==================================================*/
+
+.featured-image-wrapper {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 520px;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+}
+
+.featured-image-wrapper img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .6s ease;
+
+}
+
+.featured-card:hover img {
+
+    transform: scale(1.08);
+
+}
+
+
+/*==================================================
+                IMAGE OVERLAY
+==================================================*/
+
+.featured-overlay {
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    padding: 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    background: linear-gradient(to top,
+            rgba(16, 35, 75, .95) 0%,
+            rgba(16, 35, 75, .75) 35%,
+            rgba(16, 35, 75, .20) 70%,
+            rgba(16, 35, 75, 0) 100%);
+
+    min-height: 220px;
+
+}
+
+
+/*==================================================
+                BADGE
+==================================================*/
+
+.featured-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: max-content;
+
+    padding: 8px 18px;
+
+    margin-bottom: 18px;
+
+    background: #00A34C;
+
+    color: #FFFFFF;
+
+    border-radius: 30px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: .3px;
+
+}
+
+
+/*==================================================
+                TITLE
+==================================================*/
+
+.featured-overlay h4 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 2rem;
+
+    font-weight: 800;
+
+    color: #FFFFFF;
+
+    line-height: 1.35;
+
+    margin: 0;
+
+    transition: .35s ease;
+
+}
+
+.featured-card:hover .featured-overlay h4 {
+
+    transform: translateY(-4px);
+
+}
+
+
+/*==================================================
+            SHINE HOVER EFFECT
+==================================================*/
+
+.featured-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -120%;
+
+    width: 60%;
+
+    height: 100%;
+
+    background: linear-gradient(90deg,
+
+            transparent,
+
+            rgba(255, 255, 255, .35),
+
+            transparent);
+
+    transform: skewX(-25deg);
+
+    transition: .8s ease;
+
+    z-index: 2;
+
+}
+
+.featured-card:hover::before {
+
+    left: 150%;
+
+}
+
+/*==================================================
+            SLIDE ANIMATION
+==================================================*/
+
+.featured-content {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.featured-card {
+
+    animation: featuredFade .6s ease;
+}
+
+@keyframes featuredFade {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(40px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+/*==================================================
+            RESPONSIVE - LARGE DEVICES
+==================================================*/
+
+@media (max-width:1200px) {
+
+    .featured-wrapper {
+
+        padding: 60px;
+
+    }
+
+    .featured-header h2 {
+
+        font-size: 2.5rem;
+
+    }
+
+    .featured-image-wrapper {
+
+        height: 450px;
+
+    }
+
+}
+
+/*==================================================
+            RESPONSIVE - TABLET
+==================================================*/
+
+@media (max-width:992px) {
+
+    .featured-updates-section {
+
+        padding: 80px 0;
+
+    }
+
+    .featured-wrapper {
+
+        padding: 50px 35px;
+
+    }
+
+    .featured-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+
+    }
+
+    .featured-navigation {
+
+        position: static;
+
+        transform: none;
+
+        flex-direction: row;
+
+        justify-content: flex-end;
+
+        margin-bottom: 35px;
+
+    }
+
+    .featured-image-wrapper {
+
+        height: 380px;
+
+    }
+
+    .featured-overlay {
+
+        padding: 28px;
+
+    }
+
+    .featured-overlay h4 {
+
+        font-size: 1.6rem;
+
+    }
+
+}
+
+/*==================================================
+            RESPONSIVE - MOBILE
+==================================================*/
+
+@media (max-width:768px) {
+
+    .featured-updates-section {
+
+        padding: 70px 0;
+
+    }
+
+    .featured-wrapper {
+
+        padding: 35px 25px;
+
+        border-radius: 25px;
+
+    }
+
+    .featured-header {
+
+        text-align: center;
+
+        align-items: center;
+
+    }
+
+    .featured-header h2 {
+
+        font-size: 2rem;
+
+    }
+
+    .featured-btn {
+
+        width: 100%;
+
+    }
+
+    .featured-navigation {
+
+        justify-content: center;
+
+        margin-bottom: 30px;
+
+    }
+
+    .featured-nav-btn {
+
+        width: 55px;
+
+        height: 55px;
+
+    }
+
+    .featured-nav-btn i {
+
+        font-size: 20px;
+
+    }
+
+    .featured-image-wrapper {
+
+        height: 320px;
+
+    }
+
+    .featured-overlay {
+
+        min-height: 180px;
+
+        padding: 24px;
+
+    }
+
+    .featured-overlay h4 {
+
+        font-size: 1.4rem;
+
+    }
+
+}
+
+/*==================================================
+            SMALL MOBILE
+==================================================*/
+
+@media (max-width:576px) {
+
+    .featured-wrapper {
+
+        padding: 25px 18px;
+
+    }
+
+    .featured-header h2 {
+
+        font-size: 1.7rem;
+
+        line-height: 1.4;
+
+    }
+
+    .featured-image-wrapper {
+
+        height: 280px;
+
+        border-radius: 20px;
+
+    }
+
+    .featured-card {
+
+        border-radius: 20px;
+
+    }
+
+    .featured-overlay {
+
+        padding: 20px;
+
+        min-height: 150px;
+
+    }
+
+    .featured-overlay h4 {
+
+        font-size: 1.2rem;
+
+    }
+
+    .featured-badge {
+
+        font-size: 12px;
+
+        padding: 7px 16px;
+
+    }
+
+    .featured-nav-btn {
+
+        width: 50px;
+
+        height: 50px;
+
+    }
+
+}
+
+/*==================================================
+            PREMIUM HOVER EFFECTS
+==================================================*/
+
+.featured-card:hover .featured-badge {
+
+    background: #50C1EF;
+
+    color: #10234B;
+
+}
+
+.featured-card:hover {
+
+    border-radius: 30px;
+
+}
+
+.featured-btn {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.featured-btn::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -100%;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: rgba(255, 255, 255, .18);
+
+    transform: skewX(-25deg);
+
+    transition: .6s;
+
+}
+
+.featured-btn:hover::before {
+
+    left: 120%;
+
+}
+
+/*==================================================
+            OPTIONAL SMOOTH CARD TRANSITION
+==================================================*/
+
+.featured-card {
+
+    transition:
+        transform .45s ease,
+        box-shadow .45s ease,
+        opacity .45s ease;
+
+}
+
+/* ---------------------Need medical Assistance section starts------------------------ */
+/*==================================================
+            MEDICAL ASSISTANCE SECTION
+==================================================*/
+
+/* .medical-assistance-section {
+
+    padding: 90px 0;
+
+    background: #F8FAFC;
+
+    position: relative;
+
+}
+
+.medical-assistance-section::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+
+    height: 320px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .08);
+
+    top: -120px;
+
+    right: -120px;
+
+}
+
+.medical-assistance-section::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+
+    height: 280px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 163, 76, .08);
+
+    left: -120px;
+
+    bottom: -120px;
+
+} */
+
+
+/*==================================================
+                TOP CARD
+==================================================*/
+
+/* .medical-assistance-card {
+
+    background: linear-gradient(135deg,
+            #FFFFFF 0%,
+            #F5FCFF 100%);
+
+    border-radius: 25px;
+
+    padding: 35px 45px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+
+    border: 1px solid #EAECEF;
+
+} */
+
+
+/*==================================================
+                LEFT CONTENT
+==================================================*/
+
+/* .medical-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+} */
+
+/* .medical-icon {
+
+    width: 80px;
+
+    height: 80px;
+
+    border-radius: 50%;
+
+    background: #ECFFF4;
+
+    color: #00A34C;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-shrink: 0;
+
+    transition: .35s ease;
+
+} */
+
+/* .medical-icon i {
+
+    font-size: 36px;
+
+}
+
+.medical-assistance-card:hover .medical-icon {
+
+    background: #00A34C;
+
+    color: #FFFFFF;
+
+    transform: rotate(10deg);
+
+} */
+
+/* .medical-left h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 2rem;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    margin-bottom: 10px;
+
+} */
+
+/* .medical-left p {
+
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+
+    color: #667085;
+
+    line-height: 1.8;
+
+} */
+
+
+/*==================================================
+                BUTTONS
+==================================================*/
+
+/* .medical-buttons {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+} */
+
+/* .appointment-btn {
+
+    background: #F3FBF6 !important;
+
+    color: #10234B !important;
+
+    border: none !important;
+
+    padding: 18px 26px !important;
+
+    border-radius: 18px !important;
+
+    font-family: "Inter", sans-serif;
+
+    font-weight: 600;
+
+    transition: .35s ease;
+
+} */
+
+/* .appointment-btn i {
+
+    color: #00A34C;
+
+} */
+
+/* .appointment-btn:hover {
+
+    background: #00A34C !important;
+
+    color: #FFFFFF !important;
+
+    transform: translateY(-5px);
+
+} */
+
+/* .appointment-btn:hover i {
+
+    color: #FFFFFF;
+
+} */
+
+/* .emergency-btn {
+
+    background: #00A34C !important;
+
+    color: #FFFFFF !important;
+
+    border: none !important;
+
+    padding: 18px 30px !important;
+
+    border-radius: 18px !important;
+
+    display: flex !important;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    transition: .35s ease;
+
+} */
+
+/* .emergency-btn i {
+
+    margin-right: 8px;
+
+} */
+
+/* .emergency-btn small {
+
+    margin-top: 5px;
+
+    opacity: .9;
+
+    font-size: 12px;
+
+} */
+
+/* .emergency-btn:hover {
+
+    background: #00863D !important;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(0, 163, 76, .30);
+
+} */
+
+/*==================================================
+                STATISTICS CARDS
+==================================================*/
+
+/* .medical-stat-card {
+
+    background: #FFFFFF;
+
+    border: 1px solid #EAECEF;
+
+    border-radius: 20px;
+
+    padding: 28px 24px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    height: 100%;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
+
+    transition: .35s ease;
+
+    position: relative;
+
+    overflow: hidden;
+
+} */
+
+/* .medical-stat-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 4px;
+
+    height: 100%;
+
+    background: #00A34C;
+
+    transform: scaleY(0);
+
+    transform-origin: top;
+
+    transition: .35s ease;
+
+} */
+
+/* .medical-stat-card:hover::before {
+
+    transform: scaleY(1);
+
+} */
+
+/* .medical-stat-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .12);
+
+} */
+
+
+/*==================================================
+                STAT ICON
+==================================================*/
+
+/* .medical-stat-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    border-radius: 50%;
+
+    background: #ECFFF4;
+
+    color: #00A34C;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-shrink: 0;
+
+    transition: .35s ease;
+
+}
+
+.medical-stat-icon i {
+
+    font-size: 28px;
+
+} */
+
+/* .medical-stat-card:hover .medical-stat-icon {
+
+    background: #00A34C;
+
+    color: #FFFFFF;
+
+    transform: rotate(12deg) scale(1.08);
+
+} */
+
+
+/*==================================================
+                STAT CONTENT
+==================================================*/
+
+/* .medical-stat-content {
+
+    flex: 1;
+
+} */
+
+/* .medical-stat-content h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 2rem;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    margin-bottom: 4px;
+
+} */
+
+/* .medical-stat-content h5 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 1.05rem;
+
+    font-weight: 700;
+
+    color: #10234B;
+
+    margin-bottom: 8px;
+
+} */
+
+/* .medical-stat-content p {
+
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #667085;
+
+} */
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+/* @media (max-width:1200px) {
+
+    .medical-left h2 {
+
+        font-size: 1.8rem;
+
+    }
+
+} */
+
+/* @media (max-width:992px) {
+
+    .medical-assistance-section {
+
+        padding: 80px 0;
+
+    }
+
+    .medical-assistance-card {
+
+        padding: 35px;
+
+    }
+
+    .medical-left {
+
+        margin-bottom: 30px;
+
+    }
+
+    .medical-buttons {
+
+        justify-content: flex-start;
+
+    }
+
+} */
+/* 
+@media (max-width:768px) {
+
+    .medical-assistance-card {
+
+        padding: 30px 25px;
+
+    }
+
+    .medical-left {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        align-items: center;
+
+    }
+
+    .medical-left h2 {
+
+        font-size: 1.6rem;
+
+    }
+
+    .medical-buttons {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+    .appointment-btn,
+
+    .emergency-btn {
+
+        width: 100%;
+
+        justify-content: center;
+
+        align-items: center !important;
+
+        text-align: center;
+
+    }
+
+    .medical-stat-card {
+
+        padding: 22px;
+
+    }
+
+} */
+
+/* @media (max-width:576px) {
+
+    .medical-assistance-section {
+
+        padding: 60px 0;
+
+    }
+
+    .medical-assistance-card {
+
+        padding: 22px 18px;
+
+        border-radius: 18px;
+
+    }
+
+    .medical-left h2 {
+
+        font-size: 1.4rem;
+
+    }
+
+    .medical-left p {
+
+        font-size: 14px;
+
+    }
+
+    .medical-icon {
+
+        width: 70px;
+
+        height: 70px;
+
+    }
+
+    .medical-icon i {
+
+        font-size: 30px;
+
+    }
+
+    .medical-stat-card {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        padding: 20px;
+
+    }
+
+    .medical-stat-content h3 {
+
+        font-size: 1.7rem;
+
+    }
+
+    .medical-stat-content h5 {
+
+        font-size: 1rem;
+
+    }
+
+    .medical-stat-content p {
+
+        font-size: 13px;
+
+    }
+
+} */
+
+
+/*==================================================
+            PREMIUM ANIMATIONS
+==================================================*/
+
+/* .medical-assistance-card,
+
+.medical-stat-card {
+
+    transition:
+
+        transform .35s ease,
+
+        box-shadow .35s ease;
+
+} */
+
+/* .medical-stat-card:hover {
+
+    border-color: #00A34C;
+
+} */
+
+/* .appointment-btn,
+
+.emergency-btn {
+
+    position: relative;
+
+    overflow: hidden;
+
+} */
+
+/* .appointment-btn::before,
+
+.emergency-btn::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -120%;
+
+    width: 60%;
+
+    height: 100%;
+
+    background: rgba(255, 255, 255, .25);
+
+    transform: skewX(-25deg);
+
+    transition: .6s ease;
+
+}
+
+.appointment-btn:hover::before,
+
+.emergency-btn:hover::before {
+
+    left: 150%;
+
+} */

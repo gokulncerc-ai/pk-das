@@ -1,0 +1,773 @@
+/*==================================================
+                    FOOTER SECTION
+==================================================*/
+
+.footer-section {
+
+    position: relative;
+
+    padding: 80px 0 30px;
+
+    background: #071F4A;
+
+    overflow: hidden;
+
+}
+
+.footer-section::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 450px;
+
+    right: -180px;
+
+    top: -120px;
+
+    border-radius: 50%;
+
+    background: radial-gradient(circle,
+            rgba(0, 163, 76, .15) 0%,
+            transparent 70%);
+
+}
+
+.footer-section::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    left: -150px;
+
+    bottom: -150px;
+
+    border-radius: 50%;
+
+    background: radial-gradient(circle,
+            rgba(80, 193, 239, .08) 0%,
+            transparent 70%);
+
+}
+
+.footer-section .container {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/*==================================================
+                    FOOTER ABOUT
+==================================================*/
+
+.footer-about {
+
+    padding-right: 20px;
+
+}
+
+.footer-logo {
+
+    width: 180px;
+
+    margin-bottom: 25px;
+
+}
+
+.footer-about p {
+
+    color: rgba(255, 255, 255, .75);
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-bottom: 28px;
+
+}
+
+
+/*==================================================
+                    CONTACT
+==================================================*/
+
+.footer-contact {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0 0 30px;
+
+}
+
+.footer-contact li {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    margin-bottom: 18px;
+
+    color: rgba(255, 255, 255, .85);
+
+    font-size: 15px;
+
+}
+
+.footer-contact li i {
+
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: rgba(255, 255, 255, .08);
+
+    color: #00A34C;
+
+    flex-shrink: 0;
+
+    transition: .35s;
+
+}
+
+.footer-contact li:hover i {
+
+    background: #00A34C;
+
+    color: #fff;
+
+}
+
+
+/*==================================================
+                    SOCIAL ICONS
+==================================================*/
+
+.footer-social {
+
+    display: flex;
+
+    gap: 14px;
+
+}
+
+.footer-social a {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #fff;
+
+    background: rgba(255, 255, 255, .08);
+
+    transition: .35s;
+
+}
+
+.footer-social a:hover {
+
+    background: #00A34C;
+
+    transform: translateY(-5px);
+
+}
+
+.footer-social i {
+
+    font-size: 18px;
+
+}
+
+/*==================================================
+                    FOOTER TITLES
+==================================================*/
+
+.footer-links h4,
+.footer-newsletter h4 {
+
+    color: #FFFFFF;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    margin-bottom: 28px;
+
+    position: relative;
+
+    padding-bottom: 12px;
+
+    font-family: "Manrope", sans-serif;
+
+}
+
+.footer-links h4::after,
+.footer-newsletter h4::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 55px;
+
+    height: 3px;
+
+    border-radius: 10px;
+
+    background: #00A34C;
+
+}
+
+
+/*==================================================
+                    FOOTER LINKS
+==================================================*/
+
+.footer-links ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+.footer-links ul li {
+
+    margin-bottom: 16px;
+
+}
+
+.footer-links ul li:last-child {
+
+    margin-bottom: 0;
+
+}
+
+.footer-links ul li a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: rgba(255, 255, 255, .78);
+
+    font-size: 15px;
+
+    transition: .35s ease;
+
+}
+
+.footer-links ul li a i {
+
+    color: #00A34C;
+
+    font-size: 13px;
+
+    transition: .35s ease;
+
+}
+
+.footer-links ul li:hover a {
+
+    color: #FFFFFF;
+
+    padding-left: 8px;
+
+}
+
+.footer-links ul li:hover a i {
+
+    transform: translateX(4px);
+
+}
+
+
+/*==================================================
+                NEWSLETTER
+==================================================*/
+
+.footer-newsletter p {
+
+    color: rgba(255, 255, 255, .75);
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-bottom: 25px;
+
+}
+
+
+/*==================================================
+                INPUT BOX
+==================================================*/
+
+.footer-newsletter .form-control {
+
+    height: 56px;
+
+    border-radius: 50px;
+
+    border: 1px solid rgba(255, 255, 255, .15);
+
+    background: rgba(255, 255, 255, .08);
+
+    color: #FFFFFF;
+
+    padding: 0 22px;
+
+    font-size: 15px;
+
+    box-shadow: none;
+
+}
+
+.footer-newsletter .form-control::placeholder {
+
+    color: rgba(255, 255, 255, .55);
+
+}
+
+.footer-newsletter .form-control:focus {
+
+    background: rgba(255, 255, 255, .12);
+
+    border-color: #00A34C;
+
+    color: #FFFFFF;
+
+    box-shadow: none;
+
+}
+
+
+/*==================================================
+                SUBSCRIBE BUTTON
+==================================================*/
+
+.footer-subscribe-btn {
+
+    width: 100%;
+
+    height: 56px;
+
+    border: none !important;
+
+    border-radius: 50px !important;
+
+    background: #00A34C !important;
+
+    color: #FFFFFF !important;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition: .35s ease;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.footer-subscribe-btn i {
+
+    transition: .35s ease;
+
+}
+
+.footer-subscribe-btn:hover {
+
+    background: #009244 !important;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 25px rgba(0, 163, 76, .35);
+
+}
+
+.footer-subscribe-btn:hover i {
+
+    transform: translateX(6px);
+
+}
+
+.footer-subscribe-btn::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -120%;
+
+    width: 60%;
+
+    height: 100%;
+
+    background: rgba(255, 255, 255, .25);
+
+    transform: skewX(-25deg);
+
+    transition: .7s ease;
+
+}
+
+.footer-subscribe-btn:hover::before {
+
+    left: 150%;
+
+}
+
+/*==================================================
+                FOOTER BOTTOM
+==================================================*/
+
+.footer-bottom {
+
+    margin-top: 70px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid rgba(255, 255, 255, .12);
+
+}
+
+.footer-copyright p {
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, .70);
+
+    font-size: 15px;
+
+    font-family: "Inter", sans-serif;
+
+}
+
+.footer-bottom-links {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+}
+
+.footer-bottom-links a {
+
+    color: rgba(255, 255, 255, .75);
+
+    font-size: 15px;
+
+    transition: .35s ease;
+
+}
+
+.footer-bottom-links span {
+
+    color: rgba(255, 255, 255, .25);
+
+}
+
+.footer-bottom-links a:hover {
+
+    color: #00A34C;
+
+}
+
+
+/*==================================================
+                FOOTER HOVER EFFECTS
+==================================================*/
+
+.footer-about,
+
+.footer-links,
+
+.footer-newsletter {
+
+    transition: .35s ease;
+
+}
+
+.footer-logo {
+
+    transition: .35s ease;
+
+}
+
+.footer-logo:hover {
+
+    transform: scale(1.03);
+
+}
+
+.footer-contact li {
+
+    transition: .35s ease;
+
+}
+
+.footer-contact li:hover {
+
+    transform: translateX(6px);
+
+}
+
+.footer-links ul li {
+
+    transition: .35s ease;
+
+}
+
+.footer-links ul li:hover {
+
+    transform: translateX(5px);
+
+}
+
+
+/*==================================================
+                TABLET
+==================================================*/
+
+@media (max-width:991px) {
+
+    .footer-section {
+
+        padding: 70px 0 25px;
+
+    }
+
+    .footer-about,
+
+    .footer-links,
+
+    .footer-newsletter {
+
+        margin-bottom: 45px;
+
+    }
+
+    .footer-bottom {
+
+        margin-top: 40px;
+
+    }
+
+    .footer-bottom-links {
+
+        justify-content: flex-start;
+
+        margin-top: 18px;
+
+    }
+
+}
+
+
+/*==================================================
+                MOBILE
+==================================================*/
+
+@media (max-width:767px) {
+
+    .footer-section {
+
+        padding: 60px 0 20px;
+
+    }
+
+    .footer-logo {
+
+        width: 160px;
+
+    }
+
+    .footer-links h4,
+
+    .footer-newsletter h4 {
+
+        font-size: 20px;
+
+        margin-bottom: 22px;
+
+    }
+
+    .footer-about p,
+
+    .footer-contact li,
+
+    .footer-links ul li a,
+
+    .footer-newsletter p {
+
+        font-size: 14px;
+
+    }
+
+    .footer-social {
+
+        gap: 10px;
+
+    }
+
+    .footer-social a {
+
+        width: 40px;
+
+        height: 40px;
+
+    }
+
+    .footer-bottom {
+
+        text-align: center;
+
+    }
+
+    .footer-copyright {
+
+        margin-bottom: 18px;
+
+    }
+
+    .footer-bottom-links {
+
+        justify-content: center;
+
+        gap: 10px;
+
+    }
+
+}
+
+
+/*==================================================
+                SMALL MOBILE
+==================================================*/
+
+@media (max-width:575px) {
+
+    .footer-section {
+
+        padding: 50px 0 20px;
+
+    }
+
+    .footer-about,
+
+    .footer-links,
+
+    .footer-newsletter {
+
+        text-align: center;
+
+    }
+
+    .footer-links h4::after,
+
+    .footer-newsletter h4::after {
+
+        left: 50%;
+
+        transform: translateX(-50%);
+
+    }
+
+    .footer-contact li {
+
+        justify-content: center;
+
+        text-align: left;
+
+    }
+
+    .footer-social {
+
+        justify-content: center;
+
+    }
+
+    .footer-bottom-links {
+
+        flex-direction: column;
+
+        gap: 8px;
+
+    }
+
+    .footer-bottom-links span {
+
+        display: none;
+
+    }
+
+}
+
+
+/*==================================================
+                SMOOTH ANIMATIONS
+==================================================*/
+
+.footer-section * {
+
+    transition:
+
+        color .3s ease,
+
+        background-color .3s ease,
+
+        transform .3s ease,
+
+        border-color .3s ease;
+
+}

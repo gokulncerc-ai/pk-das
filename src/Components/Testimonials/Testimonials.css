@@ -76,9 +76,9 @@
 
     margin-bottom: 20px;
     
-    font-size:38px;
 
     font-weight:800;
+    font-size: 2rem;
 }
 
 .testimonial-heading p {
@@ -125,7 +125,7 @@
 .testimonial-nav {
 
     width: 100px;
-    height: 58px;
+    height: 250px;
 
     border: none;
 
@@ -133,7 +133,7 @@
 
     position: absolute;
 
-    top: 50%;
+    top: 65%;
 
     transform: translateY(-50%);
 
@@ -145,6 +145,8 @@
     transition: .35s;
 
     z-index: 20;
+    background: #00A34C;
+    color: #fff;
 
 }
 
@@ -234,7 +236,9 @@
     position: absolute;
 
     bottom: 30px;
-    left: 30px;
+    left: 50%;
+        right: auto;
+        width: 70%;
 
     display: flex;
     align-items: center;
@@ -244,7 +248,7 @@
 
     backdrop-filter: blur(10px);
 
-    padding: 18px 22px;
+    padding: 8px 15px;
 
     border-radius: 18px;
 
@@ -798,8 +802,9 @@
 
     .testimonial-nav {
 
-        width: 28px;
-        height: 48px;
+        width: 40px;
+        height: 60px;
+        top: 35%;
 
     }
 
@@ -845,13 +850,14 @@
 
     .recovery-badge {
 
-        left: 15px;
-        right: 15px;
+        left: 50%;
+        right: auto;
         bottom: 15px;
 
-        padding: 12px;
+        padding: 15px;
 
         gap: 10px;
+        width: 90%;
 
     }
 
@@ -901,6 +907,13 @@
     .testimonial-stat-card h3 {
 
         font-size: 1.7rem;
+
+    }
+    .testimonial-nav {
+
+        width: 40px;
+        height: 60px;
+        top: 35%;
 
     }
 
