@@ -122,6 +122,7 @@
     font-size: 1rem;
     line-height: 1.8;
     color: #667085;
+    text-align: justify;
 }
 
 .dept-link {
@@ -279,7 +280,7 @@
     }
 
     .dept-card-text {
-        text-align: center;
+        text-align: justify;
     }
 
     .dept-link {

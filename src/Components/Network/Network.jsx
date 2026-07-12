@@ -7,6 +7,9 @@ import gasteronology from "../../assets/Images/gasteronology.webp"
 import nephrology from "../../assets/Images/nephrology.webp"
 import neurology from "../../assets/Images/neurology.webp"
 import neurosurgery from "../../assets/Images/neurosurgery.webp"
+import kneereplacement from "../../assets/Images/kneereplacement.webp"
+import plasticsurgery from "../../assets/Images/plasticsurgery.webp"
+import spinesurgery from "../../assets/Images/spinesurgery.webp"
 // --------another section for the image starts---------------
 import generalmedicine from "../../assets/Images/generalmedicine.webp"
 import generalsurgery from "../../assets/Images/generalsurgery.webp"
@@ -86,12 +89,29 @@ const Network = () => {
         },
         {
             id: 5,
-            title: "Neuro Surgery",
-            image: neurosurgery,
+            title: "Robotic Joint Replacement",
+            image: kneereplacement,
             description:
-                "Advanced neurosurgical procedures for brain and spine disorders performed by highly experienced surgeons using state-of-the-art technology for better patient outcomes.",
-            link: "Brain & Spine Procedures",
+                "PKDAS Hospital introduces advanced and minimally invasive treatment options for Early Osteoarthritis, focused on preserving joint health, reducing pain, and improving mobility without immediate joint replacement surgery.",
+            link: "Robotic Joint Replacement",
         },
+        {
+            id: 5,
+            title: "Plastic Surgery",
+            image: plasticsurgery,
+            description:
+                "Plastic surgery restores form, function, and appearance. At PKDIMS, our expert surgeons deliver advanced, personalized care across a wide range of specialties, including craniofacial, microvascular, hand reconstructive, pediatric plastic, and aesthetic surgery, ensuring safe treatment and exceptional outcomes.",
+            link: "Plastic Surgery"
+        },
+        {
+            id: 5,
+            title: "Spine Surgery",
+            image: spinesurgery,
+            description:
+                "PKDAS Hospital is proud to introduce Advanced Spine Surgery Services, offering comprehensive diagnosis, treatment, and surgical care for disorders related to the spine, neck, and back. Our dedicated spine care team combines modern technology, expert surgical techniques, and patient-centered rehabilitation to provide effective treatment with improved recovery outcomes.",
+            link: "Spine Surgery",
+        },
+
     ];
 
     // -----------another section starts --------------
@@ -243,6 +263,7 @@ const Network = () => {
                     {/* Department Buttons */}
 
                     <Row>
+                         <h3 className='text-center pb-3 text-success fw-bold'>Super Speciality Departments</h3><hr />
                         <Col>
                             <div className="dept-button-wrapper">
 
@@ -263,7 +284,8 @@ const Network = () => {
 
                     {/* Card */}
 
-                    <Row className="justify-content-center">
+                    <Row className="justify-content-center"> 
+                        
 
                         <Col xl={11}>
 
@@ -281,6 +303,7 @@ const Network = () => {
                                 {/* Card */}
 
                                 <div className="dept-card">
+                                   
 
                                     <Row className="align-items-center">
 
