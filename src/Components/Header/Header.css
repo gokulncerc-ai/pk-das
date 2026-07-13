@@ -17,7 +17,7 @@
 
 .custom-navbar {
 
-    background: rgba(255,255,255,0.85);
+    background: rgba(255, 255, 255, 0.85);
 
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
@@ -34,7 +34,7 @@
 
     justify-content: center;
 
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 
 }
 
@@ -46,25 +46,24 @@
 .left-nav,
 .right-nav {
 
-    display:flex;
+    display: flex;
 
-    align-items:center;
-
-    gap:50px;
+    align-items: center;
+    gap: 100px;
 
 }
 
 
 .left-nav {
 
-    margin-right:auto;
+    margin-right: auto;
 
 }
 
 
 .right-nav {
 
-    margin-left:auto;
+    margin-left: auto;
 
 }
 
@@ -72,20 +71,20 @@
 
 .nav-link {
 
-    font-family:var(--font-body);
+    font-family: var(--font-body);
 
-    font-size:15px;
+    font-size: 15px;
 
-    font-weight:600;
+    font-weight: 600;
 
-    color:#111 !important;
+    color: #111 !important;
 
 }
 
 
 .nav-link:hover {
 
-    color:var(--primary-color) !important;
+    color: var(--primary-color) !important;
 
 }
 
@@ -97,18 +96,18 @@
 
 .logo {
 
-    position:absolute;
+    position: absolute;
 
-    left:50%;
+    left: 50%;
 
-    transform:translateX(-50%);
+    transform: translateX(-50%);
 
 }
 
 
 .logo img {
 
-    width:140px;
+    width: 140px;
 
 }
 
@@ -120,22 +119,22 @@
 
 .menu-btn {
 
-    display:none;
+    display: none;
 
-    border:none;
+    border: none;
 
-    background:none;
+    background: none;
 
-    color:var(--secondary-color);
+    color: var(--secondary-color);
 
-    padding:0;
+    padding: 0;
 
 }
 
 
 .menu-btn i {
 
-    font-size:32px;
+    font-size: 32px;
 
 }
 
@@ -147,25 +146,25 @@
 
 .mobile-offcanvas {
 
-    width:320px !important;
+    width: 320px !important;
 
 }
 
 
 .mobile-logo {
 
-    display:flex;
+    display: flex;
 
-    justify-content:center;
+    justify-content: center;
 
-    margin-bottom:40px;
+    margin-bottom: 40px;
 
 }
 
 
 .mobile-logo img {
 
-    width:160px;
+    width: 160px;
 
 }
 
@@ -173,20 +172,20 @@
 
 .mobile-nav {
 
-    display:flex;
+    display: flex;
 
-    flex-direction:column;
+    flex-direction: column;
 
 }
 
 
 .mobile-nav .nav-link {
 
-    padding:15px 0 !important;
+    padding: 15px 0 !important;
 
-    border-bottom:1px solid #eee;
+    border-bottom: 1px solid #eee;
 
-    font-size:18px;
+    font-size: 18px;
 
 }
 
@@ -194,23 +193,24 @@
 
 .appointment-btn {
 
-    width:100%;
+    width: 100%;
 
-    margin-top:40px;
+    margin-top: 40px;
 
-    padding:14px;
+    padding: 14px;
 
-    border:none;
+    border: none;
 
-    border-radius:30px;
+    border-radius: 30px;
 
-    background:var(--primary-color);
+    background: var(--primary-color);
 
-    color:#fff;
+    color: #fff;
 
-    font-weight:600;
+    font-weight: 600;
 
 }
+
 
 
 
@@ -221,25 +221,25 @@
 ========================================== */
 
 
-@media(max-width:991px){
+@media(max-width:991px) {
 
 
     .header {
 
-        top:15px;
+        top: 15px;
 
     }
 
 
     .custom-navbar {
 
-        width:100%;
+        width: 100%;
 
-        justify-content:space-between;
+        justify-content: space-between;
 
-        padding:12px 20px;
+        padding: 12px 20px;
 
-        border-radius:30px;
+        border-radius: 30px;
 
     }
 
@@ -250,7 +250,7 @@
     .left-nav,
     .right-nav {
 
-        display:none !important;
+        display: none !important;
 
     }
 
@@ -260,11 +260,11 @@
 
     .logo {
 
-        position:static;
+        position: static;
 
-        transform:none;
+        transform: none;
 
-        margin:0;
+        margin: 0;
 
     }
 
@@ -272,7 +272,7 @@
 
     .logo img {
 
-        width:100px;
+        width: 100px;
 
     }
 
@@ -282,13 +282,13 @@
 
     .menu-btn {
 
-        display:flex;
+        display: flex;
 
-        margin-left:auto;
+        margin-left: auto;
 
-        align-items:center;
+        align-items: center;
 
-        justify-content:center;
+        justify-content: center;
 
     }
 

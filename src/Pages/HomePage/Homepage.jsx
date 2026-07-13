@@ -11,6 +11,7 @@ import Faq from "../../Components/Faq/Faq";
 import BlogsComponent from "../../Components/BlogsComponent/BlogsComponent";
 import NewsAndEventComponent from "../../Components/NewsAndEventsComponent/NewsAndEventComponent";
 import Footer from "../../Components/Footer/Footer";
+import Cta from "../../Components/Cta-Buttons/Cta";
 
 
 const Homepage = () => {
@@ -154,7 +155,8 @@ const Homepage = () => {
 
 
             <NewsAndEventComponent />
-
+            {/* ----Cta Buttons------- */}
+            <Cta />
 
 
 
