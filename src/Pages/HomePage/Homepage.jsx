@@ -2,7 +2,7 @@ import React from "react";
 import "./Homepage.css";
 // import { useEffect, useRef, useState } from "react";
 import Header from "../../Components/Header/Header";
-import wideangle from "../../assets/Images/wideangle.jpeg";
+import wideangle from "../../assets/Images/wideangle.webp";
 import PatientTrust from "../../Components/PatientTrust/PatientTrust";
 import HealthCare from "../../Components/HealthCare/HealthCare";
 import Network from "../../Components/Network/Network";
