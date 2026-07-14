@@ -122,6 +122,7 @@ const Network = () => {
             image: generalmedicine,
             description:
                 "For normal & complex disease. Subspecialties in sleep medicine, cancer etc.",
+            link: "/General-Medicine"
         },
         {
             title: "General Surgery",
@@ -263,7 +264,7 @@ const Network = () => {
                     {/* Department Buttons */}
 
                     <Row>
-                         <h3 className='text-center pb-3 text-success fw-bold'>Super Speciality Departments</h3><hr />
+                        <h3 className='text-center pb-3 text-success fw-bold'>Super Speciality Departments</h3><hr />
                         <Col>
                             <div className="dept-button-wrapper">
 
@@ -284,8 +285,8 @@ const Network = () => {
 
                     {/* Card */}
 
-                    <Row className="justify-content-center"> 
-                        
+                    <Row className="justify-content-center">
+
 
                         <Col xl={11}>
 
@@ -303,7 +304,7 @@ const Network = () => {
                                 {/* Card */}
 
                                 <div className="dept-card">
-                                   
+
 
                                     <Row className="align-items-center">
 
@@ -500,12 +501,9 @@ const Network = () => {
 
                                                 </Card.Text>
 
-                                                <a href="/">
-
+                                                <a href={item.link}>
                                                     View More
-
                                                     <i className="bi bi-arrow-right ms-2"></i>
-
                                                 </a>
 
                                             </Card.Body>

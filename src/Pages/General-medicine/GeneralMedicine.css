@@ -1,0 +1,1648 @@
+/*==================================================
+                GENERAL MEDICINE HERO
+==================================================*/
+
+.gm-hero{
+
+    position:relative;
+
+    min-height:700px;
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+.gm-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        rgba(16,35,75,.85),
+        rgba(16,35,75,.60)
+    );
+
+}
+
+.gm-hero .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.gm-hero-content{
+
+    color:#FFFFFF;
+
+    max-width:760px;
+
+}
+
+
+/*==================================================
+                BREADCRUMB
+==================================================*/
+
+.gm-breadcrumb{
+
+    margin-bottom:25px;
+
+}
+
+.gm-breadcrumb .breadcrumb-item a{
+
+    color:rgba(255,255,255,.75);
+
+    text-decoration:none;
+
+}
+
+.gm-breadcrumb .breadcrumb-item.active{
+
+    color:#50C1EF;
+
+}
+
+.gm-breadcrumb .breadcrumb-item + .breadcrumb-item::before{
+
+    color:rgba(255,255,255,.45);
+
+}
+
+
+/*==================================================
+                HERO BADGE
+==================================================*/
+
+.gm-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.12);
+
+    color:#50C1EF;
+
+    backdrop-filter:blur(12px);
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+
+/*==================================================
+                HERO TITLE
+==================================================*/
+
+.gm-hero-content h1{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:4rem;
+
+    font-weight:800;
+
+    line-height:1.2;
+
+    margin-bottom:22px;
+
+    color:#FFFFFF;
+
+}
+
+.gm-hero-content p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:rgba(255,255,255,.85);
+
+    margin-bottom:35px;
+
+}
+
+
+/*==================================================
+                HERO BUTTONS
+==================================================*/
+
+.gm-hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+.gm-primary-btn{
+
+    padding:16px 34px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#00A34C;
+
+    color:#FFFFFF;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.gm-primary-btn:hover{
+
+    background:#00863D;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 35px rgba(0,163,76,.30);
+
+}
+
+.gm-secondary-btn{
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    border:2px solid rgba(255,255,255,.35);
+
+    background:transparent;
+
+    color:#FFFFFF;
+
+    transition:.35s;
+
+}
+
+.gm-secondary-btn:hover{
+
+    background:#FFFFFF;
+
+    color:#10234B;
+
+}
+/*==================================================
+            QUICK INFO SECTION
+==================================================*/
+
+.gm-quick-info{
+
+    position:relative;
+
+    margin-top:-90px;
+
+    z-index:10;
+
+}
+
+.gm-info-card{
+
+    background:#FFFFFF;
+
+    border-radius:24px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    box-shadow:0 20px 45px rgba(16,35,75,.08);
+
+    transition:.35s ease;
+
+    border:1px solid #EAECEF;
+
+    height:100%;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.gm-info-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:#00A34C;
+
+    transform:scaleX(0);
+
+    transition:.35s ease;
+
+}
+
+.gm-info-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+.gm-info-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 55px rgba(16,35,75,.15);
+
+}
+
+.gm-info-icon{
+
+    width:75px;
+
+    height:75px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border-radius:50%;
+
+    background:#ECFFF4;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:.35s ease;
+
+}
+
+.gm-info-icon i{
+
+    font-size:32px;
+
+    color:#00A34C;
+
+}
+
+.gm-info-card:hover .gm-info-icon{
+
+    background:#00A34C;
+
+    transform:rotate(12deg);
+
+}
+
+.gm-info-card:hover .gm-info-icon i{
+
+    color:#FFFFFF;
+
+}
+
+.gm-info-card h3{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:28px;
+
+    font-weight:800;
+
+    color:#10234B;
+
+    margin-bottom:10px;
+
+}
+
+.gm-info-card p{
+
+    color:#667085;
+
+    font-size:15px;
+
+    margin:0;
+
+    line-height:1.7;
+
+}
+
+
+/*==================================================
+                ABOUT SECTION
+==================================================*/
+
+.gm-about{
+
+    padding:120px 0;
+
+    background:#FFFFFF;
+
+}
+
+.gm-about-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 50px rgba(16,35,75,.10);
+
+}
+
+.gm-about-image img{
+
+    width:100%;
+
+    border-radius:30px;
+
+    transition:.5s ease;
+
+}
+
+.gm-about-image:hover img{
+
+    transform:scale(1.06);
+
+}
+
+.gm-about-content{
+
+    padding-left:40px;
+
+}
+
+.gm-section-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:8px 20px;
+
+    background:#ECFFF4;
+
+    color:#00A34C;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.gm-about-content h2{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:#10234B;
+
+    line-height:1.3;
+
+    margin-bottom:25px;
+
+}
+
+.gm-about-content p{
+
+    color:#667085;
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    margin-bottom:18px;
+
+}
+
+
+/*==================================================
+                HIGHLIGHTS
+==================================================*/
+
+.gm-highlights{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.gm-highlight-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:#F8FAFC;
+
+    padding:16px 18px;
+
+    border-radius:15px;
+
+    transition:.35s ease;
+
+}
+
+.gm-highlight-item i{
+
+    color:#00A34C;
+
+    font-size:20px;
+
+}
+
+.gm-highlight-item span{
+
+    color:#10234B;
+
+    font-weight:600;
+
+    font-size:15px;
+
+}
+
+.gm-highlight-item:hover{
+
+    background:#00A34C;
+
+    transform:translateX(8px);
+
+}
+
+.gm-highlight-item:hover i,
+
+.gm-highlight-item:hover span{
+
+    color:#FFFFFF;
+
+}
+/*==================================================
+                FEATURES SECTION
+==================================================*/
+
+.gm-features{
+
+    padding:110px 0;
+
+    background:#F8FAFC;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.gm-features::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    background:rgba(80,193,239,.08);
+
+    top:-150px;
+
+    right:-120px;
+
+}
+
+.gm-features::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:280px;
+
+    height:280px;
+
+    border-radius:50%;
+
+    background:rgba(0,163,76,.08);
+
+    bottom:-100px;
+
+    left:-100px;
+
+}
+
+
+/*==================================================
+            SECTION HEADING
+==================================================*/
+
+.gm-section-heading{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.gm-section-heading span{
+
+    display:inline-block;
+
+    background:#ECFFF4;
+
+    color:#00A34C;
+
+    padding:8px 22px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.gm-section-heading h2{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:#10234B;
+
+    margin-bottom:18px;
+
+}
+
+.gm-section-heading p{
+
+    max-width:720px;
+
+    margin:auto;
+
+    color:#667085;
+
+    line-height:1.9;
+
+    font-size:16px;
+
+}
+
+
+/*==================================================
+                FEATURE CARD
+==================================================*/
+
+.gm-feature-card{
+
+    background:#FFFFFF;
+
+    border-radius:24px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    height:100%;
+
+    border:1px solid #EAECEF;
+
+    box-shadow:0 15px 40px rgba(16,35,75,.06);
+
+    transition:.4s ease;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.gm-feature-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:#00A34C;
+
+    transform:scaleX(0);
+
+    transition:.35s ease;
+
+}
+
+.gm-feature-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+.gm-feature-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 25px 55px rgba(16,35,75,.15);
+
+}
+
+
+/*==================================================
+                FEATURE ICON
+==================================================*/
+
+.gm-feature-icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    background:#ECFFF4;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.35s ease;
+
+}
+
+.gm-feature-icon i{
+
+    font-size:38px;
+
+    color:#00A34C;
+
+}
+
+.gm-feature-card:hover .gm-feature-icon{
+
+    background:#00A34C;
+
+    transform:rotate(10deg) scale(1.05);
+
+}
+
+.gm-feature-card:hover .gm-feature-icon i{
+
+    color:#FFFFFF;
+
+}
+
+
+/*==================================================
+                FEATURE CONTENT
+==================================================*/
+
+.gm-feature-card h4{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#10234B;
+
+    margin-bottom:15px;
+
+}
+
+.gm-feature-card p{
+
+    color:#667085;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+    margin:0;
+
+}
+
+.gm-feature-card:hover h4{
+
+    color:#00A34C;
+
+}
+/*==================================================
+                ADVANTAGES SECTION
+==================================================*/
+
+.gm-advantages{
+
+    padding:120px 0;
+
+    background:#FFFFFF;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.gm-advantages::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    background:rgba(80,193,239,.06);
+
+    top:-150px;
+
+    left:-120px;
+
+}
+
+.gm-advantages::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+
+    height:250px;
+
+    border-radius:50%;
+
+    background:rgba(0,163,76,.06);
+
+    bottom:-100px;
+
+    right:-80px;
+
+}
+
+
+/*==================================================
+                ADVANTAGES IMAGE
+==================================================*/
+
+.gm-advantages-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    box-shadow:0 20px 50px rgba(16,35,75,.10);
+
+}
+
+.gm-advantages-image img{
+
+    width:100%;
+
+    border-radius:28px;
+
+    transition:.5s ease;
+
+}
+
+.gm-advantages-image:hover img{
+
+    transform:scale(1.06);
+
+}
+
+
+/*==================================================
+                CONTENT
+==================================================*/
+
+.gm-advantages-content{
+
+    padding-left:40px;
+
+}
+
+.gm-advantages-content h2{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:#10234B;
+
+    line-height:1.3;
+
+    margin:20px 0;
+
+}
+
+.gm-advantages-content p{
+
+    color:#667085;
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+
+/*==================================================
+                ADVANTAGE CARD
+==================================================*/
+
+.gm-advantage-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    background:#F8FAFC;
+
+    border:1px solid #EAECEF;
+
+    border-radius:18px;
+
+    padding:18px 20px;
+
+    height:100%;
+
+    transition:.35s ease;
+
+    cursor:pointer;
+
+}
+
+.gm-advantage-card i{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#ECFFF4;
+
+    color:#00A34C;
+
+    font-size:20px;
+
+    transition:.35s ease;
+
+    flex-shrink:0;
+
+}
+
+.gm-advantage-card span{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#10234B;
+
+    line-height:1.5;
+
+}
+
+
+/*==================================================
+                HOVER EFFECT
+==================================================*/
+
+.gm-advantage-card:hover{
+
+    background:#00A34C;
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(0,163,76,.18);
+
+}
+
+.gm-advantage-card:hover i{
+
+    background:#FFFFFF;
+
+    color:#00A34C;
+
+    transform:rotate(12deg);
+
+}
+
+.gm-advantage-card:hover span{
+
+    color:#FFFFFF;
+
+}
+
+
+/*==================================================
+            IMAGE DECORATION
+==================================================*/
+
+.gm-advantages-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:120px;
+
+    height:120px;
+
+    right:-25px;
+
+    bottom:-25px;
+
+    border-radius:25px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        #00A34C,
+
+        #50C1EF
+
+    );
+
+    opacity:.15;
+
+}
+
+.gm-advantages-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:90px;
+
+    height:90px;
+
+    left:-20px;
+
+    top:-20px;
+
+    border-radius:20px;
+
+    border:5px solid rgba(80,193,239,.25);
+
+    z-index:2;
+
+}
+/*==================================================
+                SPECIALISTS SECTION
+==================================================*/
+
+.gm-specialists{
+
+    padding:120px 0;
+
+    background:#F8FAFC;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.gm-specialists::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    background:rgba(80,193,239,.08);
+
+    top:-150px;
+
+    right:-120px;
+
+}
+
+.gm-specialists::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    border-radius:50%;
+
+    background:rgba(0,163,76,.08);
+
+    bottom:-100px;
+
+    left:-100px;
+
+}
+
+
+/*==================================================
+                DOCTOR CARD
+==================================================*/
+
+.gm-doctor-card{
+
+    background:#FFFFFF;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    border:1px solid #EAECEF;
+
+    box-shadow:0 18px 45px rgba(16,35,75,.08);
+
+    transition:.4s ease;
+
+    height:100%;
+
+}
+
+.gm-doctor-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 28px 60px rgba(16,35,75,.15);
+
+}
+
+
+/*==================================================
+                DOCTOR IMAGE
+==================================================*/
+
+.gm-doctor-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.gm-doctor-image img{
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+    transition:.5s ease;
+
+}
+
+.gm-doctor-card:hover .gm-doctor-image img{
+
+    transform:scale(1.08);
+
+}
+
+
+/*==================================================
+                EXPERIENCE BADGE
+==================================================*/
+
+.gm-experience{
+
+    position:absolute;
+
+    bottom:20px;
+
+    left:20px;
+
+    background:#00A34C;
+
+    color:#FFFFFF;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    box-shadow:0 10px 25px rgba(0,163,76,.25);
+
+}
+
+
+/*==================================================
+                DOCTOR CONTENT
+==================================================*/
+
+.gm-doctor-content{
+
+    padding:35px;
+
+}
+
+.gm-doctor-designation{
+
+    display:inline-block;
+
+    background:#ECFFF4;
+
+    color:#00A34C;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.gm-doctor-content h3{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:30px;
+
+    font-weight:800;
+
+    color:#10234B;
+
+    margin-bottom:18px;
+
+}
+
+.gm-doctor-content p{
+
+    color:#667085;
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    margin-bottom:30px;
+
+}
+
+
+/*==================================================
+                BUTTONS
+==================================================*/
+
+.gm-doctor-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.gm-doctor-buttons .gm-primary-btn{
+
+    flex:1;
+
+}
+
+.gm-outline-btn{
+
+    flex:1;
+
+    padding:16px 30px;
+
+    border-radius:50px;
+
+    border:2px solid #00A34C;
+
+    background:transparent;
+
+    color:#00A34C;
+
+    font-weight:600;
+
+    transition:.35s ease;
+
+}
+
+.gm-outline-btn:hover{
+
+    background:#00A34C;
+
+    color:#FFFFFF;
+
+}
+
+
+/*==================================================
+                HOVER EFFECTS
+==================================================*/
+
+.gm-doctor-card:hover .gm-doctor-designation{
+
+    background:#00A34C;
+
+    color:#FFFFFF;
+
+}
+
+.gm-doctor-card:hover h3{
+
+    color:#00A34C;
+
+}
+
+.gm-doctor-card:hover .gm-experience{
+
+    transform:translateY(-5px);
+
+}
+/*==================================================
+                CTA SECTION
+==================================================*/
+
+.gm-cta{
+
+    padding:120px 0;
+
+    background:linear-gradient(
+        135deg,
+        #10234B 0%,
+        #1D3B73 100%
+    );
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.gm-cta::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:rgba(80,193,239,.10);
+
+    top:-180px;
+
+    right:-120px;
+
+}
+
+.gm-cta::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    background:rgba(0,163,76,.12);
+
+    bottom:-140px;
+
+    left:-100px;
+
+}
+
+.gm-cta .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/*==================================================
+                CTA CONTENT
+==================================================*/
+
+.gm-cta-content{
+
+    color:#FFFFFF;
+
+}
+
+.gm-cta-content .gm-section-tag{
+
+    background:rgba(255,255,255,.12);
+
+    color:#50C1EF;
+
+    backdrop-filter:blur(12px);
+
+}
+
+.gm-cta-content h2{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:48px;
+
+    font-weight:800;
+
+    margin:20px 0;
+
+    color:#FFFFFF;
+
+}
+
+.gm-cta-content p{
+
+    color:rgba(255,255,255,.82);
+
+    line-height:1.9;
+
+    font-size:17px;
+
+    margin-bottom:35px;
+
+}
+
+
+/*==================================================
+                CTA BUTTONS
+==================================================*/
+
+.gm-cta-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+.gm-cta-buttons .gm-primary-btn{
+
+    min-width:220px;
+
+}
+
+.gm-cta-buttons .gm-outline-btn{
+
+    min-width:220px;
+
+    border:2px solid rgba(255,255,255,.35);
+
+    color:#FFFFFF;
+
+    background:transparent;
+
+}
+
+.gm-cta-buttons .gm-outline-btn:hover{
+
+    background:#FFFFFF;
+
+    color:#10234B;
+
+}
+
+
+/*==================================================
+                CTA BOX
+==================================================*/
+
+.gm-cta-box{
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:30px;
+
+    padding:45px;
+
+    color:#FFFFFF;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.18);
+
+}
+
+.gm-cta-icon{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    background:#00A34C;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    transition:.4s ease;
+
+}
+
+.gm-cta-icon i{
+
+    font-size:42px;
+
+    color:#FFFFFF;
+
+}
+
+.gm-cta-box:hover .gm-cta-icon{
+
+    transform:rotate(12deg) scale(1.08);
+
+    box-shadow:0 15px 35px rgba(0,163,76,.35);
+
+}
+
+.gm-cta-box h3{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:30px;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+
+}
+
+.gm-cta-box p{
+
+    color:rgba(255,255,255,.82);
+
+    line-height:1.8;
+
+    margin-bottom:28px;
+
+}
+
+
+/*==================================================
+                CTA FEATURES
+==================================================*/
+
+.gm-cta-features{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+.gm-cta-features div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-weight:500;
+
+    color:#FFFFFF;
+
+}
+
+.gm-cta-features i{
+
+    color:#50C1EF;
+
+    font-size:20px;
+
+}
+
+
+/*==================================================
+                CTA HOVER
+==================================================*/
+
+.gm-cta-box{
+
+    transition:.4s ease;
+
+}
+
+.gm-cta-box:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 35px 70px rgba(0,0,0,.22);
+
+}
