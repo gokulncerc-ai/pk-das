@@ -1,0 +1,2070 @@
+/* ==========================================================
+   GOOGLE FONTS
+========================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap");
+
+/* ==========================================================
+   ROOT VARIABLES
+========================================================== */
+
+:root {
+    --primary-green: #00a34c;
+    --primary-hover: #00863d;
+    --secondary-blue: #2a3a87;
+    --accent-blue: #50c1ef;
+
+    --heading-color: #10234b;
+    --text-color: #667085;
+
+    --bg-color: #f8fafc;
+    --card-color: #ffffff;
+    --border-color: #eaecef;
+
+    --shadow-sm: 0 15px 40px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 25px 70px rgba(16, 35, 75, 0.12);
+
+    --radius: 28px;
+
+    --transition: all 0.35s ease;
+}
+
+/* ==========================================================
+   GLOBAL
+========================================================== */
+
+body {
+    background: var(--bg-color);
+}
+
+section {
+    position: relative;
+}
+
+.section-subtitle {
+
+    display: inline-flex;
+    align-items: center;
+
+    padding: 10px 22px;
+
+    border-radius: 50px;
+
+    background: rgba(0, 163, 76, .08);
+
+    color: var(--primary-green);
+
+    font-size: .9rem;
+
+    font-family: "Inter", sans-serif;
+
+    font-weight: 600;
+
+    letter-spacing: .5px;
+
+    margin-bottom: 20px;
+
+}
+
+.section-heading h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 3rem;
+
+    font-weight: 800;
+
+    color: var(--heading-color);
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+
+}
+
+.section-description {
+
+    font-family: "Inter";
+
+    color: var(--text-color);
+
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+}
+
+/* ==========================================================
+   HERO SECTION
+========================================================== */
+
+.trust-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 170px 0 150px;
+
+    background:
+        linear-gradient(130deg,
+            rgba(42, 58, 135, .92),
+            rgba(0, 163, 76, .88)),
+        url("../../assets/images/trust/trust-banner.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+.trust-hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(circle at top left,
+            rgba(255, 255, 255, .14),
+            transparent 45%);
+
+}
+
+/* floating blur */
+
+.trust-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 430px;
+
+    height: 430px;
+
+    background: #50c1ef33;
+
+    border-radius: 50%;
+
+    top: -180px;
+
+    left: -120px;
+
+    filter: blur(80px);
+
+}
+
+.trust-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: #00a34c33;
+
+    right: -120px;
+
+    bottom: -140px;
+
+    filter: blur(90px);
+
+}
+
+.trust-hero-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    text-align: center;
+
+}
+
+.trust-badge {
+
+    background: rgba(255, 255, 255, .18) !important;
+
+    backdrop-filter: blur(18px);
+
+    color: #fff !important;
+
+    padding: 12px 24px;
+
+    border-radius: 50px;
+
+    font-size: .9rem;
+
+    font-family: "Inter";
+
+    font-weight: 600;
+
+    border: 1px solid rgba(255, 255, 255, .25);
+
+}
+
+.trust-hero-content h1 {
+
+    font-family: "Manrope";
+
+    font-size: 4.3rem;
+
+    color: #fff;
+
+    font-weight: 800;
+
+    margin-top: 30px;
+
+    line-height: 1.15;
+
+}
+
+.trust-hero-content h1 span {
+
+    color: #bdf8d0;
+
+}
+
+.trust-hero-content p {
+
+    max-width: 770px;
+
+    margin: 35px auto;
+
+    color: #eef6ff;
+
+    font-family: "Inter";
+
+    font-size: 1.15rem;
+
+    line-height: 2;
+
+}
+
+.trust-hero-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 45px;
+
+}
+
+.trust-primary-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 18px 34px;
+
+    text-decoration: none;
+
+    color: #fff;
+
+    border-radius: 60px;
+
+    background: linear-gradient(135deg,
+            var(--primary-green),
+            #18b95f);
+
+    font-family: "Inter";
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+    box-shadow: 0 18px 40px rgba(0, 163, 76, .35);
+
+}
+
+.trust-primary-btn:hover {
+
+    transform: translateY(-6px);
+
+    color: #fff;
+
+    box-shadow: 0 22px 50px rgba(0, 163, 76, .45);
+
+}
+
+.trust-primary-btn i {
+
+    transition: .35s;
+
+}
+
+.trust-primary-btn:hover i {
+
+    transform: translateX(6px);
+
+}
+
+/* ==========================================================
+   TRUST HIGHLIGHTS SECTION
+========================================================== */
+
+.trust-highlights {
+    position: relative;
+    margin-top: -70px;
+    padding-bottom: 100px;
+    z-index: 10;
+}
+
+/* ==========================================================
+   HIGHLIGHT CARD
+========================================================== */
+
+.trust-highlight-card {
+    position: relative;
+    height: 100%;
+    padding: 45px 35px;
+
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(234, 236, 239, 0.8);
+    border-radius: 28px;
+
+    box-shadow: 0 18px 45px rgba(16, 35, 75, 0.08);
+
+    overflow: hidden;
+
+    transition: all 0.4s ease;
+}
+
+/* Top Accent Line */
+
+.trust-highlight-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background: linear-gradient(90deg,
+            #00a34c,
+            #50c1ef);
+
+    transform: scaleX(0);
+
+    transform-origin: left;
+
+    transition: 0.45s;
+}
+
+/* Decorative Glow */
+
+.trust-highlight-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, 0.08);
+
+    top: -80px;
+    right: -70px;
+
+    transition: 0.45s;
+}
+
+/* ==========================================================
+   HOVER
+========================================================== */
+
+.trust-highlight-card:hover {
+
+    transform: translateY(-12px);
+
+    box-shadow: 0 28px 70px rgba(16, 35, 75, 0.15);
+
+    border-color: rgba(0, 163, 76, 0.18);
+
+}
+
+.trust-highlight-card:hover::before {
+
+    transform: scaleX(1);
+
+}
+
+.trust-highlight-card:hover::after {
+
+    transform: scale(1.15);
+
+}
+
+/* ==========================================================
+   ICON
+========================================================== */
+
+.highlight-icon {
+
+    width: 78px;
+    height: 78px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 22px;
+
+    margin-bottom: 28px;
+
+    background: linear-gradient(135deg,
+            #00a34c,
+            #50c1ef);
+
+    box-shadow: 0 15px 35px rgba(0, 163, 76, 0.25);
+
+    transition: all 0.4s ease;
+
+}
+
+.highlight-icon i {
+
+    color: #ffffff;
+
+    font-size: 2rem;
+
+}
+
+.trust-highlight-card:hover .highlight-icon {
+
+    transform: rotate(-8deg) scale(1.08);
+
+}
+
+/* ==========================================================
+   CARD TYPOGRAPHY
+========================================================== */
+
+.trust-highlight-card h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 2.6rem;
+
+    font-weight: 800;
+
+    color: var(--heading-color);
+
+    margin-bottom: 8px;
+
+}
+
+.trust-highlight-card span {
+
+    display: inline-block;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 0.95rem;
+
+    font-weight: 600;
+
+    color: var(--primary-green);
+
+    margin-bottom: 18px;
+
+    letter-spacing: .3px;
+
+}
+
+.trust-highlight-card p {
+
+    margin: 0;
+
+    color: var(--text-color);
+
+    font-size: 1rem;
+
+    font-family: "Inter", sans-serif;
+
+    line-height: 1.9;
+
+}
+
+/* ==========================================================
+   SUBTLE FLOAT EFFECT
+========================================================== */
+
+.trust-highlight-card:nth-child(2) {
+
+    animation: floatingCard 6s ease-in-out infinite;
+
+}
+
+.trust-highlight-card:nth-child(1) {
+
+    animation: floatingCard 7s ease-in-out infinite;
+
+}
+
+.trust-highlight-card:nth-child(3) {
+
+    animation: floatingCard 8s ease-in-out infinite;
+
+}
+
+/* ==========================================================
+   OPTIONAL BADGE STYLE
+========================================================== */
+
+.highlight-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 6px 14px;
+
+    border-radius: 50px;
+
+    background: rgba(0, 163, 76, 0.08);
+
+    color: var(--primary-green);
+
+    font-size: .8rem;
+
+    font-weight: 600;
+
+}
+
+/* ==========================================================
+   ABOUT TRUST SECTION
+========================================================== */
+
+.about-trust-section {
+    position: relative;
+    padding: 120px 0;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+/* Decorative Background */
+
+.about-trust-section::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, 0.06);
+
+    top: -180px;
+    left: -120px;
+
+    filter: blur(20px);
+}
+
+.about-trust-section::after {
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 163, 76, 0.05);
+
+    right: -120px;
+    bottom: -120px;
+
+    filter: blur(25px);
+}
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.trust-content {
+    margin-top: 30px;
+}
+
+.trust-content p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.03rem;
+    line-height: 2;
+    color: var(--text-color);
+    margin-bottom: 22px;
+}
+
+.trust-content strong {
+    color: var(--heading-color);
+    font-weight: 700;
+}
+
+/* ==========================================================
+   FEATURE GRID
+========================================================== */
+
+.trust-features {
+    margin-top: 45px;
+}
+
+/* ==========================================================
+   FEATURE BOX
+========================================================== */
+
+.feature-box {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 22px;
+
+    background: #ffffff;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 22px;
+
+    box-shadow: var(--shadow-sm);
+
+    transition: var(--transition);
+
+    height: 100%;
+}
+
+.feature-box:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(0, 163, 76, 0.18);
+
+    box-shadow: 0 20px 50px rgba(16, 35, 75, 0.12);
+}
+
+/* ==========================================================
+   FEATURE ICON
+========================================================== */
+
+.feature-icon {
+    width: 62px;
+    height: 62px;
+
+    min-width: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: linear-gradient(135deg,
+            var(--primary-green),
+            var(--accent-blue));
+
+    box-shadow: 0 12px 30px rgba(0, 163, 76, 0.25);
+
+    transition: var(--transition);
+}
+
+.feature-box:hover .feature-icon {
+    transform: rotate(-10deg) scale(1.08);
+}
+
+.feature-icon i {
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+/* ==========================================================
+   FEATURE CONTENT
+========================================================== */
+
+.feature-box h5 {
+    margin-bottom: 4px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 1.05rem;
+
+    font-weight: 700;
+
+    color: var(--heading-color);
+}
+
+.feature-box p {
+    margin: 0;
+
+    font-size: .92rem;
+
+    color: var(--text-color);
+
+    line-height: 1.6;
+}
+
+/* ==========================================================
+   IMAGE WRAPPER
+========================================================== */
+
+.trust-image-wrapper {
+    position: relative;
+
+    padding: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==========================================================
+   IMAGE
+========================================================== */
+
+.trust-main-image {
+    position: relative;
+
+    width: 100%;
+
+    border-radius: 30px;
+
+    object-fit: cover;
+
+    box-shadow: var(--shadow-lg);
+
+    transition: .6s ease;
+
+    z-index: 2;
+}
+
+.trust-main-image:hover {
+    transform: scale(1.03);
+}
+
+/* ==========================================================
+   DECORATIVE CIRCLES
+========================================================== */
+
+.image-bg-circle {
+    position: absolute;
+
+    border-radius: 50%;
+
+    z-index: 1;
+}
+
+.image-circle-one {
+    width: 220px;
+    height: 220px;
+
+    background: rgba(80, 193, 239, 0.18);
+
+    top: -35px;
+    right: -30px;
+}
+
+.image-circle-two {
+    width: 140px;
+    height: 140px;
+
+    background: rgba(0, 163, 76, 0.14);
+
+    bottom: -25px;
+    left: -25px;
+}
+
+/* ==========================================================
+   FLOATING CARD
+========================================================== */
+
+.trust-floating-card {
+    position: absolute;
+
+    bottom: 35px;
+    left: -20px;
+
+    width: 250px;
+
+    padding: 24px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    border-radius: 24px;
+
+    box-shadow: 0 25px 60px rgba(16, 35, 75, 0.15);
+
+    z-index: 3;
+
+    transition: var(--transition);
+}
+
+.trust-floating-card:hover {
+    transform: translateY(-10px);
+}
+
+/* ==========================================================
+   FLOATING ICON
+========================================================== */
+
+.floating-card-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    margin-bottom: 16px;
+
+    background: linear-gradient(135deg,
+            var(--primary-green),
+            var(--accent-blue));
+
+    color: #ffffff;
+
+    font-size: 1.4rem;
+
+    box-shadow: 0 12px 30px rgba(0, 163, 76, 0.28);
+}
+
+.trust-floating-card h3 {
+    margin-bottom: 5px;
+
+    font-size: 2rem;
+
+    font-family: "Manrope", sans-serif;
+
+    font-weight: 800;
+
+    color: var(--heading-color);
+}
+
+.trust-floating-card span {
+    display: inline-block;
+
+    color: var(--primary-green);
+
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+
+.trust-floating-card p {
+    margin: 0;
+
+    font-size: .92rem;
+
+    line-height: 1.7;
+
+    color: var(--text-color);
+}
+
+/* ==========================================================
+   ANIMATIONS
+========================================================== */
+
+@keyframes floatingCard {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes floatingCircle {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(45px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   APPLY ANIMATIONS
+========================================================== */
+
+.trust-hero-content {
+
+    animation: fadeUp .9s ease forwards;
+
+}
+
+.section-heading {
+
+    animation: fadeUp .8s ease forwards;
+
+}
+
+.trust-content {
+
+    animation: fadeUp 1s ease forwards;
+
+}
+
+.image-circle-one {
+
+    animation: floatingCircle 8s ease-in-out infinite;
+
+}
+
+.image-circle-two {
+
+    animation: floatingCircle 10s ease-in-out infinite;
+
+}
+
+.trust-floating-card {
+
+    animation: floatingCard 6s ease-in-out infinite;
+
+}
+
+/* ==========================================================
+   LARGE DESKTOP
+========================================================== */
+
+@media (max-width:1400px) {
+
+    .trust-hero-content h1 {
+
+        font-size: 3.9rem;
+
+    }
+
+}
+
+/* ==========================================================
+   LAPTOP
+========================================================== */
+
+@media (max-width:1200px) {
+
+    .trust-hero {
+
+        padding: 150px 0 130px;
+
+    }
+
+    .trust-hero-content h1 {
+
+        font-size: 3.4rem;
+
+    }
+
+    .section-heading h2 {
+
+        font-size: 2.6rem;
+
+    }
+
+    .trust-floating-card {
+
+        width: 220px;
+
+        left: 0;
+
+        bottom: 20px;
+
+    }
+
+}
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width:992px) {
+
+    .trust-hero {
+
+        padding: 130px 0 120px;
+
+    }
+
+    .trust-hero-content {
+
+        text-align: center;
+
+    }
+
+    .trust-hero-content h1 {
+
+        font-size: 3rem;
+
+    }
+
+    .trust-hero-content p {
+
+        font-size: 1.05rem;
+
+    }
+
+    .trust-highlights {
+
+        margin-top: -40px;
+
+    }
+
+    .about-trust-section {
+
+        padding: 100px 0;
+
+    }
+
+    .section-heading {
+
+        text-align: center;
+
+    }
+
+    .trust-content {
+
+        text-align: center;
+
+    }
+
+    .trust-features {
+
+        margin-top: 40px;
+
+    }
+
+    .trust-image-wrapper {
+
+        margin-top: 60px;
+
+    }
+
+    .trust-floating-card {
+
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        bottom: -30px;
+
+    }
+
+    .trust-floating-card:hover {
+
+        transform: translateX(-50%) translateY(-8px);
+
+    }
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:768px) {
+
+    .trust-hero {
+
+        padding: 110px 0 90px;
+
+    }
+
+    .trust-badge {
+
+        font-size: .75rem;
+
+        padding: 10px 18px;
+        margin-top: 35px;
+
+    }
+
+    .trust-hero-content h1 {
+
+        font-size: 2.35rem;
+
+        line-height: 1.3;
+
+    }
+
+    .trust-hero-content p {
+
+        font-size: 1rem;
+
+        line-height: 1.9;
+
+    }
+
+    .trust-primary-btn {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+    .trust-highlights {
+
+        margin-top: 0;
+
+        padding: 80px 0;
+
+    }
+
+    .trust-highlight-card {
+
+        padding: 35px 28px;
+        width: 100%;
+   
+
+    }
+
+    .highlight-icon {
+
+        width: 68px;
+
+        height: 68px;
+
+    }
+
+    .highlight-icon i {
+
+        font-size: 1.7rem;
+
+    }
+
+    .trust-highlight-card h3 {
+
+        font-size: 2.2rem;
+
+    }
+
+    .about-trust-section {
+
+        padding: 80px 0;
+
+    }
+
+    .section-heading h2 {
+
+        font-size: 2rem;
+
+    }
+
+    .section-description {
+
+        font-size: 1rem;
+
+    }
+
+    .trust-content p {
+
+        font-size: .98rem;
+
+    }
+
+    .feature-box {
+
+        padding: 18px;
+
+    }
+
+    .feature-icon {
+
+        width: 56px;
+
+        height: 56px;
+
+        min-width: 56px;
+
+    }
+
+    .feature-icon i {
+
+        font-size: 1.2rem;
+
+    }
+
+    .trust-image-wrapper {
+
+        padding: 15px;
+
+    }
+
+    .trust-main-image {
+
+        border-radius: 24px;
+
+    }
+
+    .trust-floating-card {
+
+        position: relative;
+
+        width: 100%;
+
+        left: auto;
+
+        bottom: auto;
+
+        margin-top: 30px;
+
+        transform: none;
+
+    }
+
+    .trust-floating-card:hover {
+
+        transform: translateY(-6px);
+
+    }
+
+    .image-circle-one,
+
+    .image-circle-two {
+
+        display: none;
+
+    }
+
+}
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width:576px) {
+
+    .trust-hero {
+
+        padding: 100px 0 80px;
+
+    }
+
+    .trust-hero-content h1 {
+
+        font-size: 2rem;
+
+    }
+
+    .section-heading h2 {
+
+        font-size: 1.75rem;
+
+    }
+
+    .trust-highlight-card {
+
+        text-align: center;
+
+    }
+
+    .highlight-icon {
+
+        margin: 0 auto 22px;
+
+    }
+
+    .feature-box {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .feature-icon {
+
+        margin-bottom: 8px;
+
+    }
+
+}
+
+/* ---------------Institution styles for kerala and tamilnadu------ */
+/* ==========================================================
+   INSTITUTION SECTION
+========================================================== */
+
+.institution-section {
+
+    position: relative;
+
+    padding: 120px 0;
+
+    background: #f8fafc;
+
+    overflow: hidden;
+
+}
+
+/* ==========================================================
+   DECORATIVE BACKGROUND
+========================================================== */
+
+.institution-section::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+
+    height: 420px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .08);
+
+    top: -180px;
+
+    left: -140px;
+
+    filter: blur(40px);
+
+}
+
+.institution-section::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 163, 76, .08);
+
+    bottom: -160px;
+
+    right: -120px;
+
+    filter: blur(45px);
+
+}
+
+/* ==========================================================
+   SECTION HEADING
+========================================================== */
+
+.institution-heading {
+
+    text-align: center;
+
+    margin-bottom: 70px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.institution-heading h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 3rem;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    margin: 22px 0;
+
+    line-height: 1.25;
+
+}
+
+.institution-heading h2 span {
+
+    color: #00A34C;
+
+}
+
+.institution-heading p {
+
+    max-width: 760px;
+
+    margin: auto;
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+
+    color: #667085;
+
+    font-family: "Inter", sans-serif;
+
+}
+
+/* ==========================================================
+   TOGGLE WRAPPER
+========================================================== */
+
+.institution-toggle {
+
+    width: max-content;
+
+    margin: 0 auto 70px;
+
+    padding: 8px;
+
+    border-radius: 60px;
+
+    display: flex;
+
+    gap: 10px;
+
+    background: #ffffff;
+
+    border: 1px solid #EAECEF;
+
+    box-shadow: 0 20px 45px rgba(16, 35, 75, .08);
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+/* ==========================================================
+   TOGGLE BUTTON
+========================================================== */
+
+.toggle-btn {
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    padding: 16px 34px;
+
+    border-radius: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    cursor: pointer;
+
+    font-family: "Inter", sans-serif;
+
+    font-weight: 600;
+
+    color: #2A3A87;
+
+    transition: all .35s ease;
+
+}
+
+.toggle-btn i {
+
+    font-size: 1rem;
+
+    transition: .35s;
+
+}
+
+/* ==========================================================
+   ACTIVE BUTTON
+========================================================== */
+
+.toggle-btn.active {
+
+    color: #ffffff;
+
+    background: linear-gradient(135deg,
+            #00A34C,
+            #19BC67);
+
+    box-shadow: 0 12px 28px rgba(0, 163, 76, .28);
+
+}
+
+.toggle-btn.active i {
+
+    color: #ffffff;
+
+}
+
+/* ==========================================================
+   HOVER
+========================================================== */
+
+.toggle-btn:hover {
+
+    color: #00A34C;
+
+}
+
+.toggle-btn:hover i {
+
+    transform: translateY(-2px);
+
+}
+
+.toggle-btn.active:hover {
+
+    color: #ffffff;
+
+}
+
+/* ==========================================================
+   GRID
+========================================================== */
+
+.institution-grid {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+/* ==========================================================
+   INSTITUTION CARD
+========================================================== */
+
+.institution-card {
+
+    position: relative;
+
+    height: 100%;
+
+    padding: 38px 32px;
+
+    background: rgba(255, 255, 255, .9);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 28px;
+
+    border: 1px solid #EAECEF;
+
+    box-shadow:
+        0 18px 45px rgba(16, 35, 75, .07);
+
+    overflow: hidden;
+
+    transition: all .4s ease;
+
+}
+
+
+/* Decorative Glow */
+
+.institution-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 160px;
+
+    height: 160px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .08);
+
+    top: -70px;
+
+    right: -70px;
+
+    transition: .5s ease;
+
+}
+
+
+/* Bottom Accent */
+
+.institution-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    height: 4px;
+
+    width: 0;
+
+    left: 0;
+
+    bottom: 0;
+
+    background: linear-gradient(90deg,
+            #00A34C,
+            #50C1EF);
+
+    transition: .45s ease;
+
+}
+
+
+/* ==========================================================
+   CARD HOVER
+========================================================== */
+
+.institution-card:hover {
+
+    transform: translateY(-12px);
+
+    box-shadow:
+        0 30px 70px rgba(16, 35, 75, .15);
+
+    border-color: rgba(0, 163, 76, .2);
+
+}
+
+
+.institution-card:hover::before {
+
+    transform: scale(1.3);
+
+}
+
+
+.institution-card:hover::after {
+
+    width: 100%;
+
+}
+
+
+/* ==========================================================
+   FEATURED CARD
+========================================================== */
+
+.featured-card {
+
+    border: 2px solid rgba(0, 163, 76, .25);
+
+    background:
+        linear-gradient(145deg,
+            #ffffff,
+            #f3fff8);
+
+}
+
+
+.featured-card:hover {
+
+    box-shadow:
+        0 35px 80px rgba(0, 163, 76, .18);
+
+}
+
+
+/* ==========================================================
+   FEATURE BADGE
+========================================================== */
+
+.featured-badge {
+
+    position: absolute;
+
+    top: 22px;
+
+    right: 22px;
+
+    padding: 7px 18px;
+
+    border-radius: 50px;
+
+    background: linear-gradient(135deg,
+            #00A34C,
+            #19BC67);
+
+    color: #ffffff;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: .75rem;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 10px 25px rgba(0, 163, 76, .25);
+
+}
+
+
+/* ==========================================================
+   ICON
+========================================================== */
+
+.institution-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 22px;
+
+    margin-bottom: 28px;
+
+    background: linear-gradient(135deg,
+            #00A34C,
+            #50C1EF);
+
+    box-shadow:
+        0 15px 35px rgba(0, 163, 76, .25);
+
+    transition: .4s ease;
+
+}
+
+
+.institution-icon i {
+
+    font-size: 2rem;
+
+    color: #ffffff;
+
+}
+
+
+.institution-card:hover .institution-icon {
+
+    transform:
+        rotate(-8deg) scale(1.08);
+
+}
+
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+
+.institution-type {
+
+    display: inline-flex;
+
+    padding: 6px 14px;
+
+    border-radius: 50px;
+
+    background: rgba(42, 58, 135, .08);
+
+    color: #2A3A87;
+
+    font-size: .78rem;
+
+    font-weight: 600;
+
+    margin-bottom: 16px;
+
+    font-family: "Inter", sans-serif;
+
+}
+
+
+
+.institution-content h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 1.25rem;
+
+    font-weight: 750;
+
+    color: #10234B;
+
+    line-height: 1.5;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.institution-approval {
+
+    color: #667085;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: .92rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* ==========================================================
+   LOCATION
+========================================================== */
+
+
+.institution-location {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #EAECEF;
+
+}
+
+
+
+.institution-location i {
+
+    color: #00A34C;
+
+    font-size: 1rem;
+
+    margin-top: 3px;
+
+}
+
+
+
+.institution-location span {
+
+    color: #667085;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: .9rem;
+
+    line-height: 1.6;
+
+}
+
+
+/* ==========================================================
+   CARD ENTRY ANIMATION
+========================================================== */
+
+
+.institution-card {
+
+    animation:
+        institutionFade .6s ease both;
+
+}
+
+
+@keyframes institutionFade {
+
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(35px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+
+@media(max-width:992px) {
+
+
+    .institution-heading h2 {
+
+        font-size: 2.5rem;
+
+    }
+
+
+    .institution-card {
+
+        padding: 32px 26px;
+
+    }
+
+
+}
+
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+
+@media(max-width:768px) {
+
+
+    .institution-section {
+
+        padding: 80px 0;
+
+    }
+
+
+    .institution-heading h2 {
+
+        font-size: 2rem;
+
+    }
+
+
+    .institution-toggle {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+
+    .toggle-btn {
+
+        flex: 1;
+
+        justify-content: center;
+
+        padding: 14px 18px;
+
+        font-size: .9rem;
+
+    }
+
+
+    .institution-card {
+
+        text-align: center;
+
+    }
+
+
+    .institution-icon {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .institution-location {
+
+        justify-content: center;
+
+        text-align: left;
+
+    }
+
+
+}
+
+
+@media(max-width:576px) {
+
+
+    .institution-toggle {
+
+        flex-direction: column;
+
+        border-radius: 28px;
+
+    }
+
+
+    .toggle-btn {
+
+        width: 100%;
+
+    }
+
+
+    .institution-card h3 {
+
+        font-size: 1.1rem;
+
+    }
+
+
+}

@@ -9,7 +9,7 @@ const Cta = () => {
             icon: "bi bi-telephone-fill",
             title: "Call Now",
             link: "tel:+919876543210",
-            className: "call-btn",
+            className: "call-btns",
         },
         {
             icon: "bi bi-whatsapp",
