@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 import {
   Container,
@@ -110,7 +111,7 @@ const Header = () => {
               >
 
                 <NavDropdown.Item
-                  href="/About-P.K-Das"
+                 as={Link} to="/About-P.K-Das"
                   className="dropdown-item-custom about-item"
                 >
                   <i className="bi bi-hospital dropdown-icon"></i>
@@ -118,7 +119,7 @@ const Header = () => {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item
-                  href="/The-Trust"
+                  as={Link} to="/The-Trust"
                   className="dropdown-item-custom founder-item"
                 >
                   <i className="bi bi-people-fill dropdown-icon"></i>
@@ -126,7 +127,7 @@ const Header = () => {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item
-                  href="/Founder"
+                  as={Link} to="/Founder"
                   className="dropdown-item-custom founder-item"
                 >
                   <i className="bi bi-person-badge dropdown-icon"></i>
@@ -576,7 +577,7 @@ const Header = () => {
                   <Nav className="mobile-submenu">
 
                     <Nav.Link
-                      href="/About-P.K-Das"
+                      as={Link} to="/About-P.K-Das"
                       onClick={handleClose}
                     >
                       <i className="bi bi-hospital me-2"></i>
@@ -584,20 +585,20 @@ const Header = () => {
                     </Nav.Link>
 
                     <Nav.Link
-                      href="/The-Trust"
+                      as={Link} to="/The-Trust"
                       onClick={handleClose}
                     >
-                       
+
                       <i className="bi bi-people-fill me-2"></i>
-                     The Trust
+                      The Trust
                     </Nav.Link>
 
                     <Nav.Link
-                      href="/Founder"
+                      as={Link} to="/Founder"
                       onClick={handleClose}
                     >
                       <i className="bi bi-person-badge me-2"></i>
-                     Founder
+                      Founder
                     </Nav.Link>
 
                     <Nav.Link
