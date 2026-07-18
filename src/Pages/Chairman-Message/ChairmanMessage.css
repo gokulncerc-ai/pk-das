@@ -1,0 +1,328 @@
+/* =====================================================
+   Chairman Message Page
+===================================================== */
+
+.chairman-message-page {
+    background: #f8fafc;
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   Hero Section
+===================================================== */
+
+.chairman-hero {
+    position: relative;
+    padding: 100px 0 80px;
+    background: linear-gradient(135deg, #eef9f3 0%, #f8fbff 100%);
+}
+
+.chairman-hero::before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    right: -100px;
+    width: 320px;
+    height: 320px;
+    background: rgba(80, 193, 239, 0.12);
+    border-radius: 50%;
+}
+
+.chairman-hero::after {
+    content: "";
+    position: absolute;
+    bottom: -120px;
+    left: -80px;
+    width: 260px;
+    height: 260px;
+    background: rgba(0, 163, 76, 0.08);
+    border-radius: 50%;
+}
+
+.chairman-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+    margin: auto;
+}
+
+.chairman-badge {
+    background: rgba(0, 163, 76, 0.1);
+    color: #00a34c;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 22px;
+    margin-top: 35px;
+}
+
+.chairman-hero h1 {
+    font-family: "Manrope", sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #10234b;
+    margin-bottom: 18px;
+}
+
+.chairman-hero p {
+    font-family: "Inter", sans-serif;
+    color: #667085;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   Main Section
+===================================================== */
+
+.chairman-content-section {
+    padding: 90px 0;
+}
+
+
+/* =====================================================
+   Chairman Profile Card
+===================================================== */
+
+.chairman-profile-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(234, 236, 239, 0.8);
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 18px 45px rgba(16, 35, 75, 0.08);
+    transition: 0.4s ease;
+    position: sticky;
+    top: 110px;
+}
+
+.chairman-profile-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(16, 35, 75, 0.12);
+}
+
+.chairman-image-wrapper {
+    overflow: hidden;
+}
+
+.chairman-image-wrapper img {
+    width: 100%;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.chairman-profile-card:hover img {
+    transform: scale(1.05);
+}
+
+.chairman-profile-content {
+    padding: 35px 30px;
+}
+
+.chairman-profile-content h3 {
+    font-family: "Manrope", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #10234b;
+    margin-bottom: 8px;
+}
+
+.chairman-profile-content span {
+    display: block;
+    color: #00a34c;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+}
+
+.chairman-divider {
+    width: 70px;
+    height: 4px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #00a34c, #50c1ef);
+    margin: 28px 0;
+}
+
+.chairman-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.chairman-highlights div {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: "Inter", sans-serif;
+    color: #667085;
+    font-weight: 600;
+}
+
+.chairman-highlights i {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: rgba(0, 163, 76, 0.08);
+    color: #00a34c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+}
+
+
+/* =====================================================
+   Message Card
+===================================================== */
+
+.chairman-message-card {
+    position: relative;
+    background: #ffffff;
+    border-radius: 28px;
+    padding: 55px;
+    border: 1px solid #eaecef;
+    box-shadow: 0 20px 50px rgba(16, 35, 75, 0.08);
+}
+
+.quote-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, #00a34c, #50c1ef);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 35px;
+    box-shadow: 0 15px 35px rgba(0, 163, 76, 0.25);
+}
+
+.chairman-message-card p {
+    margin-bottom: 28px;
+    color: #667085;
+    font-size: 1.05rem;
+    line-height: 2;
+    font-family: "Inter", sans-serif;
+    text-align: justify;
+}
+
+.chairman-message-card p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =====================================================
+   Hover Effects
+===================================================== */
+
+.chairman-message-card,
+.chairman-profile-card {
+    transition: all 0.4s ease;
+}
+
+.chairman-message-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 28px 70px rgba(16, 35, 75, 0.12);
+}
+
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media (max-width: 1199px) {
+
+    .chairman-message-card {
+        padding: 45px;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .chairman-hero {
+        padding: 80px 0 60px;
+    }
+
+    .chairman-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .chairman-profile-card {
+        position: static;
+    }
+
+    .chairman-content-section {
+        padding: 70px 0;
+    }
+
+    .chairman-message-card {
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .chairman-hero h1 {
+        font-size: 2rem;
+    }
+
+    .chairman-hero p {
+        font-size: 1rem;
+    }
+
+    .chairman-profile-content {
+        padding: 28px 24px;
+    }
+
+    .chairman-message-card {
+        padding: 32px 24px;
+        border-radius: 24px;
+    }
+
+    .quote-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.6rem;
+        border-radius: 18px;
+        margin-bottom: 25px;
+    }
+
+    .chairman-message-card p {
+        font-size: 0.98rem;
+        line-height: 1.9;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    .chairman-hero {
+        padding: 70px 0 50px;
+    }
+
+    .chairman-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .chairman-badge {
+        font-size: 0.8rem;
+        padding: 8px 18px;
+    }
+
+    .chairman-profile-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .chairman-highlights i {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+}

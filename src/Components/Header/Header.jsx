@@ -111,7 +111,7 @@ const Header = () => {
               >
 
                 <NavDropdown.Item
-                 as={Link} to="/About-P.K-Das"
+                  as={Link} to="/About-P.K-Das"
                   className="dropdown-item-custom about-item"
                 >
                   <i className="bi bi-hospital dropdown-icon"></i>
@@ -135,7 +135,7 @@ const Header = () => {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item
-                  href="/chairman-message"
+                  as={Link} to="/Chairman-Message"
                   className="dropdown-item-custom chairman-item"
                 >
                   <i className="bi bi-chat-left-text dropdown-icon"></i>
@@ -143,20 +143,28 @@ const Header = () => {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item
-                  href="/ceo-message"
+                  as={Link} to="/Ceo-Message"
                   className="dropdown-item-custom ceo-item"
                 >
                   <i className="bi bi-person-workspace dropdown-icon"></i>
-                  <span className="dropdown-text">CEO Message</span>
+                  <span className="dropdown-text">CEO's Message</span>
                 </NavDropdown.Item>
 
 
                 <NavDropdown.Item
-                  href="/trustees"
+                  as={Link} to="/Trustee-Message"
                   className="dropdown-item-custom trustees-item"
                 >
-                  <i className="bi bi-people-fill dropdown-icon"></i>
-                  <span className="dropdown-text">Trustees</span>
+                 <i className="bi bi-person-badge-fill dropdown-icon"></i>
+                  <span className="dropdown-text">Trustee's Message</span>
+                </NavDropdown.Item>
+
+                <NavDropdown.Item
+                  as={Link} to="/Director-Message"
+                  className="dropdown-item-custom trustees-item"
+                >
+                 <i className="bi bi-person-workspace dropdown-icon"></i>
+                  <span className="dropdown-text">Directors Message</span>
                 </NavDropdown.Item>
 
 
@@ -602,27 +610,35 @@ const Header = () => {
                     </Nav.Link>
 
                     <Nav.Link
-                      href="/ceo-message"
+                      as={Link} to="/Chairman-Message"
                       onClick={handleClose}
                     >
                       <i className="bi bi-person-workspace me-2"></i>
-                      CEO Message
+                      Chairman's Message
                     </Nav.Link>
 
                     <Nav.Link
-                      href="/trustees"
+                      as={Link} to="/Ceo-Message"
                       onClick={handleClose}
                     >
                       <i className="bi bi-people-fill me-2"></i>
-                      Trustees
+                      Ceo's Message
                     </Nav.Link>
 
                     <Nav.Link
-                      href="/social-responsibility"
+                      as={Link} to="/Trustee-Message"
                       onClick={handleClose}
                     >
                       <i className="bi bi-heart-pulse-fill me-2"></i>
-                      Social Responsibility
+                      Trustee's Message
+                    </Nav.Link>
+
+                    <Nav.Link
+                      as={Link} to="/Director-Message"
+                      onClick={handleClose}
+                    >
+                       <i className="bi bi-person-workspace dropdown-icon"></i>
+                      Directors Message
                     </Nav.Link>
 
                     <Nav.Link

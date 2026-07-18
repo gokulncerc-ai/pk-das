@@ -7,10 +7,12 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import './Styles/Fonts/Fonts.css'
 import './Styles/Themes/Themes.css'
 import { BrowserRouter } from 'react-router-dom';
+import ScrollToTop from './Components/Scroll-To-Top/ScrollToTop.jsx';
 
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
+    <ScrollToTop />
     <StrictMode>
       <App />
     </StrictMode>

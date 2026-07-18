@@ -9,6 +9,10 @@ import Founder from './Pages/Founder/Founder.jsx'
 import Header from './Components/Header/Header.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 import Cta from './Components/Cta-Buttons/Cta.jsx'
+import ChairmanMessage from './Pages/Chairman-Message/ChairmanMessage.jsx'
+import CeoMessage from './Pages/Ceo-Message/CeoMessage.jsx'
+import TrusteeMessage from './Pages/Trustee-Message/TrusteeMessage.jsx'
+import DirectorsMessage from './Pages/Directors-Message/DirectorsMessage.jsx'
 
 function App() {
 
@@ -22,6 +26,10 @@ function App() {
         <Route path='/About-P.K-Das' element={<AboutPkDas />} />
         <Route path='/The-Trust' element={<TheTrustees />} />
         <Route path='/Founder' element={<Founder />} />
+        <Route path='/Chairman-Message' element={<ChairmanMessage />} />
+        <Route path='/Ceo-Message' element={<CeoMessage />} />
+        <Route path='/Trustee-Message' element={<TrusteeMessage />} />
+        <Route path='/Director-Message' element={<DirectorsMessage />} />
       </Routes>
       <Footer />
     </>

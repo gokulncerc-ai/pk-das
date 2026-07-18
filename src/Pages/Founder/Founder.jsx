@@ -109,7 +109,7 @@ const Founder = () => {
                                     className="img-fluid founder-image"
                                 />
 
-                                <div className="founder-floating-card">
+                                {/* <div className="founder-floating-card">
 
                                     <div className="floating-icon">
 
@@ -129,7 +129,7 @@ const Founder = () => {
 
                                     </span>
 
-                                </div>
+                                </div> */}
 
                             </div>
 
