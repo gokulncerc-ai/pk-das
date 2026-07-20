@@ -13,9 +13,7 @@ import ChairmanMessage from './Pages/Chairman-Message/ChairmanMessage.jsx'
 import CeoMessage from './Pages/Ceo-Message/CeoMessage.jsx'
 import TrusteeMessage from './Pages/Trustee-Message/TrusteeMessage.jsx'
 import DirectorsMessage from './Pages/Directors-Message/DirectorsMessage.jsx'
-
 function App() {
-
   return (
     <>
       <Header />
