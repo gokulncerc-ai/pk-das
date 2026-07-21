@@ -1418,7 +1418,7 @@ const AboutPkDas = () => {
 
                         <Col lg={6}>
 
-                            <div className="vision-card">
+                            <div className="vision-cards">
 
                                 <div className="vision-icon">
 
@@ -1426,7 +1426,7 @@ const AboutPkDas = () => {
 
                                 </div>
 
-                                <h3>
+                                <h3 className='text-light'>
 
                                     Our Vision
 

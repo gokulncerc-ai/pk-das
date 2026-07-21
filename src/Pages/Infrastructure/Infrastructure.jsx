@@ -308,15 +308,33 @@ const Infrastructure = () => {
                                     <div className="service-card">
 
 
-                                        <div className="service-icon">
+                                        {/* Service Image */}
 
-                                            <i className={`bi ${service.icon}`}></i>
+                                        <div className="service-image">
+
+                                            <img
+
+                                                src={service.image}
+
+                                                alt={service.title}
+
+                                            />
 
                                         </div>
 
 
 
-                                        <div>
+                                        {/* Service Content */}
+
+                                        <div className="service-content">
+
+
+                                            <div className="service-icon">
+
+                                                <i className={`bi ${service.icon}`}></i>
+
+                                            </div>
+
 
 
                                             <h4>
@@ -338,7 +356,6 @@ const Infrastructure = () => {
 
 
                                     </div>
-
 
                                 </Col>
 

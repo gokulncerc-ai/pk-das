@@ -155,7 +155,7 @@ const Header = () => {
                   as={Link} to="/Trustee-Message"
                   className="dropdown-item-custom trustees-item"
                 >
-                 <i className="bi bi-person-badge-fill dropdown-icon"></i>
+                  <i className="bi bi-person-badge-fill dropdown-icon"></i>
                   <span className="dropdown-text">Trustee's Message</span>
                 </NavDropdown.Item>
 
@@ -163,7 +163,7 @@ const Header = () => {
                   as={Link} to="/Director-Message"
                   className="dropdown-item-custom trustees-item"
                 >
-                 <i className="bi bi-person-workspace dropdown-icon"></i>
+                  <i className="bi bi-person-workspace dropdown-icon"></i>
                   <span className="dropdown-text">Directors Message</span>
                 </NavDropdown.Item>
 
@@ -178,7 +178,7 @@ const Header = () => {
 
 
                 <NavDropdown.Item
-                 as={Link} to="/Awards-Recognition"
+                  as={Link} to="/Awards-Recognition"
                   className="dropdown-item-custom awards-item"
                 >
                   <i className="bi bi-award-fill dropdown-icon"></i>
@@ -187,7 +187,7 @@ const Header = () => {
 
 
                 <NavDropdown.Item
-                   as={Link} to="/Infrastructure"
+                  as={Link} to="/Infrastructure"
                   className="dropdown-item-custom infrastructure-item"
                 >
                   <i className="bi bi-building-fill dropdown-icon"></i>
@@ -214,7 +214,9 @@ const Header = () => {
 
                     <h5>Super Speciality</h5>
 
-                    <a href="/departments/cardiology" className="dropdown-item"><small><strong>Cardiology</strong></small></a>
+                    {/* <NavDropdown.Item as={Link} to="/Cardiology">
+                      <small><strong>Cardiology</strong></small>
+                    </NavDropdown.Item> */}
                     <a href="/departments/neurology" className="dropdown-item"><small><strong>Neurology</strong></small></a>
                     <a href="/departments/nephrology" className="dropdown-item"><small><strong>Nephrology</strong></small></a>
                     <a href="/departments/neurosurgery" className="dropdown-item"><small><strong>Neurosurgery</strong></small></a>
@@ -637,11 +639,11 @@ const Header = () => {
                       as={Link} to="/Director-Message"
                       onClick={handleClose}
                     >
-                       <i className="bi bi-person-workspace dropdown-icon"></i>
+                      <i className="bi bi-person-workspace dropdown-icon"></i>
                       Directors Message
                     </Nav.Link>
 
-                     <Nav.Link
+                    <Nav.Link
                       as={Link} to="/Awards-Recognition"
                       onClick={handleClose}
                     >

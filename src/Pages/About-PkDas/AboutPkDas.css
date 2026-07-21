@@ -2256,7 +2256,7 @@
 ==========================================================*/
 
 .mission-card,
-.vision-card {
+.vision-cards {
 
     height: 100%;
 
@@ -2284,7 +2284,7 @@
 }
 
 .mission-card:hover,
-.vision-card:hover {
+.vision-cards:hover {
 
     transform: translateY(-12px);
 
@@ -2332,7 +2332,7 @@
 }
 
 .mission-card:hover .mission-icon,
-.vision-card:hover .vision-icon {
+.vision-cards:hover .vision-icon {
 
     background: linear-gradient(135deg,
             var(--primary-color),
@@ -2349,7 +2349,7 @@
 ==========================================================*/
 
 .mission-card h3,
-.vision-card h3 {
+.vision-cards h3 {
 
     color: #ffffff;
 
@@ -2362,7 +2362,7 @@
 }
 
 .mission-card p,
-.vision-card p {
+.vision-cards p {
 
     color: rgba(255, 255, 255, .82);
 
@@ -2920,7 +2920,7 @@
     .doctor-card,
     .choose-card,
     .mission-card,
-    .vision-card,
+    .vision-cards,
     .value-card {
 
         border-radius: 24px;
@@ -2994,7 +2994,7 @@
     .stats-card,
     .doctor-card,
     .mission-card,
-    .vision-card,
+    .vision-cards,
     .value-card {
 
         padding: 28px;

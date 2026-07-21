@@ -162,7 +162,7 @@ const Homepage = () => {
 
 
 
-            <Footer />
+          
 
 
 

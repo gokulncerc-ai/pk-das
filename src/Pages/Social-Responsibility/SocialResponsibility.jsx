@@ -6,7 +6,7 @@ import social2 from "../../assets/Images/social2.webp"
 import social3 from "../../assets/Images/social3.webp"
 import social4 from "../../assets/Images/social4.webp"
 
-
+    
 const SocialResponsibility = () => {
 
     const initiatives = [
