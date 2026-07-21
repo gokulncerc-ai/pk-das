@@ -13,12 +13,8 @@ import ChairmanMessage from './Pages/Chairman-Message/ChairmanMessage.jsx'
 import CeoMessage from './Pages/Ceo-Message/CeoMessage.jsx'
 import TrusteeMessage from './Pages/Trustee-Message/TrusteeMessage.jsx'
 import DirectorsMessage from './Pages/Directors-Message/DirectorsMessage.jsx'
-import SocialResponsibility from './Pages/Social-Responsibility/SocialResponsibility.jsx'
-import AwardsRecognition from './Pages/AwardsRecognition/AwardsRecognition.jsx'
-import Infrastructure from './Pages/Infrastructure/Infrastructure.jsx'
 
 function App() {
-
   return (
     <>
       <Header />
