@@ -278,8 +278,7 @@ const Infrastructure = () => {
 
 
                                 <h2>
-
-                                    Comprehensive Medical Services
+                                    Comprehensive Medical Service
 
                                 </h2>
 
