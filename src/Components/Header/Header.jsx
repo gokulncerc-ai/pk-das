@@ -169,7 +169,7 @@ const Header = () => {
 
 
                 <NavDropdown.Item
-                  href="/social-responsibility"
+                  as={Link} to="/Social-Responsibility"
                   className="dropdown-item-custom social-item"
                 >
                   <i className="bi bi-heart-pulse-fill dropdown-icon"></i>
@@ -178,7 +178,7 @@ const Header = () => {
 
 
                 <NavDropdown.Item
-                  href="/awards"
+                 as={Link} to="/Awards-Recognition"
                   className="dropdown-item-custom awards-item"
                 >
                   <i className="bi bi-award-fill dropdown-icon"></i>
@@ -187,7 +187,7 @@ const Header = () => {
 
 
                 <NavDropdown.Item
-                  href="/infrastructure"
+                   as={Link} to="/Infrastructure"
                   className="dropdown-item-custom infrastructure-item"
                 >
                   <i className="bi bi-building-fill dropdown-icon"></i>
@@ -641,12 +641,20 @@ const Header = () => {
                       Directors Message
                     </Nav.Link>
 
-                    <Nav.Link
-                      href="/awards"
+                     <Nav.Link
+                      as={Link} to="/Awards-Recognition"
                       onClick={handleClose}
                     >
                       <i className="bi bi-award-fill me-2"></i>
                       Awards & Recognition
+                    </Nav.Link>
+
+                    <Nav.Link
+                      href="/Social-Responsibility"
+                      onClick={handleClose}
+                    >
+                      <i className="bi bi-heart-pulse-fill me-2"></i>
+                      Social Responsibility
                     </Nav.Link>
 
                     <Nav.Link

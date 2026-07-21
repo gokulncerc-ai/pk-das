@@ -1,0 +1,902 @@
+/*=========================================
+  Awards Hero Section
+=========================================*/
+
+.awards-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 170px 0 100px;
+
+    background:
+        linear-gradient(135deg,
+            #F8FAFC 0%,
+            #F2FFF8 50%,
+            #EEF8FF 100%);
+
+}
+
+
+/* Background Decorative Elements */
+
+.awards-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(0, 163, 76, 0.08);
+
+    top: -180px;
+    right: -120px;
+
+}
+
+
+.awards-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(80, 193, 239, 0.10);
+
+    bottom: -150px;
+    left: -100px;
+
+}
+
+
+/*=========================================
+  Hero Content
+=========================================*/
+
+
+.awards-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.awards-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 24px;
+
+    border-radius: 50px;
+
+    background:
+        rgba(0, 163, 76, 0.08);
+
+    border:
+        1px solid rgba(0, 163, 76, 0.15);
+
+    color: #00A34C;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.awards-badge i {
+
+    font-size: 18px;
+
+}
+
+
+
+.awards-hero h1 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 58px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    color: #10234B;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.awards-hero h1 span {
+
+    color: #00A34C;
+
+}
+
+
+
+.awards-hero p {
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    color: #667085;
+
+    max-width: 560px;
+
+}
+
+
+
+
+/*=========================================
+  Hero Buttons
+=========================================*/
+
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 18px;
+
+    margin-top: 35px;
+
+}
+
+
+
+.primary-btn {
+
+    border: none;
+
+    padding: 14px 30px;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(135deg,
+            #00A34C,
+            #00863D);
+
+    color: #FFFFFF;
+
+    font-family: "Inter", sans-serif;
+
+    font-weight: 600;
+
+    transition: .35s;
+
+    box-shadow:
+        0 12px 30px rgba(0, 163, 76, 0.25);
+
+}
+
+
+
+.primary-btn:hover {
+
+    transform: translateY(-4px);
+
+}
+
+
+
+.secondary-btn {
+
+    padding: 14px 30px;
+
+    border-radius: 50px;
+
+    border: 1px solid #EAECEF;
+
+    background: #FFFFFF;
+
+    color: #10234B;
+
+    font-family: "Inter", sans-serif;
+
+    font-weight: 600;
+
+    transition: .35s;
+
+}
+
+
+
+.secondary-btn:hover {
+
+    background: #F8FAFC;
+
+    transform: translateY(-4px);
+
+}
+
+
+
+/*=========================================
+  Hero Certificate Image
+=========================================*/
+
+
+.hero-image-wrapper {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+
+.hero-image-card {
+
+    background: #FFFFFF;
+
+    padding: 25px;
+
+    border-radius: 32px;
+
+    border: 1px solid #EAECEF;
+
+    box-shadow:
+        0 25px 70px rgba(16, 35, 75, 0.15);
+
+    transition: .4s;
+
+}
+
+
+
+.hero-image-card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+
+.hero-image-card img {
+
+    width: 100%;
+
+    max-width: 430px;
+
+    height: 520px;
+
+    object-fit: contain;
+
+    border-radius: 22px;
+
+}
+
+
+
+/*=========================================
+  Awards Cards Section
+=========================================*/
+
+
+.awards-section {
+
+    padding: 100px 0;
+
+    background: #F8FAFC;
+
+}
+
+
+
+
+/*=========================================
+  Award Card
+=========================================*/
+
+
+.award-card {
+
+    height: 100%;
+
+    background: #FFFFFF;
+
+    border-radius: 28px;
+
+    overflow: hidden;
+
+    border: 1px solid #EAECEF;
+
+    box-shadow:
+        0 15px 45px rgba(16, 35, 75, 0.08);
+
+    transition: .4s;
+
+}
+
+
+
+.award-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 25px 60px rgba(16, 35, 75, 0.15);
+
+}
+
+
+
+/*=========================================
+  Award Image
+=========================================*/
+
+
+.award-image-wrapper {
+
+    position: relative;
+
+    padding: 18px;
+
+    background: #F8FAFC;
+
+}
+
+
+
+.award-image-wrapper img {
+
+    width: 100%;
+
+    height: 260px;
+
+    object-fit: contain;
+
+    background: #FFFFFF;
+
+    border-radius: 20px;
+
+}
+
+
+
+/* Floating Icon */
+
+
+.award-icon {
+
+    position: absolute;
+
+    right: 30px;
+
+    bottom: 0;
+
+    width: 58px;
+
+    height: 58px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(135deg,
+            #00A34C,
+            #2A3A87);
+
+    color: #FFFFFF;
+
+    font-size: 24px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 163, 76, 0.35);
+
+}
+
+
+
+/*=========================================
+  Card Content
+=========================================*/
+
+
+.award-content {
+
+    padding: 30px 25px;
+
+}
+
+
+
+.award-category {
+
+    display: inline-block;
+
+    padding: 7px 16px;
+
+    border-radius: 50px;
+
+    background:
+        rgba(42, 58, 135, 0.08);
+
+    color: #2A3A87;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.award-content h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    line-height: 1.4;
+
+    margin-bottom: 22px;
+
+}
+
+
+
+/*=========================================
+  Certificate Button
+=========================================*/
+
+
+.view-certificate-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(135deg,
+            #00A34C,
+            #00863D);
+
+    color: #FFFFFF;
+
+    font-family: "Inter", sans-serif;
+
+    font-weight: 600;
+
+    transition: .35s;
+
+}
+
+
+
+.view-certificate-btn:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/*=========================================
+  Responsive Design
+=========================================*/
+
+
+@media(max-width:991px) {
+
+
+    .awards-hero {
+
+        padding: 140px 0 80px;
+
+    }
+
+
+    .awards-hero h1 {
+
+        font-size: 44px;
+
+    }
+
+
+    .hero-image-card img {
+
+        height: 420px;
+
+    }
+
+    .awards-badge {
+        margin-top: 60px;
+    }
+
+
+
+}
+
+
+
+@media(max-width:767px) {
+
+
+    .awards-hero {
+
+        padding: 120px 0 70px;
+
+    }
+
+
+    .awards-hero h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+    }
+
+
+    .primary-btn,
+    .secondary-btn {
+
+        width: 100%;
+
+    }
+
+
+    .hero-image-card img {
+
+        height: 350px;
+
+    }
+
+
+    .awards-section {
+
+        padding: 70px 0;
+
+    }
+
+    .awards-badge {
+        margin-top: 60px;
+    }
+
+
+}
+
+/*=========================================
+  Quality Statistics Section
+=========================================*/
+
+
+.quality-stats-section {
+
+    padding: 100px 0;
+
+    background: #FFFFFF;
+
+}
+
+
+
+
+
+/*=========================================
+  Statistics Heading
+=========================================*/
+
+
+.stats-heading {
+
+
+    max-width: 750px;
+
+    margin: auto;
+
+}
+
+
+
+.stats-badge {
+
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px 22px;
+
+    border-radius: 50px;
+
+    background:
+        rgba(0, 163, 76, 0.08);
+
+    color: #00A34C;
+
+    font-family: "Inter", sans-serif;
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+
+
+}
+
+
+
+.stats-heading h2 {
+
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    margin-bottom: 20px;
+
+
+}
+
+
+
+.stats-heading h2 span {
+
+
+    color: #00A34C;
+
+
+}
+
+
+
+.stats-heading p {
+
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #667085;
+
+
+}
+
+
+
+
+/*=========================================
+  Statistics Card
+=========================================*/
+
+
+.stat-card {
+
+
+    height: 100%;
+
+    text-align: center;
+
+    padding: 40px 25px;
+
+    background:
+        rgba(255, 255, 255, 0.8);
+
+
+    border-radius: 28px;
+
+
+    border: 1px solid #EAECEF;
+
+
+    box-shadow:
+
+        0 15px 40px rgba(16, 35, 75, 0.08);
+
+
+    transition: .4s;
+
+
+}
+
+
+
+.stat-card:hover {
+
+
+    transform: translateY(-10px);
+
+
+    box-shadow:
+
+        0 25px 60px rgba(16, 35, 75, 0.15);
+
+
+}
+
+
+
+
+
+/*=========================================
+  Statistic Icon
+=========================================*/
+
+
+.stat-icon {
+
+
+    width: 70px;
+
+    height: 70px;
+
+
+    margin: 0 auto 25px;
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    justify-content: center;
+
+
+    border-radius: 22px;
+
+
+    background:
+
+        linear-gradient(135deg,
+            #00A34C,
+            #2A3A87);
+
+
+    color: #FFFFFF;
+
+
+    font-size: 30px;
+
+
+    box-shadow:
+
+        0 15px 35px rgba(0, 163, 76, 0.30);
+
+
+}
+
+
+
+.stat-card h3 {
+
+
+    font-family: "Manrope", sans-serif;
+
+
+    font-size: 32px;
+
+
+    font-weight: 800;
+
+
+    color: #10234B;
+
+
+    margin-bottom: 10px;
+
+
+}
+
+
+
+.stat-card p {
+
+
+    font-family: "Inter", sans-serif;
+
+
+    color: #667085;
+
+
+    font-size: 15px;
+
+
+    font-weight: 500;
+
+
+}
+
+
+
+/*=========================================
+  Responsive
+=========================================*/
+
+
+@media(max-width:767px) {
+
+
+    .quality-stats-section {
+
+
+        padding: 70px 0;
+
+
+    }
+
+
+
+    .stats-heading h2 {
+
+
+        font-size: 30px;
+
+
+    }
+
+
+
+}
