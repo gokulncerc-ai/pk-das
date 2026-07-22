@@ -1,20 +1,16 @@
 import React from 'react'
 import { Container, Row, Col, Button, Breadcrumb } from "react-bootstrap";
 import "./GeneralMedicine.css"
-import GeneralMedHero from "../../assets/Images/GeneralMedHero.jpg"
-import generaldoc1 from "../../assets/Images/generaldoc1.webp"
-import generaldoc2 from "../../assets/Images/generaldoc2.webp"
-import advancedmed from "../../assets/Images/advancedmed.webp"
-import Header from '../../Components/Header/Header';
-import Footer from '../../Components/Footer/Footer';
+import GeneralMedHero from "../../../assets/Images/GeneralMedHero.jpg";
+import generaldoc1 from "../../../assets/Images/generaldoc1.webp"
+import generaldoc2 from "../../../assets/Images/generaldoc2.webp"
+import advancedmed from "../../../assets/Images/advancedmed.webp"
+import Header from '../../../Components/Header/Header';
+import Footer from '../../../Components/Footer/Footer';
 
 const GeneralMedicine = () => {
     return (
         <>
-
-            {/*=================================
-                    HERO SECTION
-            =================================*/}
             <div><Header /></div>
             <section
                 className="gm-hero"

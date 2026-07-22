@@ -56,41 +56,22 @@ const Header = () => {
             ==============================*/}
 
       <header className={`header ${sticky ? "sticky-header" : ""}`}>
-
         <Container>
-
-
           <Navbar expand="lg" className="custom-navbar">
-
-            {/*==============================
-                                LOGO
-                        ==============================*/}
-
             <Navbar.Brand href="/" className="logo">
-
               <img
                 src={logoimg}
                 alt="Hospital Logo"
               />
-
             </Navbar.Brand>
-
-            {/*==============================
-                                MOBILE BUTTON
-                        ==============================*/}
 
             <button
               className="menu-btn"
               onClick={handleShow}
             >
-
               <i className="bi bi-list"></i>
-
             </button>
 
-            {/*==============================
-                            DESKTOP NAVIGATION
-                        ==============================*/}
 
             <Nav className="desktop-nav ms-auto">
               <Nav.Link href="/">
@@ -214,10 +195,12 @@ const Header = () => {
 
                     <h5>Super Speciality</h5>
 
-                    {/* <NavDropdown.Item as={Link} to="/Cardiology">
+                    <NavDropdown.Item as={Link} to="/Cardiology">
                       <small><strong>Cardiology</strong></small>
-                    </NavDropdown.Item> */}
-                    <a href="/departments/neurology" className="dropdown-item"><small><strong>Neurology</strong></small></a>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/Neurology">
+                      <small><strong>Neurology</strong></small>
+                    </NavDropdown.Item>
                     <a href="/departments/nephrology" className="dropdown-item"><small><strong>Nephrology</strong></small></a>
                     <a href="/departments/neurosurgery" className="dropdown-item"><small><strong>Neurosurgery</strong></small></a>
                     <a href="/departments/urology" className="dropdown-item"><small><strong>Gastroentrology</strong></small></a>
@@ -240,15 +223,15 @@ const Header = () => {
 
                     <div className="dept-list">
 
-                      <a href="/departments/general-medicine" className="dropdown-item">
+                      <a href="/general-department/general-medicine" className="dropdown-item">
                         <small><strong>General Medicine</strong></small>
                       </a>
 
-                      <a href="/departments/general-surgery" className="dropdown-item">
+                      <a href="/general-department/general-surgery" className="dropdown-item">
                         <small><strong>General Surgery</strong></small>
                       </a>
 
-                      <a href="/departments/orthopedics" className="dropdown-item">
+                      <a href="/general-department/orthopedics" className="dropdown-item">
                         <small><strong>Orthopedics</strong></small>
                       </a>
 
@@ -691,11 +674,11 @@ const Header = () => {
 
                       <Accordion.Body className="p-0">
 
-                        <Nav.Link href="/departments/cardiology" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/Cardiology" onClick={handleClose}>
                           Cardiology
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/neurology" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/Neurology" onClick={handleClose}>
                           Neurology
                         </Nav.Link>
 
@@ -731,17 +714,16 @@ const Header = () => {
                     </Accordion.Item>
 
                     {/* General Departments */}
-
                     <Accordion.Item eventKey="1">
                       <Accordion.Header>General Departments</Accordion.Header>
 
                       <Accordion.Body className="p-0">
 
-                        <Nav.Link href="/departments/general-medicine" onClick={handleClose}>
+                        <Nav.Link href="/general-department/general-medicine" onClick={handleClose}>
                           General Medicine
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/general-surgery" onClick={handleClose}>
+                        <Nav.Link href="/general-department/general-surgery" onClick={handleClose}>
                           General Surgery
                         </Nav.Link>
 

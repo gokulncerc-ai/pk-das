@@ -96,7 +96,7 @@ const Network = () => {
             link: "Robotic Joint Replacement",
         },
         {
-            id: 5,
+            id: 6,
             title: "Plastic Surgery",
             image: plasticsurgery,
             description:
@@ -104,14 +104,13 @@ const Network = () => {
             link: "Plastic Surgery"
         },
         {
-            id: 5,
+            id: 7,
             title: "Spine Surgery",
             image: spinesurgery,
             description:
                 "PKDAS Hospital is proud to introduce Advanced Spine Surgery Services, offering comprehensive diagnosis, treatment, and surgical care for disorders related to the spine, neck, and back. Our dedicated spine care team combines modern technology, expert surgical techniques, and patient-centered rehabilitation to provide effective treatment with improved recovery outcomes.",
             link: "Spine Surgery",
         },
-
     ];
 
     // -----------another section starts --------------
