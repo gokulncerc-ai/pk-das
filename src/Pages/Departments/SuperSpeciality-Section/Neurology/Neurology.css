@@ -1,0 +1,2572 @@
+/*==================================================
+                NEUROLOGY HERO SECTION
+==================================================*/
+
+.neurology-hero {
+
+    position: relative;
+
+    min-height: 700px;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+}
+
+
+
+.neurology-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(90deg,
+            rgba(16, 35, 75, .88),
+            rgba(16, 35, 75, .60));
+
+}
+
+
+
+.neurology-hero .container {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+
+.neurology-hero-content {
+
+    color: #FFFFFF;
+
+    max-width: 780px;
+
+}
+
+
+
+
+
+
+
+/*==================================================
+                BREADCRUMB
+==================================================*/
+
+
+.neurology-breadcrumb {
+
+    margin-bottom: 25px;
+    margin-top: 90px;
+
+}
+
+
+
+.neurology-breadcrumb .breadcrumb-item a {
+
+    color: rgba(255, 255, 255, .75);
+
+    text-decoration: none;
+
+}
+
+
+
+.neurology-breadcrumb .breadcrumb-item.active {
+
+    color: #50C1EF;
+
+}
+
+
+
+.neurology-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+
+    color: rgba(255, 255, 255, .45);
+
+}
+
+
+
+
+
+
+
+/*==================================================
+                HERO BADGE
+==================================================*/
+
+
+.neurology-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 10px 22px;
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, .12);
+
+    color: #50C1EF;
+
+    backdrop-filter: blur(12px);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+
+/*==================================================
+                HERO TITLE
+==================================================*/
+
+
+.neurology-hero-content h1 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 4rem;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    margin-bottom: 22px;
+
+    color: #FFFFFF;
+
+}
+
+
+
+.neurology-hero-content p {
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    color: rgba(255, 255, 255, .85);
+
+    margin-bottom: 35px;
+
+}
+
+
+
+
+
+
+
+/*==================================================
+                HERO BUTTONS
+==================================================*/
+
+
+.neurology-hero-buttons {
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+.neurology-primary-btn {
+
+    padding: 16px 34px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: #00A34C;
+
+    color: #FFFFFF;
+
+    font-weight: 600;
+
+    transition: .35s ease;
+
+}
+
+
+
+.neurology-primary-btn:hover {
+
+    background: #00863D;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(0, 163, 76, .30);
+
+}
+
+
+
+.neurology-secondary-btn {
+
+    padding: 16px 34px;
+
+    border-radius: 50px;
+
+    border: 2px solid rgba(255, 255, 255, .35);
+
+    background: transparent;
+
+    color: #FFFFFF;
+
+    font-weight: 600;
+
+    transition: .35s ease;
+
+}
+
+
+
+.neurology-secondary-btn:hover {
+
+    background: #FFFFFF;
+
+    color: #10234B;
+
+}
+
+
+
+
+
+
+
+
+/*==================================================
+            QUICK INFORMATION SECTION
+==================================================*/
+
+
+.neurology-quick-info {
+
+    position: relative;
+
+    margin-top: -90px;
+
+    z-index: 10;
+
+}
+
+
+
+
+
+
+.neurology-info-card {
+
+    background: #FFFFFF;
+
+    border-radius: 24px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border: 1px solid #EAECEF;
+
+    box-shadow: 0 20px 45px rgba(16, 35, 75, .08);
+
+    height: 100%;
+
+    transition: .35s ease;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+
+
+.neurology-info-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 4px;
+
+    background: #00A34C;
+
+    transform: scaleX(0);
+
+    transition: .35s ease;
+
+}
+
+
+
+.neurology-info-card:hover::before {
+
+    transform: scaleX(1);
+
+}
+
+
+
+
+.neurology-info-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 25px 55px rgba(16, 35, 75, .15);
+
+}
+
+
+
+
+
+
+
+.neurology-info-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: #ECFFF4;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: .35s ease;
+
+}
+
+
+
+.neurology-info-icon i {
+
+    font-size: 32px;
+
+    color: #00A34C;
+
+}
+
+
+
+.neurology-info-card:hover .neurology-info-icon {
+
+    background: #00A34C;
+
+    transform: rotate(12deg);
+
+}
+
+
+
+.neurology-info-card:hover .neurology-info-icon i {
+
+    color: #FFFFFF;
+
+}
+
+
+
+.neurology-info-card h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.neurology-info-card p {
+
+    color: #667085;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin: 0;
+
+}
+
+
+
+
+
+
+
+
+/*==================================================
+                ABOUT SECTION
+==================================================*/
+
+
+.neurology-about {
+
+    padding: 120px 0;
+
+    background: #FFFFFF;
+
+}
+
+
+
+
+
+
+
+.neurology-about-image {
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    box-shadow: 0 20px 50px rgba(16, 35, 75, .10);
+
+}
+
+
+
+
+.neurology-about-image img {
+
+    width: 100%;
+
+    border-radius: 30px;
+
+    transition: .5s ease;
+
+}
+
+
+
+
+.neurology-about-image:hover img {
+
+    transform: scale(1.06);
+
+}
+
+
+
+
+
+
+
+.neurology-about-content {
+
+    padding-left: 40px;
+
+}
+
+
+
+
+.neurology-section-tag {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 8px 20px;
+
+    background: #ECFFF4;
+
+    color: #00A34C;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+
+.neurology-about-content h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    line-height: 1.3;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+
+.neurology-about-content p {
+
+    color: #667085;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+
+
+
+
+
+/*==================================================
+                ABOUT HIGHLIGHTS
+==================================================*/
+
+
+.neurology-highlights {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+    margin-top: 35px;
+
+}
+
+
+
+.neurology-highlight-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    background: #F8FAFC;
+
+    padding: 16px 18px;
+
+    border-radius: 15px;
+
+    transition: .35s ease;
+
+}
+
+
+
+.neurology-highlight-item i {
+
+    color: #00A34C;
+
+    font-size: 20px;
+
+}
+
+
+
+.neurology-highlight-item span {
+
+    color: #10234B;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+}
+
+
+
+.neurology-highlight-item:hover {
+
+    background: #00A34C;
+
+    transform: translateX(8px);
+
+}
+
+
+
+.neurology-highlight-item:hover i,
+
+.neurology-highlight-item:hover span {
+
+    color: #FFFFFF;
+
+}
+
+/*==================================================
+            FEATURES SECTION
+==================================================*/
+
+
+.neurology-features {
+
+    padding: 110px 0;
+
+    background: #F8FAFC;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+
+.neurology-features::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .08);
+
+    top: -150px;
+
+    right: -120px;
+
+}
+
+
+
+.neurology-features::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+
+    height: 280px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 163, 76, .08);
+
+    bottom: -100px;
+
+    left: -100px;
+
+}
+
+
+
+
+
+
+
+/*==================================================
+            SECTION HEADING
+==================================================*/
+
+
+.neurology-section-heading {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+
+.neurology-section-heading span {
+
+    display: inline-block;
+
+    background: #ECFFF4;
+
+    color: #00A34C;
+
+    padding: 8px 22px;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+.neurology-section-heading h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+.neurology-section-heading p {
+
+    max-width: 720px;
+
+    margin: auto;
+
+    color: #667085;
+
+    line-height: 1.9;
+
+    font-size: 16px;
+
+}
+
+
+
+
+
+
+
+/*==================================================
+            FEATURE CARDS
+==================================================*/
+
+
+.neurology-feature-card {
+
+    background: #FFFFFF;
+
+    border-radius: 24px;
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    height: 100%;
+
+    border: 1px solid #EAECEF;
+
+    box-shadow: 0 15px 40px rgba(16, 35, 75, .06);
+
+    transition: .4s ease;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+
+.neurology-feature-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 5px;
+
+    background: #00A34C;
+
+    transform: scaleX(0);
+
+    transition: .35s ease;
+
+}
+
+
+
+.neurology-feature-card:hover::before {
+
+    transform: scaleX(1);
+
+}
+
+
+
+.neurology-feature-card:hover {
+
+    transform: translateY(-12px);
+
+    box-shadow: 0 25px 55px rgba(16, 35, 75, .15);
+
+}
+
+
+
+
+
+
+
+.neurology-feature-icon {
+
+    width: 90px;
+
+    height: 90px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    background: #ECFFF4;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: .35s ease;
+
+}
+
+
+
+.neurology-feature-icon i {
+
+    font-size: 38px;
+
+    color: #00A34C;
+
+}
+
+
+
+.neurology-feature-card:hover .neurology-feature-icon {
+
+    background: #00A34C;
+
+    transform: rotate(10deg) scale(1.05);
+
+}
+
+
+
+.neurology-feature-card:hover .neurology-feature-icon i {
+
+    color: #FFFFFF;
+
+}
+
+
+
+.neurology-feature-card h4 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: #10234B;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.neurology-feature-card p {
+
+    color: #667085;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+}
+
+
+
+
+
+
+
+
+
+/*==================================================
+            ADVANTAGES SECTION
+==================================================*/
+
+
+.neurology-advantages {
+
+    padding: 120px 0;
+
+    background: #FFFFFF;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+
+.neurology-advantages-image {
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    box-shadow: 0 20px 50px rgba(16, 35, 75, .10);
+
+}
+
+
+
+.neurology-advantages-image img {
+
+    width: 100%;
+
+    border-radius: 28px;
+
+    transition: .5s ease;
+
+}
+
+
+
+.neurology-advantages-image:hover img {
+
+    transform: scale(1.06);
+
+}
+
+
+
+
+
+
+
+.neurology-advantages-content {
+
+    padding-left: 40px;
+
+}
+
+
+
+.neurology-advantages-content h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    line-height: 1.3;
+
+    margin: 20px 0;
+
+}
+
+
+
+.neurology-advantages-content p {
+
+    color: #667085;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    margin-bottom: 35px;
+
+}
+
+
+
+
+
+
+
+
+
+/*==================================================
+            ADVANTAGE CARDS
+==================================================*/
+
+
+.neurology-advantage-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background: #F8FAFC;
+
+    border: 1px solid #EAECEF;
+
+    border-radius: 18px;
+
+    padding: 18px 20px;
+
+    height: 100%;
+
+    transition: .35s ease;
+
+    cursor: pointer;
+
+}
+
+
+
+.neurology-advantage-card i {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #ECFFF4;
+
+    color: #00A34C;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+
+    transition: .35s ease;
+
+    flex-shrink: 0;
+
+}
+
+
+
+.neurology-advantage-card span {
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #10234B;
+
+}
+
+
+
+.neurology-advantage-card:hover {
+
+    background: #00A34C;
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(0, 163, 76, .18);
+
+}
+
+
+
+.neurology-advantage-card:hover i {
+
+    background: #FFFFFF;
+
+    color: #00A34C;
+
+    transform: rotate(12deg);
+
+}
+
+
+
+.neurology-advantage-card:hover span {
+
+    color: #FFFFFF;
+
+}
+
+
+
+
+
+
+
+
+
+/*==================================================
+            SERVICES SECTION
+==================================================*/
+
+
+.neurology-services {
+
+    padding: 120px 0;
+
+    background: #F8FAFC;
+
+}
+
+
+
+
+
+
+
+/*==================================================
+            SERVICE CARD
+==================================================*/
+
+
+.neurology-service-card {
+
+    background: #FFFFFF;
+
+    padding: 40px 30px;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    height: 100%;
+
+    border: 1px solid #EAECEF;
+
+    box-shadow: 0 15px 40px rgba(16, 35, 75, .06);
+
+    transition: .4s ease;
+
+}
+
+
+
+.neurology-service-card:hover {
+
+    transform: translateY(-12px);
+
+    box-shadow: 0 25px 55px rgba(16, 35, 75, .15);
+
+}
+
+
+
+.neurology-service-icon {
+
+    width: 85px;
+
+    height: 85px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    background: #ECFFF4;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: .35s ease;
+
+}
+
+
+
+.neurology-service-icon i {
+
+    font-size: 35px;
+
+    color: #00A34C;
+
+}
+
+
+
+.neurology-service-card:hover .neurology-service-icon {
+
+    background: #00A34C;
+
+    transform: scale(1.08);
+
+}
+
+
+
+.neurology-service-card:hover .neurology-service-icon i {
+
+    color: #FFFFFF;
+
+}
+
+
+
+.neurology-service-card h4 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 23px;
+
+    font-weight: 700;
+
+    color: #10234B;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.neurology-service-card p {
+
+    color: #667085;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+}
+
+/*==================================================
+            DIAGNOSTICS SECTION
+==================================================*/
+
+
+.neurology-diagnostics {
+
+    padding: 120px 0;
+
+    background: #FFFFFF;
+
+}
+
+
+
+.neurology-diagnostics-content {
+
+    padding-right: 35px;
+
+}
+
+
+
+.neurology-diagnostics-content h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    line-height: 1.3;
+
+    margin: 20px 0;
+
+}
+
+
+
+.neurology-diagnostics-content p {
+
+    color: #667085;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+
+
+
+
+/*==================================================
+            DIAGNOSTIC LIST
+==================================================*/
+
+
+.neurology-diagnostic-list {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+
+    margin-top: 30px;
+
+}
+
+
+
+.neurology-diagnostic-list div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    background: #F8FAFC;
+
+    padding: 15px 18px;
+
+    border-radius: 16px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #10234B;
+
+    transition: .35s ease;
+
+}
+
+
+
+.neurology-diagnostic-list i {
+
+    color: #00A34C;
+
+    font-size: 20px;
+
+}
+
+
+
+.neurology-diagnostic-list div:hover {
+
+    background: #00A34C;
+
+    color: #FFFFFF;
+
+    transform: translateX(8px);
+
+}
+
+
+
+.neurology-diagnostic-list div:hover i {
+
+    color: #FFFFFF;
+
+}
+
+
+
+
+
+
+
+/*==================================================
+            DIAGNOSTIC IMAGE
+==================================================*/
+
+
+.neurology-diagnostics-image {
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    box-shadow: 0 20px 50px rgba(16, 35, 75, .10);
+
+}
+
+
+
+.neurology-diagnostics-image img {
+
+    width: 100%;
+
+    border-radius: 30px;
+
+    transition: .5s ease;
+
+}
+
+
+
+.neurology-diagnostics-image:hover img {
+
+    transform: scale(1.06);
+
+}
+
+
+
+
+
+
+
+
+
+/*==================================================
+            NEURO MEDICINE SECTION
+==================================================*/
+
+
+.neurology-medicine {
+
+    padding: 120px 0;
+
+    background: #F8FAFC;
+
+    position: relative;
+
+}
+
+
+
+.neurology-medicine-card {
+
+    background: #FFFFFF;
+
+    border-radius: 24px;
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    height: 100%;
+
+    border: 1px solid #EAECEF;
+
+    box-shadow: 0 15px 40px rgba(16, 35, 75, .06);
+
+    transition: .4s ease;
+
+}
+
+
+
+.neurology-medicine-card:hover {
+
+    transform: translateY(-12px);
+
+    box-shadow: 0 25px 55px rgba(16, 35, 75, .15);
+
+}
+
+
+
+
+
+
+
+.neurology-medicine-icon {
+
+    width: 90px;
+
+    height: 90px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    background: #ECFFF4;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: .35s ease;
+
+}
+
+
+
+.neurology-medicine-icon i {
+
+    font-size: 38px;
+
+    color: #00A34C;
+
+}
+
+
+
+.neurology-medicine-card:hover .neurology-medicine-icon {
+
+    background: #00A34C;
+
+    transform: rotate(10deg) scale(1.05);
+
+}
+
+
+
+.neurology-medicine-card:hover .neurology-medicine-icon i {
+
+    color: #FFFFFF;
+
+}
+
+
+
+.neurology-medicine-card h4 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: #10234B;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.neurology-medicine-card p {
+
+    color: #667085;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+/*==================================================
+            TREATMENT SECTION
+==================================================*/
+
+
+.neurology-treatment {
+
+    padding: 120px 0;
+
+    background: #FFFFFF;
+
+}
+
+
+
+.neurology-treatment-image {
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    box-shadow: 0 20px 50px rgba(16, 35, 75, .10);
+
+}
+
+
+
+.neurology-treatment-image img {
+
+    width: 100%;
+
+    border-radius: 28px;
+
+    transition: .5s ease;
+
+}
+
+
+
+.neurology-treatment-image:hover img {
+
+    transform: scale(1.06);
+
+}
+
+
+
+
+
+
+
+.neurology-treatment-content {
+
+    padding-left: 40px;
+
+}
+
+
+
+.neurology-treatment-content h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    line-height: 1.3;
+
+    margin: 20px 0;
+
+}
+
+
+
+.neurology-treatment-content p {
+
+    color: #667085;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+
+
+
+
+/*==================================================
+            TREATMENT GRID
+==================================================*/
+
+
+.neurology-treatment-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+}
+
+
+
+.neurology-treatment-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 18px;
+
+    background: #F8FAFC;
+
+    border-radius: 18px;
+
+    border: 1px solid #EAECEF;
+
+    transition: .35s ease;
+
+}
+
+
+
+.neurology-treatment-item i {
+
+    color: #00A34C;
+
+    font-size: 20px;
+
+}
+
+
+
+.neurology-treatment-item span {
+
+    color: #10234B;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+}
+
+
+
+.neurology-treatment-item:hover {
+
+    background: #00A34C;
+
+    transform: translateY(-6px);
+
+}
+
+
+
+.neurology-treatment-item:hover i,
+
+.neurology-treatment-item:hover span {
+
+    color: #FFFFFF;
+
+}
+
+/*==================================================
+            SPECIALISTS SECTION
+==================================================*/
+
+
+.neurology-specialists {
+
+    padding: 120px 0;
+
+    background: #F8FAFC;
+
+    position: relative;
+
+}
+
+
+
+
+
+
+
+/*==================================================
+            DOCTOR CARD
+==================================================*/
+
+
+.neurology-doctor-card {
+
+    background: #FFFFFF;
+
+    border-radius: 28px;
+
+    overflow: hidden;
+
+    border: 1px solid #EAECEF;
+
+    box-shadow: 0 18px 45px rgba(16, 35, 75, .08);
+
+    transition: .4s ease;
+
+}
+
+
+
+.neurology-doctor-card:hover {
+
+    transform: translateY(-12px);
+
+    box-shadow: 0 30px 65px rgba(16, 35, 75, .15);
+
+}
+
+
+
+
+
+
+
+/*==================================================
+            DOCTOR IMAGE
+==================================================*/
+
+
+.neurology-doctor-image {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+
+.neurology-doctor-image img {
+
+    width: 100%;
+
+    height: 420px;
+
+    object-fit: cover;
+
+    transition: .5s ease;
+
+}
+
+
+
+.neurology-doctor-card:hover .neurology-doctor-image img {
+
+    transform: scale(1.08);
+
+}
+
+
+
+
+
+
+
+/*==================================================
+            EXPERIENCE BADGE
+==================================================*/
+
+
+.neurology-experience {
+
+    position: absolute;
+
+    bottom: 20px;
+
+    left: 20px;
+
+    background: #00A34C;
+
+    color: #FFFFFF;
+
+    padding: 10px 20px;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    box-shadow: 0 10px 25px rgba(0, 163, 76, .25);
+
+}
+
+
+
+
+
+
+
+/*==================================================
+            DOCTOR CONTENT
+==================================================*/
+
+
+.neurology-doctor-content {
+
+    padding: 35px;
+
+}
+
+
+
+.neurology-doctor-designation {
+
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border-radius: 50px;
+
+    background: #ECFFF4;
+
+    color: #00A34C;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+.neurology-doctor-content h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 32px;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+.neurology-doctor-content p {
+
+    color: #667085;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+
+
+
+
+/*==================================================
+            DOCTOR BUTTONS
+==================================================*/
+
+
+.neurology-doctor-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+.neurology-doctor-buttons .neurology-primary-btn {
+
+    flex: 1;
+
+}
+
+
+
+.neurology-outline-btn {
+
+    flex: 1;
+
+    padding: 16px 30px;
+
+    border-radius: 50px;
+
+    border: 2px solid #00A34C;
+
+    background: transparent;
+
+    color: #00A34C;
+
+    font-weight: 600;
+
+    transition: .35s ease;
+
+}
+
+
+
+.neurology-outline-btn:hover {
+
+    background: #00A34C;
+
+    color: #FFFFFF;
+
+}
+
+
+
+
+
+
+
+.neurology-doctor-card:hover .neurology-doctor-designation {
+
+    background: #00A34C;
+
+    color: #FFFFFF;
+
+}
+
+
+
+.neurology-doctor-card:hover h3 {
+
+    color: #00A34C;
+
+}
+
+
+
+
+
+
+
+
+
+/*==================================================
+                CTA SECTION
+==================================================*/
+
+
+.neurology-cta {
+
+    padding: 120px 0;
+
+    background: linear-gradient(135deg,
+
+            #10234B 0%,
+
+            #1D3B73 100%);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+
+.neurology-cta::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+
+    height: 420px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .10);
+
+    top: -180px;
+
+    right: -120px;
+
+}
+
+
+
+.neurology-cta::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+
+    height: 320px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 163, 76, .12);
+
+    bottom: -140px;
+
+    left: -100px;
+
+}
+
+
+
+.neurology-cta .container {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+
+
+
+
+
+/*==================================================
+            CTA CONTENT
+==================================================*/
+
+
+.neurology-cta-content {
+
+    color: #FFFFFF;
+
+}
+
+
+
+.neurology-cta-content .neurology-section-tag {
+
+    background: rgba(255, 255, 255, .12);
+
+    color: #50C1EF;
+
+    backdrop-filter: blur(12px);
+
+}
+
+
+
+.neurology-cta-content h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 48px;
+
+    font-weight: 800;
+
+    color: #FFFFFF;
+
+    margin: 20px 0;
+
+}
+
+
+
+.neurology-cta-content p {
+
+    color: rgba(255, 255, 255, .82);
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    margin-bottom: 35px;
+
+}
+
+
+
+
+
+
+
+/*==================================================
+            CTA BUTTONS
+==================================================*/
+
+
+.neurology-cta-buttons {
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+.neurology-cta-buttons .neurology-primary-btn {
+
+    min-width: 220px;
+
+}
+
+
+
+.neurology-cta-buttons .neurology-outline-btn {
+
+    min-width: 220px;
+
+    color: #FFFFFF;
+
+    border-color: rgba(255, 255, 255, .35);
+
+}
+
+
+
+.neurology-cta-buttons .neurology-outline-btn:hover {
+
+    background: #FFFFFF;
+
+    color: #10234B;
+
+}
+
+
+
+
+
+
+
+/*==================================================
+            CTA GLASS BOX
+==================================================*/
+
+
+.neurology-cta-box {
+
+    background: rgba(255, 255, 255, .10);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, .15);
+
+    border-radius: 30px;
+
+    padding: 45px;
+
+    color: #FFFFFF;
+
+    box-shadow: 0 25px 60px rgba(0, 0, 0, .18);
+
+    transition: .4s ease;
+
+}
+
+
+
+.neurology-cta-box:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 35px 70px rgba(0, 0, 0, .22);
+
+}
+
+
+
+.neurology-cta-icon {
+
+    width: 90px;
+
+    height: 90px;
+
+    border-radius: 50%;
+
+    background: #00A34C;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    transition: .4s ease;
+
+}
+
+
+
+.neurology-cta-icon i {
+
+    color: #FFFFFF;
+
+    font-size: 42px;
+
+}
+
+
+
+.neurology-cta-box:hover .neurology-cta-icon {
+
+    transform: rotate(12deg) scale(1.08);
+
+    box-shadow: 0 15px 35px rgba(0, 163, 76, .35);
+
+}
+
+
+
+.neurology-cta-box h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.neurology-cta-box p {
+
+    color: rgba(255, 255, 255, .82);
+
+    line-height: 1.8;
+
+    margin-bottom: 28px;
+
+}
+
+
+
+
+
+
+
+/*==================================================
+            CTA FEATURES
+==================================================*/
+
+
+.neurology-cta-features {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+
+}
+
+
+
+.neurology-cta-features div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #FFFFFF;
+
+    font-weight: 500;
+
+}
+
+
+
+.neurology-cta-features i {
+
+    color: #50C1EF;
+
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+/*==================================================
+            RESPONSIVE DESIGN
+==================================================*/
+
+
+@media(max-width:992px) {
+
+
+    .neurology-hero {
+
+        min-height: 600px;
+
+    }
+
+
+
+    .neurology-hero-content h1 {
+
+        font-size: 3rem;
+
+    }
+
+
+
+    .neurology-about-content,
+    .neurology-advantages-content,
+    .neurology-treatment-content,
+    .neurology-diagnostics-content {
+
+        padding-left: 0;
+
+        padding-right: 0;
+
+    }
+
+
+
+    .neurology-section-heading h2,
+    .neurology-about-content h2,
+    .neurology-advantages-content h2,
+    .neurology-treatment-content h2 {
+
+        font-size: 34px;
+
+    }
+
+
+
+}
+
+
+
+
+
+@media(max-width:768px) {
+
+
+    .neurology-hero {
+
+        min-height: 650px;
+
+    }
+
+
+
+    .neurology-hero-content h1 {
+
+        font-size: 2.4rem;
+
+    }
+
+
+
+    .neurology-hero-content p {
+
+        font-size: 16px;
+
+    }
+
+
+
+    .neurology-quick-info {
+
+        margin-top: 40px;
+
+    }
+
+
+
+    .neurology-about,
+    .neurology-features,
+    .neurology-advantages,
+    .neurology-services,
+    .neurology-diagnostics,
+    .neurology-treatment,
+    .neurology-specialists,
+    .neurology-cta {
+
+        padding: 80px 0;
+
+    }
+
+
+
+    .neurology-highlights,
+    .neurology-diagnostic-list,
+    .neurology-treatment-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .neurology-cta-content h2 {
+
+        font-size: 36px;
+
+    }
+
+
+
+    .neurology-doctor-image img {
+
+        height: 350px;
+
+    }
+
+
+
+}

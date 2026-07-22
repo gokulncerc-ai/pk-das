@@ -1,4 +1,3 @@
-
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Homepage from './Pages/HomePage/Homepage.jsx'
@@ -18,6 +17,8 @@ import SocialResponsibility from "./Pages/Social-Responsibility/SocialResponsibi
 import Infrastructure from './Pages/Infrastructure/Infrastructure.jsx';
 import GeneralSurgery from './Pages/GeneralDepartments/General-Surgery/GeneralSurgery.jsx';
 import Orthopedics from './Pages/GeneralDepartments/Orthopedics/Orthopedics.jsx';
+import Cardiology from './Pages/Departments/SuperSpeciality-Section/Cardiology/Cardiology.jsx';
+import Neurology from './Pages/Departments/SuperSpeciality-Section/Neurology/Neurology.jsx';
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
         <Route path='/general-department/general-surgery' element={<GeneralSurgery />} />
         <Route path='/general-department/orthopedics' element={<Orthopedics />} />
 
+        {/* ------------department route------------- */}
+        <Route path='/Cardiology' element={<Cardiology />} />
+        <Route path='/Neurology' element={<Neurology />} />
       </Routes>
       <Footer />
     </>
