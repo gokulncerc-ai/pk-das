@@ -728,11 +728,11 @@ const Header = () => {
                           General Surgery
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/orthopedics" onClick={handleClose}>
+                        <Nav.Link href="/general-department/orthopedics" onClick={handleClose}>
                           Orthopedics
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/pediatrics" onClick={handleClose}>
+                        <Nav.Link href="/general-department/pediatrics" onClick={handleClose}>
                           Pediatrics
                         </Nav.Link>
 
