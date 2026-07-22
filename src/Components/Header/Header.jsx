@@ -223,21 +223,22 @@ const Header = () => {
 
                     <div className="dept-list">
 
-                      <a href="/general-department/general-medicine" className="dropdown-item">
+
+                      <NavDropdown.Item as={Link} to="/general-department/general-medicine">
                         <small><strong>General Medicine</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/general-department/general-surgery" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/general-surgery">
                         <small><strong>General Surgery</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/general-department/orthopedics" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/orthopedics">
                         <small><strong>Orthopedics</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/general-department/pediatrics" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/pediatrics">
                         <small><strong>Pediatrics</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
                       <a href="/departments/ent" className="dropdown-item">
                         <small><strong>ENT</strong></small>
