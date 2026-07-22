@@ -235,7 +235,7 @@ const Header = () => {
                         <small><strong>Orthopedics</strong></small>
                       </a>
 
-                      <a href="/departments/pediatrics" className="dropdown-item">
+                      <a href="/general-department/pediatrics" className="dropdown-item">
                         <small><strong>Pediatrics</strong></small>
                       </a>
 

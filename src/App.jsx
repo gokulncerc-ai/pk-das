@@ -18,7 +18,7 @@ import SocialResponsibility from "./Pages/Social-Responsibility/SocialResponsibi
 import Infrastructure from './Pages/Infrastructure/Infrastructure.jsx';
 import GeneralSurgery from './Pages/GeneralDepartments/General-Surgery/GeneralSurgery.jsx';
 import Orthopedics from './Pages/GeneralDepartments/Orthopedics/Orthopedics.jsx';
-
+import Pediatrics from './Pages/GeneralDepartments/Pediatrics/Pediatrics.jsx';
 function App() {
   return (
     <>
@@ -39,6 +39,7 @@ function App() {
         <Route path='/Infrastructure' element={<Infrastructure />} />
         <Route path='/general-department/general-surgery' element={<GeneralSurgery />} />
         <Route path='/general-department/orthopedics' element={<Orthopedics />} />
+        <Route path='/general-department/pediatrics' element={<Pediatrics />} />
       </Routes>
       <Footer />
     </>
