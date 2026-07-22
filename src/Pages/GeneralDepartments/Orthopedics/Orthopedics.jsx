@@ -5,7 +5,7 @@ import OrthopedicsHero from "../../../assets/Images/Orthopedics.jpg";
 import orthoAbout from "../../../assets/Images/orthoAbout.avif";
 import jointReplacements from "../../../assets/Images/JointReplacements.avif";
 import sportsMedicine from "../../../assets/Images/SportsMedicine.avif";
-import jointDisorders from "../../../assets/Images/JointDisorders.avif";
+import jointDisorders from "../../../assets/Images/jointDisorders.avif";
 import arthroscopy from "../../../assets/Images/Arthroscopy.avif";
 import spineSurgery from "../../../assets/Images/SpineSurgery.avif";
 import trauma from "../../../assets/Images/Trauma.avif";
