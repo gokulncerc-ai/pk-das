@@ -39,7 +39,6 @@ function App() {
         <Route path='/Infrastructure' element={<Infrastructure />} />
         <Route path='/general-department/general-surgery' element={<GeneralSurgery />} />
         <Route path='/general-department/orthopedics' element={<Orthopedics />} />
-
       </Routes>
       <Footer />
     </>
