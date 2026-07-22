@@ -40,7 +40,6 @@ function App() {
         <Route path='/Infrastructure' element={<Infrastructure />} />
         <Route path='/general-department/general-surgery' element={<GeneralSurgery />} />
         <Route path='/general-department/orthopedics' element={<Orthopedics />} />
-
         {/* ------------department route------------- */}
         <Route path='/Cardiology' element={<Cardiology />} />
         <Route path='/Neurology' element={<Neurology />} />
