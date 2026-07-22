@@ -19,6 +19,7 @@ import GeneralSurgery from './Pages/GeneralDepartments/General-Surgery/GeneralSu
 import Orthopedics from './Pages/GeneralDepartments/Orthopedics/Orthopedics.jsx';
 import Cardiology from './Pages/Departments/SuperSpeciality-Section/Cardiology/Cardiology.jsx';
 import Neurology from './Pages/Departments/SuperSpeciality-Section/Neurology/Neurology.jsx';
+import Pediatrics from './Pages/GeneralDepartments/Pediatrics/Pediatrics.jsx';
 
 function App() {
   return (
@@ -40,6 +41,8 @@ function App() {
         <Route path='/Infrastructure' element={<Infrastructure />} />
         <Route path='/general-department/general-surgery' element={<GeneralSurgery />} />
         <Route path='/general-department/orthopedics' element={<Orthopedics />} />
+        <Route path='/general-department/pediatrics' element={<Pediatrics />} />
+
         {/* ------------department route------------- */}
         <Route path='/Cardiology' element={<Cardiology />} />
         <Route path='/Neurology' element={<Neurology />} />
