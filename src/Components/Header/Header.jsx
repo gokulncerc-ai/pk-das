@@ -720,59 +720,59 @@ const Header = () => {
 
                       <Accordion.Body className="p-0">
 
-                        <Nav.Link href="/general-department/general-medicine" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/general-medicine" onClick={handleClose}>
                           General Medicine
                         </Nav.Link>
 
-                        <Nav.Link href="/general-department/general-surgery" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/general-surgery" onClick={handleClose}>
                           General Surgery
                         </Nav.Link>
 
-                        <Nav.Link href="/general-department/orthopedics" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/orthopedics" onClick={handleClose}>
                           Orthopedics
                         </Nav.Link>
 
-                        <Nav.Link href="/general-department/pediatrics" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/pediatrics" onClick={handleClose}>
                           Pediatrics
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/ent" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/ent" onClick={handleClose}>
                           ENT
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/dermatology" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/dermatology" onClick={handleClose}>
                           Dermatology
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/psychiatry" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/psychiatry" onClick={handleClose}>
                           Psychiatry
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/pulmonology" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/pulmonology" onClick={handleClose}>
                           Pulmonology
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/radiology" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/radiology" onClick={handleClose}>
                           Radiology
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/dentistry" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/dentistry" onClick={handleClose}>
                           Dentistry
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/physiotherapy" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/physiotherapy" onClick={handleClose}>
                           Physiotherapy
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/obg" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/obg" onClick={handleClose}>
                           OBG
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/ivf" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/ivf" onClick={handleClose}>
                           IVF & Fertility
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/blood-bank" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
                           Blood Bank
                         </Nav.Link>
 
