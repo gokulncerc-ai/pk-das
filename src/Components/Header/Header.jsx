@@ -201,15 +201,30 @@ const Header = () => {
                     <NavDropdown.Item as={Link} to="/Neurology">
                       <small><strong>Neurology</strong></small>
                     </NavDropdown.Item>
-                    <a href="/departments/nephrology" className="dropdown-item"><small><strong>Nephrology</strong></small></a>
-                    <a href="/departments/neurosurgery" className="dropdown-item"><small><strong>Neurosurgery</strong></small></a>
-                    <a href="/departments/urology" className="dropdown-item"><small><strong>Gastroentrology</strong></small></a>
+                    <NavDropdown.Item as={Link} to="/Nephrology">
+                      <small><strong>Nephrology</strong></small>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/neuro-surgery">
+                      <small><strong>Neuro Surgery</strong></small>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/gastroenterology">
+                      <small><strong>Gastroenterology</strong></small>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/urology">
+                      <small><strong>Urology</strong></small>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/spine-surgery">
+                      <small><strong>Spine Surgery</strong></small>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/Oncology">
+                      <small><strong>Oncology</strong></small>
+                    </NavDropdown.Item>
                     <a href="/departments/oncology" className="dropdown-item"><small><strong>Oncology</strong></small></a>
                     <a href="/departments/oncology" className="dropdown-item"><small><strong>Neonatology</strong></small></a>
+
                     <a href="/departments/oncology" className="dropdown-item"><small><strong>Plastic Surgery</strong></small></a>
                     <a href="/departments/oncology" className="dropdown-item"><small><strong>Critical Care</strong></small></a>
                   </div>
-
                   {/* General Departments */}
                   <div className="dept-card">
 
@@ -223,25 +238,26 @@ const Header = () => {
 
                     <div className="dept-list">
 
-                      <a href="/general-department/general-medicine" className="dropdown-item">
+
+                      <NavDropdown.Item as={Link} to="/general-department/general-medicine">
                         <small><strong>General Medicine</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/general-department/general-surgery" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/general-surgery">
                         <small><strong>General Surgery</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/general-department/orthopedics" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/orthopedics">
                         <small><strong>Orthopedics</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/general-department/pediatrics" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/pediatrics">
                         <small><strong>Pediatrics</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/departments/ent" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/ENT">
                         <small><strong>ENT</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
                       <a href="/departments/dermatology" className="dropdown-item">
                         <small><strong>Dermatology</strong></small>
@@ -682,24 +698,24 @@ const Header = () => {
                           Neurology
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/nephrology" onClick={handleClose}>
+                        <Nav.Link href="/Nephrology" onClick={handleClose}>
                           Nephrology
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/neurosurgery" onClick={handleClose}>
-                          Neurosurgery
+                        <Nav.Link href="/neuro-surgery" onClick={handleClose}>
+                          Neuro Surgery
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/urology" onClick={handleClose}>
+                        <Nav.Link href="/gastroenterology" onClick={handleClose}>
+                          Gastroenterology
+                        </Nav.Link>
+
+                        <Nav.Link href="/urology" onClick={handleClose}>
                           Urology
                         </Nav.Link>
 
                         <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
                           Cardiothoracic Surgery
-                        </Nav.Link>
-
-                        <Nav.Link href="/departments/gastroenterology" onClick={handleClose}>
-                          Gastroenterology
                         </Nav.Link>
 
                         <Nav.Link href="/departments/oncology" onClick={handleClose}>
@@ -708,6 +724,14 @@ const Header = () => {
 
                         <Nav.Link href="/departments/neonatology" onClick={handleClose}>
                           Neonatology
+                        </Nav.Link>
+
+                        <Nav.Link href="/Spine Surgery" onClick={handleClose}>
+                          Spine Surgery
+                        </Nav.Link>
+
+                        <Nav.Link href="/departments/critical-care" onClick={handleClose}>
+                          Critical Care
                         </Nav.Link>
 
                       </Accordion.Body>
@@ -719,59 +743,59 @@ const Header = () => {
 
                       <Accordion.Body className="p-0">
 
-                        <Nav.Link href="/general-department/general-medicine" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/general-medicine" onClick={handleClose}>
                           General Medicine
                         </Nav.Link>
 
-                        <Nav.Link href="/general-department/general-surgery" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/general-surgery" onClick={handleClose}>
                           General Surgery
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/orthopedics" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/orthopedics" onClick={handleClose}>
                           Orthopedics
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/pediatrics" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/pediatrics" onClick={handleClose}>
                           Pediatrics
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/ent" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/ENT" onClick={handleClose}>
                           ENT
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/dermatology" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/dermatology" onClick={handleClose}>
                           Dermatology
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/psychiatry" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/psychiatry" onClick={handleClose}>
                           Psychiatry
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/pulmonology" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/pulmonology" onClick={handleClose}>
                           Pulmonology
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/radiology" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/radiology" onClick={handleClose}>
                           Radiology
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/dentistry" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/dentistry" onClick={handleClose}>
                           Dentistry
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/physiotherapy" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/physiotherapy" onClick={handleClose}>
                           Physiotherapy
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/obg" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/obg" onClick={handleClose}>
                           OBG
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/ivf" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/ivf" onClick={handleClose}>
                           IVF & Fertility
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/blood-bank" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
                           Blood Bank
                         </Nav.Link>
 

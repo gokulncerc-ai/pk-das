@@ -322,8 +322,6 @@ const Pediatrics = () => {
                     </Row>
                 </Container>
             </section>
-
-            <Footer />
         </>
     );
 };

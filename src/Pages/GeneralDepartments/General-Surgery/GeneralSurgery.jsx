@@ -312,8 +312,6 @@ const GeneralSurgery = () => {
                     </Row>
                 </Container>
             </section>
-
-            <Footer />
         </>
     );
 };

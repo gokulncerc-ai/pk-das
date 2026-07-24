@@ -1047,8 +1047,6 @@ const GeneralMedicine = () => {
                 </Container>
 
             </section>
-            <div><Footer /></div>
-
         </>
 
 

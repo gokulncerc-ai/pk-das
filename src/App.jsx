@@ -18,8 +18,13 @@ import Infrastructure from './Pages/Infrastructure/Infrastructure.jsx';
 import GeneralSurgery from './Pages/GeneralDepartments/General-Surgery/GeneralSurgery.jsx';
 import Orthopedics from './Pages/GeneralDepartments/Orthopedics/Orthopedics.jsx';
 import Cardiology from './Pages/Departments/SuperSpeciality-Section/Cardiology/Cardiology.jsx';
+import Nephrology from './Pages/Departments/SuperSpeciality-Section/Nephrology/Nephrology.jsx';
+import NeuroSurgery from './Pages/Departments/SuperSpeciality-Section/NeuroSurgery/NeuroSurgery.jsx';
+import Gastroenterology from './Pages/Departments/SuperSpeciality-Section/Gastroenterology/Gastroenterology.jsx';
+import Urology from './Pages/Departments/SuperSpeciality-Section/UROLOGY/UROLOGY.jsx';
 import Neurology from './Pages/Departments/SuperSpeciality-Section/Neurology/Neurology.jsx';
 import Pediatrics from './Pages/GeneralDepartments/Pediatrics/Pediatrics.jsx';
+import ENT from './Pages/GeneralDepartments/ENT/ENT.jsx';
 
 function App() {
   return (
@@ -42,9 +47,14 @@ function App() {
         <Route path='/general-department/general-surgery' element={<GeneralSurgery />} />
         <Route path='/general-department/orthopedics' element={<Orthopedics />} />
         <Route path='/general-department/pediatrics' element={<Pediatrics />} />
+        <Route path='/general-department/ENT' element={<ENT />} />
 
         {/* ------------department route------------- */}
         <Route path='/Cardiology' element={<Cardiology />} />
+        <Route path='/Nephrology' element={<Nephrology />} />
+        <Route path='/neuro-surgery' element={<NeuroSurgery />} />
+        <Route path='/gastroenterology' element={<Gastroenterology />} />
+        <Route path='/urology' element={<Urology />} />
         <Route path='/Neurology' element={<Neurology />} />
       </Routes>
       <Footer />
