@@ -28,6 +28,7 @@ import ENT from './Pages/GeneralDepartments/ENT/ENT.jsx';
 import Neonatology from './Pages/Departments/SuperSpeciality-Section/Neonatology/Neonatology.jsx';
 import Oncology from './Pages/Departments/SuperSpeciality-Section/Oncology/Oncology.jsx';
 import SpineSurgery from './Pages/Departments/SuperSpeciality-Section/Spine-Surgery/SpineSurgery.jsx';
+import RoboticJointReplacement from './Pages/Departments/SuperSpeciality-Section/Robotic-Joint-Replacement/RoboticJointReplacement.jsx';
 
 function App() {
   return (
@@ -62,6 +63,7 @@ function App() {
         <Route path='/Neonatology' element={<Neonatology />} />
         <Route path='/Oncology' element={<Oncology />} />
         <Route path='/Spine-Surgery' element={<SpineSurgery />} />
+        <Route path='/Robotic-Joint-Replacement' element={<RoboticJointReplacement />} />
       </Routes>
       <Footer />
     </>

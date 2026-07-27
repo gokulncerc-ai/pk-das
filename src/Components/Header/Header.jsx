@@ -224,7 +224,7 @@ const Header = () => {
                       <NavDropdown.Item as={Link} to="/Spine-Surgery">
                         <small><strong>Spine Surgery</strong></small>
                       </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="#">
+                      <NavDropdown.Item as={Link} to="/Robotic-Joint-Replacement">
                         <small><strong>Robotic Joint Replacement</strong></small>
                       </NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="#">
@@ -742,16 +742,12 @@ const Header = () => {
                           Neuro Surgery
                         </Nav.Link>
 
-                        <Nav.Link href="/gastroenterology" onClick={handleClose}>
-                          Gastroenterology
-                        </Nav.Link>
-
                         <Nav.Link href="/urology" onClick={handleClose}>
                           Urology
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
-                          Cardiothoracic Surgery
+                        <Nav.Link href="/gastroenterology" onClick={handleClose}>
+                          Gastroenterology
                         </Nav.Link>
 
                         <Nav.Link as={Link} to="/Oncology" onClick={handleClose}>
@@ -766,9 +762,26 @@ const Header = () => {
                           Spine Surgery
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/critical-care" onClick={handleClose}>
-                          Critical Care
+                        <Nav.Link as={Link} to="/Robotic-Joint-Replacement" onClick={handleClose}>
+                          Robotic Joint Replacement
                         </Nav.Link>
+
+                        <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
+                          Plastic Surgery
+                        </Nav.Link>
+
+                        <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
+                          Vascular Surgery
+                        </Nav.Link>
+
+                        <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
+                          Endocrine Surgery
+                        </Nav.Link>
+
+                        <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
+                          Critical Care Medicine
+                        </Nav.Link>
+
 
                       </Accordion.Body>
                     </Accordion.Item>
@@ -828,11 +841,39 @@ const Header = () => {
                         </Nav.Link>
 
                         <Nav.Link as={Link} to="/departments/ivf" onClick={handleClose}>
-                          IVF & Fertility
+                          Fertility Clinic
                         </Nav.Link>
 
                         <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
                           Blood Bank
+                        </Nav.Link>
+
+                        <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
+                          Ophthamology
+                        </Nav.Link>
+
+                        <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
+                          Obstertics & Gynecology
+                        </Nav.Link>
+
+                        <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
+                          Anesthesiology
+                        </Nav.Link>
+
+                        <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
+                          Preventive Medicine
+                        </Nav.Link>
+
+                        <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
+                          Cosmetology
+                        </Nav.Link>
+
+                        <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
+                          Nutrition & Dietetics
+                        </Nav.Link>
+
+                        <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
+                          Emergency Medicine
                         </Nav.Link>
 
                       </Accordion.Body>
