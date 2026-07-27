@@ -1,0 +1,3090 @@
+/*==================================================
+                ONCOLOGY HERO
+==================================================*/
+
+.oncology-hero {
+
+    position: relative;
+
+    min-height: 700px;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+}
+
+.oncology-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(90deg,
+            rgba(16, 35, 75, .88),
+            rgba(16, 35, 75, .65));
+
+}
+
+.oncology-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 450px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .08);
+
+    top: -180px;
+
+    right: -150px;
+
+    filter: blur(30px);
+
+}
+
+.oncology-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 163, 76, .08);
+
+    bottom: -120px;
+
+    left: -120px;
+
+    filter: blur(30px);
+
+}
+
+.oncology-hero .container {
+
+    position: relative;
+
+    z-index: 5;
+
+}
+
+.oncology-hero-content {
+
+    color: #FFFFFF;
+
+    max-width: 760px;
+
+}
+
+
+
+/*==================================================
+                    BREADCRUMB
+==================================================*/
+
+.oncology-breadcrumb {
+
+    margin-bottom: 25px;
+
+    margin-top: 90px;
+
+}
+
+.oncology-breadcrumb .breadcrumb-item a {
+
+    color: rgba(255, 255, 255, .75);
+
+    text-decoration: none;
+
+}
+
+.oncology-breadcrumb .breadcrumb-item.active {
+
+    color: #50C1EF;
+
+}
+
+.oncology-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+
+    color: rgba(255, 255, 255, .45);
+
+}
+
+
+
+/*==================================================
+                    HERO BADGE
+==================================================*/
+
+.oncology-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 10px 22px;
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, .12);
+
+    color: #50C1EF;
+
+    backdrop-filter: blur(14px);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 22px;
+
+    border: 1px solid rgba(255, 255, 255, .15);
+
+}
+
+
+
+/*==================================================
+                    HERO TITLE
+==================================================*/
+
+.oncology-hero-content h1 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 4rem;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    color: #FFFFFF;
+
+    margin-bottom: 24px;
+
+}
+
+.oncology-hero-content p {
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    color: rgba(255, 255, 255, .85);
+
+    margin-bottom: 35px;
+
+}
+
+
+
+/*==================================================
+                HERO BUTTONS
+==================================================*/
+
+.oncology-hero-buttons {
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+.oncology-primary-btn {
+
+    padding: 16px 34px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: #00A34C;
+
+    color: #FFFFFF;
+
+    font-weight: 600;
+
+    transition: .35s ease;
+
+}
+
+.oncology-primary-btn:hover {
+
+    background: #00863D;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 18px 35px rgba(0, 163, 76, .30);
+
+}
+
+.oncology-secondary-btn {
+
+    padding: 16px 34px;
+
+    border-radius: 50px;
+
+    border: 2px solid rgba(255, 255, 255, .30);
+
+    background: transparent;
+
+    color: #FFFFFF;
+
+    transition: .35s ease;
+
+}
+
+.oncology-secondary-btn:hover {
+
+    background: #FFFFFF;
+
+    color: #10234B;
+
+}
+
+
+
+/*==================================================
+            QUICK INFO SECTION
+==================================================*/
+
+.oncology-quick-info {
+
+    position: relative;
+
+    margin-top: -90px;
+
+    z-index: 10;
+
+}
+
+.oncology-info-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #FFFFFF;
+
+    border-radius: 24px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border: 1px solid #EAECEF;
+
+    box-shadow: 0 20px 45px rgba(16, 35, 75, .08);
+
+    transition: .35s ease;
+
+    height: 100%;
+
+}
+
+.oncology-info-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 4px;
+
+    background: #00A34C;
+
+    transform: scaleX(0);
+
+    transition: .35s ease;
+
+}
+
+.oncology-info-card:hover::before {
+
+    transform: scaleX(1);
+
+}
+
+.oncology-info-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 25px 55px rgba(16, 35, 75, .15);
+
+}
+
+.oncology-info-icon {
+
+    width: 78px;
+
+    height: 78px;
+
+    border-radius: 50%;
+
+    margin: auto;
+
+    margin-bottom: 22px;
+
+    background: #ECFFF4;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: .35s ease;
+
+}
+
+.oncology-info-icon i {
+
+    font-size: 34px;
+
+    color: #00A34C;
+
+}
+
+.oncology-info-card:hover .oncology-info-icon {
+
+    background: #00A34C;
+
+    transform: rotate(12deg);
+
+}
+
+.oncology-info-card:hover .oncology-info-icon i {
+
+    color: #FFFFFF;
+
+}
+
+.oncology-info-card h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    margin-bottom: 10px;
+
+}
+
+.oncology-info-card p {
+
+    margin: 0;
+
+    color: #667085;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:992px) {
+
+    .oncology-hero {
+
+        min-height: 650px;
+
+    }
+
+    .oncology-hero-content h1 {
+
+        font-size: 3rem;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .oncology-hero {
+
+        min-height: 600px;
+
+    }
+
+    .oncology-hero-content h1 {
+
+        font-size: 2.3rem;
+
+    }
+
+    .oncology-hero-content p {
+
+        font-size: 16px;
+
+    }
+
+    .oncology-hero-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .oncology-primary-btn,
+    .oncology-secondary-btn {
+
+        width: 100%;
+
+    }
+
+    .oncology-quick-info {
+
+        margin-top: -40px;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .oncology-hero-content h1 {
+
+        font-size: 2rem;
+
+    }
+
+    .oncology-badge {
+
+        font-size: 12px;
+
+        padding: 8px 16px;
+
+    }
+
+    .oncology-info-card {
+
+        padding: 28px 20px;
+
+    }
+
+    .oncology-info-card h3 {
+
+        font-size: 24px;
+
+    }
+
+}
+
+/*==================================================
+                ABOUT SECTION
+==================================================*/
+
+.oncology-about {
+
+    padding: 120px 0;
+
+    background: #FFFFFF;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.oncology-about::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .06);
+
+    top: -140px;
+
+    left: -120px;
+
+}
+
+.oncology-about::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+
+    height: 260px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 163, 76, .06);
+
+    bottom: -100px;
+
+    right: -80px;
+
+}
+
+.oncology-about .container {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+
+/*==================================================
+                ABOUT IMAGE
+==================================================*/
+
+.oncology-about-image {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    box-shadow: 0 20px 55px rgba(16, 35, 75, .10);
+
+}
+
+.oncology-about-image img {
+
+    width: 100%;
+
+    border-radius: 30px;
+
+    transition: .5s ease;
+
+}
+
+.oncology-about-image:hover img {
+
+    transform: scale(1.06);
+
+}
+
+.oncology-about-image::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 95px;
+
+    height: 95px;
+
+    left: -18px;
+
+    top: -18px;
+
+    border-radius: 22px;
+
+    border: 5px solid rgba(80, 193, 239, .22);
+
+    z-index: 2;
+
+}
+
+.oncology-about-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+
+    height: 120px;
+
+    right: -20px;
+
+    bottom: -20px;
+
+    border-radius: 24px;
+
+    background: linear-gradient(135deg,
+            #00A34C,
+            #50C1EF);
+
+    opacity: .15;
+
+}
+
+
+
+/*==================================================
+                ABOUT CONTENT
+==================================================*/
+
+.oncology-about-content {
+
+    padding-left: 45px;
+
+}
+
+.oncology-section-tag {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 9px 22px;
+
+    border-radius: 50px;
+
+    background: #ECFFF4;
+
+    color: #00A34C;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+}
+
+.oncology-about-content h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+
+    color: #10234B;
+
+    margin-bottom: 25px;
+
+}
+
+.oncology-about-content p {
+
+    color: #667085;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+/*==================================================
+                HIGHLIGHTS
+==================================================*/
+
+.oncology-highlights {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+    margin-top: 35px;
+
+}
+
+.oncology-highlight-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 17px 18px;
+
+    background: #F8FAFC;
+
+    border-radius: 16px;
+
+    border: 1px solid #EAECEF;
+
+    transition: .35s ease;
+
+    cursor: pointer;
+
+}
+
+.oncology-highlight-item i {
+
+    font-size: 20px;
+
+    color: #00A34C;
+
+    transition: .35s ease;
+
+}
+
+.oncology-highlight-item span {
+
+    color: #10234B;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    line-height: 1.6;
+
+    transition: .35s ease;
+
+}
+
+.oncology-highlight-item:hover {
+
+    background: #00A34C;
+
+    transform: translateX(8px);
+
+    box-shadow: 0 15px 35px rgba(0, 163, 76, .18);
+
+}
+
+.oncology-highlight-item:hover i,
+
+.oncology-highlight-item:hover span {
+
+    color: #FFFFFF;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:992px) {
+
+    .oncology-about {
+
+        padding: 90px 0;
+
+    }
+
+    .oncology-about-content {
+
+        padding-left: 0;
+
+        margin-top: 45px;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .oncology-about {
+
+        padding: 80px 0;
+
+    }
+
+    .oncology-about-content h2 {
+
+        font-size: 32px;
+
+    }
+
+    .oncology-highlights {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .oncology-about-content h2 {
+
+        font-size: 28px;
+
+    }
+
+    .oncology-about-content p {
+
+        font-size: 15px;
+
+    }
+
+    .oncology-highlight-item {
+
+        padding: 16px;
+
+    }
+
+}
+
+/*==================================================
+            ONCOLOGY SERVICES
+==================================================*/
+
+.oncology-services {
+
+    padding: 120px 0;
+
+    background: #FFFFFF;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.oncology-services::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 380px;
+
+    height: 380px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .06);
+
+    top: -180px;
+
+    right: -120px;
+
+}
+
+.oncology-services::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+
+    height: 280px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 163, 76, .06);
+
+    bottom: -120px;
+
+    left: -100px;
+
+}
+
+.oncology-services .container {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/*==================================================
+            SERVICE CARD
+==================================================*/
+
+.oncology-service-card {
+
+    position: relative;
+
+    background: #FFFFFF;
+
+    border: 1px solid #EAECEF;
+
+    border-radius: 28px;
+
+    padding: 38px 28px;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    height: 100%;
+
+    transition: .4s ease;
+
+    box-shadow: 0 18px 45px rgba(16, 35, 75, .07);
+
+}
+
+.oncology-service-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 5px;
+
+    background: #00A34C;
+
+    transform: scaleX(0);
+
+    transition: .35s;
+
+}
+
+.oncology-service-card:hover::before {
+
+    transform: scaleX(1);
+
+}
+
+.oncology-service-card:hover {
+
+    transform: translateY(-12px);
+
+    box-shadow: 0 30px 60px rgba(16, 35, 75, .14);
+
+}
+
+
+/*==================================================
+            ICON
+==================================================*/
+
+.oncology-service-icon {
+
+    width: 90px;
+
+    height: 90px;
+
+    margin: 0 auto 24px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(135deg,
+            #ECFFF4,
+            #F5FDFF);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: .4s ease;
+
+}
+
+.oncology-service-icon i {
+
+    font-size: 38px;
+
+    color: #00A34C;
+
+    transition: .35s;
+
+}
+
+.oncology-service-card:hover .oncology-service-icon {
+
+    background: linear-gradient(135deg,
+            #00A34C,
+            #50C1EF);
+
+    transform: rotate(10deg) scale(1.08);
+
+}
+
+.oncology-service-card:hover .oncology-service-icon i {
+
+    color: #FFFFFF;
+
+}
+
+
+/*==================================================
+            CONTENT
+==================================================*/
+
+.oncology-service-card h4 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 24px;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    margin-bottom: 16px;
+
+    transition: .3s;
+
+}
+
+.oncology-service-card p {
+
+    color: #667085;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin: 0;
+
+}
+
+.oncology-service-card:hover h4 {
+
+    color: #00A34C;
+
+}
+
+
+/*==================================================
+            DECORATIVE CIRCLE
+==================================================*/
+
+.oncology-service-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+
+    height: 120px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .08);
+
+    top: -45px;
+
+    right: -45px;
+
+    transition: .35s;
+
+}
+
+.oncology-service-card:hover::after {
+
+    transform: scale(1.3);
+
+}
+
+
+/*==================================================
+            RESPONSIVE
+==================================================*/
+
+@media(max-width:992px) {
+
+    .oncology-services {
+
+        padding: 90px 0;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .oncology-services {
+
+        padding: 80px 0;
+
+    }
+
+    .oncology-service-card {
+
+        padding: 32px 22px;
+
+    }
+
+    .oncology-service-card h4 {
+
+        font-size: 22px;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .oncology-service-card {
+
+        border-radius: 22px;
+
+        padding: 28px 20px;
+
+    }
+
+    .oncology-service-icon {
+
+        width: 75px;
+
+        height: 75px;
+
+    }
+
+    .oncology-service-icon i {
+
+        font-size: 30px;
+
+    }
+
+}
+
+/*==================================================
+        ADVANCED ONCOLOGY TREATMENTS
+==================================================*/
+
+.oncology-treatments {
+
+    padding: 120px 0;
+
+    background: #FFFFFF;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.oncology-treatments::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 360px;
+
+    height: 360px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .06);
+
+    top: -160px;
+
+    left: -120px;
+
+}
+
+.oncology-treatments::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+
+    height: 260px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 163, 76, .06);
+
+    bottom: -100px;
+
+    right: -80px;
+
+}
+
+.oncology-treatments .container {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+
+/*==================================================
+                IMAGE
+==================================================*/
+
+.oncology-treatments-image {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    box-shadow: 0 22px 55px rgba(16, 35, 75, .12);
+
+}
+
+.oncology-treatments-image img {
+
+    width: 100%;
+
+    border-radius: 30px;
+
+    transition: .5s ease;
+
+}
+
+.oncology-treatments-image:hover img {
+
+    transform: scale(1.06);
+
+}
+
+
+
+/* Decorative Elements */
+
+.oncology-treatments-image::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 95px;
+
+    height: 95px;
+
+    left: -18px;
+
+    top: -18px;
+
+    border-radius: 22px;
+
+    border: 5px solid rgba(80, 193, 239, .25);
+
+    z-index: 2;
+
+}
+
+.oncology-treatments-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+
+    height: 120px;
+
+    right: -25px;
+
+    bottom: -25px;
+
+    border-radius: 25px;
+
+    background: linear-gradient(135deg,
+            #00A34C,
+            #50C1EF);
+
+    opacity: .15;
+
+}
+
+
+
+/*==================================================
+                CONTENT
+==================================================*/
+
+.oncology-treatments-content {
+
+    padding-left: 40px;
+
+}
+
+.oncology-treatments-content h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+
+    color: #10234B;
+
+    margin: 20px 0;
+
+}
+
+.oncology-treatments-content p {
+
+    color: #667085;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    margin-bottom: 35px;
+
+}
+
+
+
+/*==================================================
+            TREATMENT CARD
+==================================================*/
+
+.oncology-treatment-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background: #F8FAFC;
+
+    border: 1px solid #EAECEF;
+
+    border-radius: 18px;
+
+    padding: 18px 20px;
+
+    height: 100%;
+
+    transition: .35s ease;
+
+    cursor: pointer;
+
+}
+
+.oncology-treatment-card i {
+
+    width: 44px;
+
+    height: 44px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #ECFFF4;
+
+    color: #00A34C;
+
+    font-size: 20px;
+
+    flex-shrink: 0;
+
+    transition: .35s ease;
+
+}
+
+.oncology-treatment-card span {
+
+    color: #10234B;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    line-height: 1.6;
+
+    transition: .35s ease;
+
+}
+
+
+
+/*==================================================
+                HOVER
+==================================================*/
+
+.oncology-treatment-card:hover {
+
+    background: #00A34C;
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 45px rgba(0, 163, 76, .18);
+
+}
+
+.oncology-treatment-card:hover i {
+
+    background: #FFFFFF;
+
+    color: #00A34C;
+
+    transform: rotate(12deg);
+
+}
+
+.oncology-treatment-card:hover span {
+
+    color: #FFFFFF;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:992px) {
+
+    .oncology-treatments {
+
+        padding: 90px 0;
+
+    }
+
+    .oncology-treatments-content {
+
+        padding-left: 0;
+
+        margin-top: 40px;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .oncology-treatments {
+
+        padding: 80px 0;
+
+    }
+
+    .oncology-treatments-content h2 {
+
+        font-size: 32px;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .oncology-treatments-content h2 {
+
+        font-size: 28px;
+
+    }
+
+    .oncology-treatment-card {
+
+        padding: 16px;
+
+    }
+
+    .oncology-treatment-card span {
+
+        font-size: 14px;
+
+    }
+
+}
+
+/*==================================================
+        CANCER PREVENTION & SCREENING
+==================================================*/
+
+.oncology-screening {
+
+    padding: 120px 0;
+
+    background: #F8FAFC;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.oncology-screening::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 380px;
+
+    height: 380px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .08);
+
+    top: -180px;
+
+    right: -120px;
+
+}
+
+.oncology-screening::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+
+    height: 280px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 163, 76, .08);
+
+    bottom: -120px;
+
+    left: -100px;
+
+}
+
+.oncology-screening .container {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+
+/*==================================================
+            SCREENING CARD
+==================================================*/
+
+.oncology-screening-card {
+
+    position: relative;
+
+    background: #FFFFFF;
+
+    border: 1px solid #EAECEF;
+
+    border-radius: 28px;
+
+    padding: 38px 30px;
+
+    height: 100%;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    transition: .4s ease;
+
+    box-shadow: 0 18px 45px rgba(16, 35, 75, .07);
+
+}
+
+.oncology-screening-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 5px;
+
+    background: #00A34C;
+
+    transform: scaleX(0);
+
+    transition: .35s ease;
+
+}
+
+.oncology-screening-card:hover::before {
+
+    transform: scaleX(1);
+
+}
+
+.oncology-screening-card:hover {
+
+    transform: translateY(-12px);
+
+    box-shadow: 0 28px 60px rgba(16, 35, 75, .15);
+
+}
+
+
+
+/*==================================================
+            ICON
+==================================================*/
+
+.oncology-screening-icon {
+
+    width: 90px;
+
+    height: 90px;
+
+    margin: 0 auto 24px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(135deg,
+            #ECFFF4,
+            #F4FCFF);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: .4s ease;
+
+}
+
+.oncology-screening-icon i {
+
+    font-size: 38px;
+
+    color: #00A34C;
+
+    transition: .35s ease;
+
+}
+
+.oncology-screening-card:hover .oncology-screening-icon {
+
+    background: linear-gradient(135deg,
+            #00A34C,
+            #50C1EF);
+
+    transform: rotate(10deg) scale(1.08);
+
+}
+
+.oncology-screening-card:hover .oncology-screening-icon i {
+
+    color: #FFFFFF;
+
+}
+
+
+
+/*==================================================
+            CONTENT
+==================================================*/
+
+.oncology-screening-card h4 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 24px;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    margin-bottom: 16px;
+
+    transition: .35s ease;
+
+}
+
+.oncology-screening-card p {
+
+    color: #667085;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin: 0;
+
+}
+
+.oncology-screening-card:hover h4 {
+
+    color: #00A34C;
+
+}
+
+
+
+/*==================================================
+        DECORATIVE ELEMENT
+==================================================*/
+
+.oncology-screening-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+
+    height: 120px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .08);
+
+    top: -45px;
+
+    right: -45px;
+
+    transition: .35s ease;
+
+}
+
+.oncology-screening-card:hover::after {
+
+    transform: scale(1.3);
+
+}
+
+
+
+/*==================================================
+            RESPONSIVE
+==================================================*/
+
+@media(max-width:992px) {
+
+    .oncology-screening {
+
+        padding: 90px 0;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .oncology-screening {
+
+        padding: 80px 0;
+
+    }
+
+    .oncology-screening-card {
+
+        padding: 32px 24px;
+
+    }
+
+    .oncology-screening-card h4 {
+
+        font-size: 22px;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .oncology-screening-card {
+
+        padding: 28px 20px;
+
+        border-radius: 22px;
+
+    }
+
+    .oncology-screening-icon {
+
+        width: 75px;
+
+        height: 75px;
+
+    }
+
+    .oncology-screening-icon i {
+
+        font-size: 30px;
+
+    }
+
+}
+
+/*==================================================
+            OUR ONCOLOGY SPECIALISTS
+==================================================*/
+
+.oncology-specialists {
+
+    padding: 120px 0;
+
+    background: #FFFFFF;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.oncology-specialists::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 380px;
+
+    height: 380px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .08);
+
+    top: -180px;
+
+    left: -140px;
+
+}
+
+.oncology-specialists::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+
+    height: 300px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 163, 76, .06);
+
+    bottom: -120px;
+
+    right: -100px;
+
+}
+
+.oncology-specialists .container {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+
+/*==================================================
+                DOCTOR CARD
+==================================================*/
+
+.oncology-doctor-card {
+
+    background: #FFFFFF;
+
+    border: 1px solid #EAECEF;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    height: 100%;
+
+    transition: .45s ease;
+
+    box-shadow: 0 18px 45px rgba(16, 35, 75, .08);
+
+}
+
+.oncology-doctor-card:hover {
+
+    transform: translateY(-12px);
+
+    box-shadow: 0 30px 65px rgba(16, 35, 75, .16);
+
+}
+
+
+
+/*==================================================
+                IMAGE
+==================================================*/
+
+.oncology-doctor-image {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.oncology-doctor-image img {
+
+    width: 100%;
+
+    height: 420px;
+
+    object-fit: cover;
+
+    transition: .55s ease;
+
+}
+
+.oncology-doctor-card:hover .oncology-doctor-image img {
+
+    transform: scale(1.08);
+
+}
+
+
+
+/*==================================================
+            EXPERIENCE BADGE
+==================================================*/
+
+.oncology-experience {
+
+    position: absolute;
+
+    left: 25px;
+
+    bottom: 25px;
+
+    background: #00A34C;
+
+    color: #FFFFFF;
+
+    padding: 10px 20px;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: .35s ease;
+
+}
+
+.oncology-doctor-card:hover .oncology-experience {
+
+    transform: translateY(-4px);
+
+}
+
+
+
+/*==================================================
+                CONTENT
+==================================================*/
+
+.oncology-doctor-content {
+
+    padding: 35px;
+
+}
+
+
+
+/*==================================================
+            DESIGNATION BADGE
+==================================================*/
+
+.oncology-doctor-designation {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 8px 18px;
+
+    border-radius: 50px;
+
+    background: #ECFFF4;
+
+    color: #00A34C;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+
+    transition: .35s ease;
+
+}
+
+.oncology-doctor-card:hover .oncology-doctor-designation {
+
+    background: #00A34C;
+
+    color: #FFFFFF;
+
+}
+
+
+
+/*==================================================
+                TITLE
+==================================================*/
+
+.oncology-doctor-content h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    margin-bottom: 18px;
+
+    transition: .35s ease;
+
+}
+
+.oncology-doctor-card:hover h3 {
+
+    color: #00A34C;
+
+}
+
+
+
+/*==================================================
+                DESCRIPTION
+==================================================*/
+
+.oncology-doctor-content p {
+
+    color: #667085;
+
+    line-height: 1.9;
+
+    font-size: 16px;
+
+    margin-bottom: 28px;
+
+}
+
+
+
+/*==================================================
+                SPECIALITY TAGS
+==================================================*/
+
+.oncology-doctor-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+
+}
+
+.oncology-doctor-tags span {
+
+    padding: 10px 18px;
+
+    border-radius: 50px;
+
+    background: #F8FAFC;
+
+    border: 1px solid #EAECEF;
+
+    color: #10234B;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: .35s ease;
+
+}
+
+.oncology-doctor-tags span:hover {
+
+    background: #00A34C;
+
+    color: #FFFFFF;
+
+    border-color: #00A34C;
+
+}
+
+
+
+/*==================================================
+                BUTTONS
+==================================================*/
+
+.oncology-doctor-buttons {
+
+    display: flex;
+
+    gap: 16px;
+
+    flex-wrap: wrap;
+
+}
+
+.oncology-doctor-buttons .oncology-primary-btn {
+
+    flex: 1;
+
+}
+
+.oncology-doctor-buttons .oncology-outline-btn {
+
+    flex: 1;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:992px) {
+
+    .oncology-specialists {
+
+        padding: 90px 0;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .oncology-specialists {
+
+        padding: 80px 0;
+
+    }
+
+    .oncology-doctor-image img {
+
+        height: 360px;
+
+    }
+
+    .oncology-doctor-content {
+
+        padding: 28px;
+
+    }
+
+    .oncology-doctor-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .oncology-doctor-buttons .oncology-primary-btn,
+
+    .oncology-doctor-buttons .oncology-outline-btn {
+
+        width: 100%;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .oncology-doctor-image img {
+
+        height: 320px;
+
+    }
+
+    .oncology-doctor-content h3 {
+
+        font-size: 26px;
+
+    }
+
+    .oncology-doctor-content {
+
+        padding: 24px;
+
+    }
+
+}
+
+/*==================================================
+                ONCOLOGY CTA
+==================================================*/
+
+.oncology-cta {
+
+    padding: 120px 0;
+
+    background: linear-gradient(135deg,
+            #10234B,
+            #1D3B73);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.oncology-cta::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+
+    height: 420px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .10);
+
+    top: -180px;
+
+    right: -120px;
+
+}
+
+.oncology-cta::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+
+    height: 320px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 163, 76, .10);
+
+    left: -120px;
+
+    bottom: -120px;
+
+}
+
+.oncology-cta .container {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+
+/*==================================================
+                CTA CONTENT
+==================================================*/
+
+.oncology-cta-content {
+
+    color: #FFFFFF;
+
+}
+
+.oncology-cta-content h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 48px;
+
+    font-weight: 800;
+
+    color: #FFFFFF;
+
+    margin: 20px 0;
+
+    line-height: 1.25;
+
+}
+
+.oncology-cta-content p {
+
+    color: rgba(255, 255, 255, .82);
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    margin-bottom: 35px;
+
+}
+
+
+
+/*==================================================
+                CTA BUTTONS
+==================================================*/
+
+.oncology-cta-buttons {
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+.oncology-cta-buttons .oncology-outline-btn {
+
+    border-color: rgba(255, 255, 255, .35);
+
+    color: #FFFFFF;
+
+}
+
+.oncology-cta-buttons .oncology-outline-btn:hover {
+
+    background: #FFFFFF;
+
+    color: #10234B;
+
+}
+
+
+
+/*==================================================
+                GLASS CARD
+==================================================*/
+
+.oncology-cta-box {
+
+    background: rgba(255, 255, 255, .10);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, .15);
+
+    border-radius: 30px;
+
+    padding: 45px;
+
+    color: #FFFFFF;
+
+    box-shadow: 0 25px 60px rgba(0, 0, 0, .20);
+
+    transition: .4s ease;
+
+}
+
+.oncology-cta-box:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 35px 70px rgba(0, 0, 0, .28);
+
+}
+
+
+
+/*==================================================
+                    ICON
+==================================================*/
+
+.oncology-cta-icon {
+
+    width: 90px;
+
+    height: 90px;
+
+    border-radius: 50%;
+
+    background: #00A34C;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    transition: .35s ease;
+
+}
+
+.oncology-cta-icon i {
+
+    color: #FFFFFF;
+
+    font-size: 40px;
+
+}
+
+.oncology-cta-box:hover .oncology-cta-icon {
+
+    transform: rotate(12deg) scale(1.08);
+
+    box-shadow: 0 18px 40px rgba(0, 163, 76, .35);
+
+}
+
+
+
+/*==================================================
+                GLASS CONTENT
+==================================================*/
+
+.oncology-cta-box h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    margin-bottom: 20px;
+
+}
+
+.oncology-cta-box p {
+
+    color: rgba(255, 255, 255, .82);
+
+    line-height: 1.8;
+
+    margin-bottom: 28px;
+
+}
+
+
+
+/*==================================================
+                FEATURES
+==================================================*/
+
+.oncology-cta-features {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+
+}
+
+.oncology-cta-features div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-weight: 500;
+
+}
+
+.oncology-cta-features i {
+
+    color: #50C1EF;
+
+    font-size: 20px;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:992px) {
+
+    .oncology-cta {
+
+        padding: 90px 0;
+
+    }
+
+    .oncology-cta-content {
+
+        margin-bottom: 50px;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .oncology-cta {
+
+        padding: 80px 0;
+
+    }
+
+    .oncology-cta-content h2 {
+
+        font-size: 34px;
+
+    }
+
+    .oncology-cta-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .oncology-primary-btn,
+
+    .oncology-outline-btn {
+
+        width: 100%;
+
+    }
+
+    .oncology-cta-box {
+
+        padding: 30px;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .oncology-cta-box {
+
+        padding: 24px;
+
+        border-radius: 24px;
+
+    }
+
+    .oncology-cta-icon {
+
+        width: 75px;
+
+        height: 75px;
+
+    }
+
+    .oncology-cta-icon i {
+
+        font-size: 32px;
+
+    }
+
+}
+
+/*==================================================
+                WHY CHOOSE US
+==================================================*/
+
+.oncology-features {
+
+    padding: 120px 0;
+
+    background: #F8FAFC;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.oncology-features::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 380px;
+
+    height: 380px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .08);
+
+    top: -170px;
+
+    right: -120px;
+
+}
+
+.oncology-features::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+
+    height: 280px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 163, 76, .08);
+
+    bottom: -110px;
+
+    left: -100px;
+
+}
+
+.oncology-features .container {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+
+/*==================================================
+            FEATURE CARD
+==================================================*/
+
+.oncology-feature-card {
+
+    position: relative;
+
+    background: #FFFFFF;
+
+    border: 1px solid #EAECEF;
+
+    border-radius: 28px;
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    transition: .4s ease;
+
+    box-shadow: 0 18px 45px rgba(16, 35, 75, .08);
+
+}
+
+.oncology-feature-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 5px;
+
+    background: #00A34C;
+
+    transform: scaleX(0);
+
+    transition: .35s ease;
+
+}
+
+.oncology-feature-card:hover::before {
+
+    transform: scaleX(1);
+
+}
+
+.oncology-feature-card:hover {
+
+    transform: translateY(-12px);
+
+    box-shadow: 0 28px 60px rgba(16, 35, 75, .16);
+
+}
+
+
+
+/*==================================================
+                FEATURE ICON
+==================================================*/
+
+.oncology-feature-icon {
+
+    width: 90px;
+
+    height: 90px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(135deg,
+            #ECFFF4,
+            #F4FCFF);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: .4s ease;
+
+}
+
+.oncology-feature-icon i {
+
+    font-size: 38px;
+
+    color: #00A34C;
+
+    transition: .35s ease;
+
+}
+
+.oncology-feature-card:hover .oncology-feature-icon {
+
+    background: linear-gradient(135deg,
+            #00A34C,
+            #50C1EF);
+
+    transform: rotate(10deg) scale(1.08);
+
+}
+
+.oncology-feature-card:hover .oncology-feature-icon i {
+
+    color: #FFFFFF;
+
+}
+
+
+
+/*==================================================
+                CONTENT
+==================================================*/
+
+.oncology-feature-card h4 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 24px;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    margin-bottom: 18px;
+
+    transition: .35s ease;
+
+}
+
+.oncology-feature-card:hover h4 {
+
+    color: #00A34C;
+
+}
+
+.oncology-feature-card p {
+
+    color: #667085;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin: 0;
+
+}
+
+
+
+/*==================================================
+            DECORATIVE CIRCLE
+==================================================*/
+
+.oncology-feature-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+
+    height: 120px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .08);
+
+    top: -50px;
+
+    right: -50px;
+
+    transition: .35s ease;
+
+}
+
+.oncology-feature-card:hover::after {
+
+    transform: scale(1.25);
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:992px) {
+
+    .oncology-features {
+
+        padding: 90px 0;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .oncology-features {
+
+        padding: 80px 0;
+
+    }
+
+    .oncology-feature-card {
+
+        padding: 35px 25px;
+
+    }
+
+    .oncology-feature-card h4 {
+
+        font-size: 22px;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .oncology-feature-card {
+
+        padding: 30px 20px;
+
+        border-radius: 22px;
+
+    }
+
+    .oncology-feature-icon {
+
+        width: 75px;
+
+        height: 75px;
+
+    }
+
+    .oncology-feature-icon i {
+
+        font-size: 30px;
+
+    }
+
+}
+
+/*==================================================
+            SECTION HEADING
+==================================================*/
+
+.oncology-section-heading {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.oncology-section-heading span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 8px 22px;
+
+    border-radius: 50px;
+
+    background: #ECFFF4;
+
+    color: #00A34C;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: .5px;
+
+    margin-bottom: 18px;
+
+}
+
+.oncology-section-heading h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    line-height: 1.3;
+
+    margin-bottom: 20px;
+
+}
+
+.oncology-section-heading p {
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    color: #667085;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:992px) {
+
+    .oncology-section-heading {
+
+        margin-bottom: 50px;
+
+    }
+
+    .oncology-section-heading h2 {
+
+        font-size: 36px;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .oncology-section-heading {
+
+        margin-bottom: 40px;
+
+    }
+
+    .oncology-section-heading h2 {
+
+        font-size: 32px;
+
+    }
+
+    .oncology-section-heading p {
+
+        font-size: 15px;
+
+        line-height: 1.8;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .oncology-section-heading h2 {
+
+        font-size: 28px;
+
+    }
+
+    .oncology-section-heading span {
+
+        padding: 7px 18px;
+
+        font-size: 13px;
+
+    }
+
+}
