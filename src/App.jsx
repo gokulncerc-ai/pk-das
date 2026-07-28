@@ -28,6 +28,10 @@ import ENT from './Pages/GeneralDepartments/ENT/ENT.jsx';
 import Dermatology from './Pages/GeneralDepartments/Dermatology/Dermatology.jsx';
 import Psychiatry from './Pages/GeneralDepartments/Psychiatry/Psychiatry.jsx';
 import Pulmonology from './Pages/GeneralDepartments/Pulmonology/Pulmonology.jsx';
+import Radiology from './Pages/GeneralDepartments/Radiology/Radiology.jsx';
+import Dentistry from './Pages/GeneralDepartments/Dentistry/Dentistry.jsx';
+import Physiotherapy from './Pages/GeneralDepartments/Physiotherapy/Physiotherapy.jsx';
+import BloodBank from './Pages/GeneralDepartments/BloodBank/BloodBank.jsx';
 
 function App() {
   return (
@@ -54,6 +58,10 @@ function App() {
         <Route path='/general-department/dermatology' element={<Dermatology />} />
         <Route path='/general-department/psychiatry' element={<Psychiatry />} />
         <Route path='/general-department/Pulmonology' element={<Pulmonology />} />
+        <Route path='/general-department/Radiology' element={<Radiology />} />
+        <Route path='/general-department/Dentistry' element={<Dentistry />} />
+        <Route path='/general-department/physiotherapy' element={<Physiotherapy />} />
+        <Route path='/general-department/blood-bank' element={<BloodBank />} />
         {/* ------------department route------------- */}
         <Route path='/Cardiology' element={<Cardiology />} />
         <Route path='/Nephrology' element={<Nephrology />} />

@@ -271,17 +271,17 @@ const Header = () => {
                         <small><strong>Pulmonology</strong></small>
                       </NavDropdown.Item>
 
-                      <a href="/departments/radiology" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/radiology">
                         <small><strong>Radiology</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/departments/dentistry" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/dentistry">
                         <small><strong>Dentistry</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/departments/physiotherapy" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/physiotherapy">
                         <small><strong>Physiotherapy</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
                       <a href="/departments/obg" className="dropdown-item">
                         <small><strong>OBG</strong></small>
@@ -291,10 +291,9 @@ const Header = () => {
                         <small><strong>IVF & Fertility</strong></small>
                       </a>
 
-                      <a href="/departments/blood-bank" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/blood-bank">
                         <small><strong>Blood Bank</strong></small>
-                      </a>
-
+                      </NavDropdown.Item>
                     </div>
 
                   </div>
@@ -779,23 +778,23 @@ const Header = () => {
                           Radiology
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/departments/dentistry" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/dentistry" onClick={handleClose}>
                           Dentistry
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/departments/physiotherapy" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/physiotherapy" onClick={handleClose}>
                           Physiotherapy
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/departments/obg" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/obg" onClick={handleClose}>
                           OBG
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/departments/ivf" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/ivf" onClick={handleClose}>
                           IVF & Fertility
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/blood-bank" onClick={handleClose}>
                           Blood Bank
                         </Nav.Link>
 
