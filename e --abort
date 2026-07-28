@@ -1,0 +1,12 @@
+[33m5adff4a[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: pull --rebase origin main (start): checkout 5adff4ab26d1b0f83e6534bd007619c147823310
+[33m311c955[m[33m ([m[1;32mmain[m[33m)[m HEAD@{1}: Branch: renamed refs/heads/main to refs/heads/main
+[33m311c955[m[33m ([m[1;32mmain[m[33m)[m HEAD@{3}: commit: Initial project commit
+[33m7f291ef[m HEAD@{4}: Branch: renamed refs/heads/master to refs/heads/main
+[33m7f291ef[m HEAD@{6}: commit: Initial commit
+[33m4fcd12e[m HEAD@{7}: pull origin master: Fast-forward
+[33mc9d7afa[m HEAD@{8}: commit: updated the route of pediatrics
+[33mbab8a80[m HEAD@{9}: pull origin master: Fast-forward
+[33m4ba0c0a[m HEAD@{10}: commit: updated Pediatrics well
+[33ma997ea8[m HEAD@{11}: commit: test
+[33mc3019a2[m HEAD@{12}: commit: general department updated 3 pages
+[33m48c9127[m HEAD@{13}: clone: from https://github.com/advsignature-dotcom/p.k-das.git

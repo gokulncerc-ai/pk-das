@@ -25,6 +25,9 @@ import Urology from './Pages/Departments/SuperSpeciality-Section/UROLOGY/UROLOGY
 import Neurology from './Pages/Departments/SuperSpeciality-Section/Neurology/Neurology.jsx';
 import Pediatrics from './Pages/GeneralDepartments/Pediatrics/Pediatrics.jsx';
 import ENT from './Pages/GeneralDepartments/ENT/ENT.jsx';
+import Dermatology from './Pages/GeneralDepartments/Dermatology/Dermatology.jsx';
+import Psychiatry from './Pages/GeneralDepartments/Psychiatry/Psychiatry.jsx';
+import Pulmonology from './Pages/GeneralDepartments/Pulmonology/Pulmonology.jsx';
 
 function App() {
   return (
@@ -48,7 +51,9 @@ function App() {
         <Route path='/general-department/orthopedics' element={<Orthopedics />} />
         <Route path='/general-department/pediatrics' element={<Pediatrics />} />
         <Route path='/general-department/ENT' element={<ENT />} />
-
+        <Route path='/general-department/dermatology' element={<Dermatology />} />
+        <Route path='/general-department/psychiatry' element={<Psychiatry />} />
+        <Route path='/general-department/Pulmonology' element={<Pulmonology />} />
         {/* ------------department route------------- */}
         <Route path='/Cardiology' element={<Cardiology />} />
         <Route path='/Nephrology' element={<Nephrology />} />

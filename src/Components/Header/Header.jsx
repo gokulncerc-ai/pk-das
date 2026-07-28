@@ -259,17 +259,17 @@ const Header = () => {
                         <small><strong>ENT</strong></small>
                       </NavDropdown.Item>
 
-                      <a href="/departments/dermatology" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/dermatology">
                         <small><strong>Dermatology</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/departments/psychiatry" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/psychiatry">
                         <small><strong>Psychiatry</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/departments/pulmonology" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/pulmonology">
                         <small><strong>Pulmonology</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
                       <a href="/departments/radiology" className="dropdown-item">
                         <small><strong>Radiology</strong></small>
@@ -763,19 +763,19 @@ const Header = () => {
                           ENT
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/departments/dermatology" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/dermatology" onClick={handleClose}>
                           Dermatology
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/departments/psychiatry" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/psychiatry" onClick={handleClose}>
                           Psychiatry
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/departments/pulmonology" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/pulmonology" onClick={handleClose}>
                           Pulmonology
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/departments/radiology" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/radiology" onClick={handleClose}>
                           Radiology
                         </Nav.Link>
 
