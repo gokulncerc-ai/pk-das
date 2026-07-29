@@ -20,10 +20,18 @@ import Orthopedics from './Pages/GeneralDepartments/Orthopedics/Orthopedics.jsx'
 import Cardiology from './Pages/Departments/SuperSpeciality-Section/Cardiology/Cardiology.jsx';
 import Nephrology from './Pages/Departments/SuperSpeciality-Section/Nephrology/Nephrology.jsx';
 import RoboticJointReplacement from './Pages/Departments/SuperSpeciality-Section/Robotic-Joint-Replacement/RoboticJointReplacement.jsx';
+import PlasticSurgery from './Pages/Departments/SuperSpeciality-Section/PlasticSurgery/PlasticSurgery.jsx';
+import VascularSurgery from './Pages/Departments/SuperSpeciality-Section/VascularSurgery/VascularSurgery.jsx';
 import NeuroSurgery from './Pages/Departments/SuperSpeciality-Section/NeuroSurgery/NeuroSurgery.jsx';
 import Gastroenterology from './Pages/Departments/SuperSpeciality-Section/Gastroenterology/Gastroenterology.jsx';
 import Urology from './Pages/Departments/SuperSpeciality-Section/UROLOGY/UROLOGY.jsx';
+import Oncology from './Pages/Departments/SuperSpeciality-Section/Oncology/Oncology.jsx';
+import Neonatology from './Pages/Departments/SuperSpeciality-Section/Neonatology/Neonatology.jsx';
+import SpineSurgery from './Pages/Departments/SuperSpeciality-Section/SpineSurgery/SpineSurgery.jsx';
 import Neurology from './Pages/Departments/SuperSpeciality-Section/Neurology/Neurology.jsx';
+import EndocrineSurgery from './Pages/Departments/SuperSpeciality-Section/EndocrineSurgery/EndocrineSurgery.jsx';
+import CriticalCareMedicine from './Pages/Departments/SuperSpeciality-Section/CriticalCareMedicine/CriticalCareMedicine.jsx';
+import OBG from './Pages/GeneralDepartments/OBG/OBG.jsx';
 import Pediatrics from './Pages/GeneralDepartments/Pediatrics/Pediatrics.jsx';
 import ENT from './Pages/GeneralDepartments/ENT/ENT.jsx';
 import Dermatology from './Pages/GeneralDepartments/Dermatology/Dermatology.jsx';
@@ -33,6 +41,9 @@ import Radiology from './Pages/GeneralDepartments/Radiology/Radiology.jsx';
 import Dentistry from './Pages/GeneralDepartments/Dentistry/Dentistry.jsx';
 import Physiotherapy from './Pages/GeneralDepartments/Physiotherapy/Physiotherapy.jsx';
 import BloodBank from './Pages/GeneralDepartments/BloodBank/BloodBank.jsx';
+import FertilityClinic from './Pages/GeneralDepartments/Fertility-Clinic/FertilityClinic.jsx';
+import HealthCheckups from './Pages/Health-Checkups/Health-Checkups.jsx';
+import Insurance from './Pages/Insurance/Insurance.jsx';
 
 function App() {
   return (
@@ -63,6 +74,10 @@ function App() {
         <Route path='/general-department/Dentistry' element={<Dentistry />} />
         <Route path='/general-department/physiotherapy' element={<Physiotherapy />} />
         <Route path='/general-department/blood-bank' element={<BloodBank />} />
+        <Route path='/general-department/obg' element={<OBG />} />
+        <Route path='/general-department/fertility-clinic' element={<FertilityClinic />} />
+        <Route path='/health-checkups' element={<HealthCheckups />} />
+        <Route path='/insurance' element={<Insurance />} />
         {/* ------------department route------------- */}
         <Route path='/Cardiology' element={<Cardiology />} />
         <Route path='/Nephrology' element={<Nephrology />} />
@@ -70,7 +85,14 @@ function App() {
         <Route path='/gastroenterology' element={<Gastroenterology />} />
         <Route path='/urology' element={<Urology />} />
         <Route path='/Neurology' element={<Neurology />} />
+        <Route path='/Oncology' element={<Oncology />} />
+        <Route path='/Neonatology' element={<Neonatology />} />
         <Route path='/Robotic-Joint-Replacement' element={<RoboticJointReplacement />} />
+        <Route path='/plastic-surgery' element={<PlasticSurgery />} />
+        <Route path='/vascular-surgery' element={<VascularSurgery />} />
+        <Route path='/Spine-Surgery' element={<SpineSurgery />} />
+        <Route path="/Endocrine-Surgery" element={<EndocrineSurgery />} />
+        <Route path="/critical-care-medicine" element={<CriticalCareMedicine />} />
       </Routes>
       <Footer />
     </>

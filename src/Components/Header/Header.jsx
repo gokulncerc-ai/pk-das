@@ -227,16 +227,18 @@ const Header = () => {
                       <NavDropdown.Item as={Link} to="/Robotic-Joint-Replacement">
                         <small><strong>Robotic Joint Replacement</strong></small>
                       </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="#">
+                      <NavDropdown.Item as={Link} to="/plastic-surgery">
                         <small><strong>Plastic Surgery</strong></small>
                       </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="#">
+
+                      <NavDropdown.Item as={Link} to="/vascular-surgery">
                         <small><strong>Vascular Surgery</strong></small>
                       </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="#">
+
+                      <NavDropdown.Item as={Link} to="/Endocrine-Surgery">
                         <small><strong>Endocrine Surgery</strong></small>
                       </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="#">
+                      <NavDropdown.Item as={Link} to="/critical-care-medicine">
                         <small><strong>Critical Care Medicine</strong></small>
                       </NavDropdown.Item>
                     </div>
@@ -299,13 +301,13 @@ const Header = () => {
                         <small><strong>Physiotherapy</strong></small>
                       </NavDropdown.Item>
 
-                      <a href="/departments/obg" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/obg">
                         <small><strong>OBG</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/departments/ivf" className="dropdown-item">
-                        <small><strong>IVF & Fertility</strong></small>
-                      </a>
+                      <NavDropdown.Item as={Link} to="/general-department/fertility-clinic">
+                        <small><strong>Fertility Clinic</strong></small>
+                      </NavDropdown.Item>
 
                       <NavDropdown.Item as={Link} to="/general-department/blood-bank">
                         <small><strong>Blood Bank</strong></small>
@@ -376,7 +378,9 @@ const Header = () => {
               >
 
                 <NavDropdown.Item
-                  href="/find-doctor"
+                  href="https://bookappointment.pkdashospital.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="dropdown-item-custom doctor-item"
                 >
                   <i className="bi bi-calendar2-check dropdown-icon"></i>
@@ -384,7 +388,7 @@ const Header = () => {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item
-                  href="/doctor-directory"
+                  href="/health-checkups"
                   className="dropdown-item-custom directory-item"
                 >
                   <i className="bi bi-heart-pulse dropdown-icon"></i>
@@ -392,7 +396,7 @@ const Header = () => {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item
-                  href="/doctor-schedule"
+                  href="/insurance"
                   className="dropdown-item-custom schedule-item"
                 >
                   <i className="bi bi-shield-check dropdown-icon"></i>
@@ -733,7 +737,7 @@ const Header = () => {
                           Oncology
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/neonatology" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/Neonatology" onClick={handleClose}>
                           Neonatology
                         </Nav.Link>
 
@@ -745,19 +749,19 @@ const Header = () => {
                           Robotic Joint Replacement
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/plastic-surgery" onClick={handleClose}>
                           Plastic Surgery
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/vascular-surgery" onClick={handleClose}>
                           Vascular Surgery
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/Endocrine-Surgery" onClick={handleClose}>
                           Endocrine Surgery
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/critical-care-medicine" onClick={handleClose}>
                           Critical Care Medicine
                         </Nav.Link>
 
@@ -818,8 +822,8 @@ const Header = () => {
                           OBG
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/general-department/ivf" onClick={handleClose}>
-                          IVF & Fertility
+                        <Nav.Link as={Link} to="/general-department/fertility-clinic" onClick={handleClose}>
+                          Fertility Clinic
                         </Nav.Link>
 
                         <Nav.Link as={Link} to="/general-department/blood-bank" onClick={handleClose}>
@@ -901,7 +905,12 @@ const Header = () => {
 
                 <Accordion.Body className="p-0">
 
-                  <Nav.Link href="/find-doctor" onClick={handleClose}>
+                  <Nav.Link
+                    href="https://bookappointment.pkdashospital.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={handleClose}
+                  >
                     <i className="bi bi-calendar2-check me-2"></i>
                     Book Appointments
                   </Nav.Link>
@@ -911,7 +920,7 @@ const Header = () => {
                     Health Checkups
                   </Nav.Link>
 
-                  <Nav.Link href="/insurance-tpa" onClick={handleClose}>
+                  <Nav.Link href="/insurance" onClick={handleClose}>
                     <i className="bi bi-shield-check me-2"></i>
                     Insurance & TPA
                   </Nav.Link>
