@@ -183,7 +183,7 @@ const Header = () => {
                 className="departments-dropdown"
                 autoClose="outside"
               >
-                <div className="mega-menu">
+                <div className="mega-menu ">
 
                   {/* Super Speciality */}
                   <div className="dept-card">
@@ -195,35 +195,51 @@ const Header = () => {
 
                     <h5>Super Speciality</h5>
 
-                    <NavDropdown.Item as={Link} to="/Cardiology">
-                      <small><strong>Cardiology</strong></small>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/Neurology">
-                      <small><strong>Neurology</strong></small>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/Nephrology">
-                      <small><strong>Nephrology</strong></small>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/neuro-surgery">
-                      <small><strong>Neuro Surgery</strong></small>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/gastroenterology">
-                      <small><strong>Gastroenterology</strong></small>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/urology">
-                      <small><strong>Urology</strong></small>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/spine-surgery">
-                      <small><strong>Spine Surgery</strong></small>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/Oncology">
-                      <small><strong>Oncology</strong></small>
-                    </NavDropdown.Item>
-                    <a href="/departments/oncology" className="dropdown-item"><small><strong>Oncology</strong></small></a>
-                    <a href="/departments/oncology" className="dropdown-item"><small><strong>Neonatology</strong></small></a>
+                    <div className="dept-list">
 
-                    <a href="/departments/oncology" className="dropdown-item"><small><strong>Plastic Surgery</strong></small></a>
-                    <a href="/departments/oncology" className="dropdown-item"><small><strong>Critical Care</strong></small></a>
+                      <NavDropdown.Item as={Link} to="/Cardiology">
+                        <small><strong>Cardiology</strong></small>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/Neurology">
+                        <small><strong>Neurology</strong></small>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/Nephrology">
+                        <small><strong>Nephrology</strong></small>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/neuro-surgery">
+                        <small><strong>Neuro Surgery</strong></small>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/urology">
+                        <small><strong>Urology</strong></small>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/gastroenterology">
+                        <small><strong>Gastroenterology</strong></small>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/Oncology">
+                        <small><strong>Oncology</strong></small>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/Neonatology">
+                        <small><strong>Neonatology</strong></small>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/Spine-Surgery">
+                        <small><strong>Spine Surgery</strong></small>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/Robotic-Joint-Replacement">
+                        <small><strong>Robotic Joint Replacement</strong></small>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="#">
+                        <small><strong>Plastic Surgery</strong></small>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="#">
+                        <small><strong>Vascular Surgery</strong></small>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="#">
+                        <small><strong>Endocrine Surgery</strong></small>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="#">
+                        <small><strong>Critical Care Medicine</strong></small>
+                      </NavDropdown.Item>
+                    </div>
                   </div>
                   {/* General Departments */}
                   <div className="dept-card">
@@ -705,19 +721,15 @@ const Header = () => {
                           Neuro Surgery
                         </Nav.Link>
 
-                        <Nav.Link href="/gastroenterology" onClick={handleClose}>
-                          Gastroenterology
-                        </Nav.Link>
-
                         <Nav.Link href="/urology" onClick={handleClose}>
                           Urology
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
-                          Cardiothoracic Surgery
+                        <Nav.Link href="/gastroenterology" onClick={handleClose}>
+                          Gastroenterology
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/oncology" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/Oncology" onClick={handleClose}>
                           Oncology
                         </Nav.Link>
 
@@ -725,17 +737,33 @@ const Header = () => {
                           Neonatology
                         </Nav.Link>
 
-                        <Nav.Link href="/Spine Surgery" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/Spine-Surgery" onClick={handleClose}>
                           Spine Surgery
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/critical-care" onClick={handleClose}>
-                          Critical Care
+                        <Nav.Link as={Link} to="/Robotic-Joint-Replacement" onClick={handleClose}>
+                          Robotic Joint Replacement
                         </Nav.Link>
+
+                        <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
+                          Plastic Surgery
+                        </Nav.Link>
+
+                        <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
+                          Vascular Surgery
+                        </Nav.Link>
+
+                        <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
+                          Endocrine Surgery
+                        </Nav.Link>
+
+                        <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
+                          Critical Care Medicine
+                        </Nav.Link>
+
 
                       </Accordion.Body>
                     </Accordion.Item>
-
                     {/* General Departments */}
                     <Accordion.Item eventKey="1">
                       <Accordion.Header>General Departments</Accordion.Header>

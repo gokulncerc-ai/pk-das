@@ -19,6 +19,7 @@ import GeneralSurgery from './Pages/GeneralDepartments/General-Surgery/GeneralSu
 import Orthopedics from './Pages/GeneralDepartments/Orthopedics/Orthopedics.jsx';
 import Cardiology from './Pages/Departments/SuperSpeciality-Section/Cardiology/Cardiology.jsx';
 import Nephrology from './Pages/Departments/SuperSpeciality-Section/Nephrology/Nephrology.jsx';
+import RoboticJointReplacement from './Pages/Departments/SuperSpeciality-Section/Robotic-Joint-Replacement/RoboticJointReplacement.jsx';
 import NeuroSurgery from './Pages/Departments/SuperSpeciality-Section/NeuroSurgery/NeuroSurgery.jsx';
 import Gastroenterology from './Pages/Departments/SuperSpeciality-Section/Gastroenterology/Gastroenterology.jsx';
 import Urology from './Pages/Departments/SuperSpeciality-Section/UROLOGY/UROLOGY.jsx';
@@ -69,6 +70,7 @@ function App() {
         <Route path='/gastroenterology' element={<Gastroenterology />} />
         <Route path='/urology' element={<Urology />} />
         <Route path='/Neurology' element={<Neurology />} />
+        <Route path='/Robotic-Joint-Replacement' element={<RoboticJointReplacement />} />
       </Routes>
       <Footer />
     </>

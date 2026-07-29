@@ -1003,6 +1003,6 @@
 
 /* Hover effect */
 .submenu .dropdown-item:hover {
-    background:var(--primary-color);
+    background: var(--primary-color);
     color: white;
 }
