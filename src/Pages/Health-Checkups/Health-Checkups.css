@@ -1,0 +1,390 @@
+/*==================================================
+                HEALTH CHECKUPS HERO
+==================================================*/
+
+.hc-hero {
+    position: relative;
+    /* Increased top padding from 100px to 160px to shift content downwards */
+    padding: 160px 0 140px;
+    background: linear-gradient(135deg,
+            #10234B 0%,
+            #1D3B73 100%);
+    overflow: hidden;
+}
+
+.hc-hero::before {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: rgba(80, 193, 239, .10);
+    top: -160px;
+    right: -100px;
+}
+
+.hc-hero::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(0, 163, 76, .12);
+    bottom: -120px;
+    left: -100px;
+}
+
+.hc-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hc-hero-content {
+    color: #FFFFFF;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    /* Moves the interior content down by 50px */
+}
+
+/*==================================================
+                BREADCRUMB
+==================================================*/
+
+.hc-breadcrumb {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.hc-breadcrumb .breadcrumb {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hc-breadcrumb .breadcrumb-item a {
+    color: rgba(255, 255, 255, .75);
+    text-decoration: none;
+}
+
+.hc-breadcrumb .breadcrumb-item a:hover {
+    color: #50C1EF;
+}
+
+.hc-breadcrumb .breadcrumb-item.active {
+    color: #50C1EF;
+}
+
+.hc-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    content: "/";
+    display: inline-block;
+    padding: 0 10px;
+    color: rgba(255, 255, 255, .45);
+}
+
+/*==================================================
+                HERO BADGE
+==================================================*/
+
+.hc-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 22px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, .12);
+    color: #50C1EF;
+    backdrop-filter: blur(12px);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/*==================================================
+                HERO TITLE
+==================================================*/
+
+.hc-hero-content h1 {
+    font-family: "Manrope", sans-serif;
+    font-size: 3.4rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 22px;
+    color: #FFFFFF;
+}
+
+.hc-hero-content p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, .85);
+    margin-bottom: 0;
+}
+
+/*==================================================
+            PACKAGES SECTION
+==================================================*/
+
+.hc-packages {
+    position: relative;
+    margin-top: -80px;
+    z-index: 10;
+    padding: 0 0 120px;
+    background: #FFFFFF;
+}
+
+.hc-section-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*==================================================
+                PACKAGE CARD
+==================================================*/
+
+.hc-package-card {
+    display: block;
+    background: #FFFFFF;
+    border-radius: 22px;
+    overflow: hidden;
+    text-decoration: none;
+    border: 1px solid #EAECEF;
+    box-shadow: 0 20px 45px rgba(16, 35, 75, .10);
+    transition: .4s ease;
+    height: 100%;
+}
+
+.hc-package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 28px 60px rgba(16, 35, 75, .18);
+}
+
+.hc-package-thumb {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+}
+
+.hc-package-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: .6s ease;
+}
+
+.hc-package-card:hover .hc-package-thumb img {
+    transform: scale(1.1);
+}
+
+.hc-package-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg,
+            rgba(16, 35, 75, .78) 0%,
+            rgba(16, 35, 75, 0) 55%);
+    opacity: 0;
+    transition: .4s ease;
+}
+
+.hc-package-card:hover .hc-package-overlay {
+    opacity: 1;
+}
+
+.hc-package-number {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .92);
+    color: #00A34C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    box-shadow: 0 8px 20px rgba(16, 35, 75, .18);
+}
+
+.hc-package-body {
+    padding: 24px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.hc-package-body h3 {
+    font-family: "Manrope", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: #10234B;
+    margin: 0;
+    transition: .35s ease;
+}
+
+.hc-package-card:hover .hc-package-body h3 {
+    color: #00A34C;
+}
+
+.hc-package-arrow {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ECFFF4;
+    color: #00A34C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .35s ease;
+}
+
+.hc-package-card:hover .hc-package-arrow {
+    background: #00A34C;
+    color: #FFFFFF;
+    transform: rotate(-45deg);
+}
+
+/*==================================================
+                CTA SECTION
+==================================================*/
+
+.hc-cta {
+    padding: 90px 0;
+    background: #F8FAFC;
+    position: relative;
+    overflow: hidden;
+}
+
+.hc-cta-box {
+    background: #FFFFFF;
+    border-radius: 28px;
+    border: 1px solid #EAECEF;
+    box-shadow: 0 20px 50px rgba(16, 35, 75, .08);
+    padding: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.hc-cta-text h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: #10234B;
+    margin-bottom: 12px;
+}
+
+.hc-cta-text p {
+    color: #667085;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+    max-width: 520px;
+}
+
+.hc-cta-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.hc-primary-btn {
+    padding: 15px 32px;
+    border: none;
+    border-radius: 50px;
+    background: #00A34C;
+    color: #FFFFFF;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: .35s;
+}
+
+.hc-primary-btn:hover {
+    background: #00863D;
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 163, 76, .30);
+}
+
+.hc-outline-btn {
+    padding: 15px 32px;
+    border-radius: 50px;
+    border: 2px solid #00A34C;
+    background: transparent;
+    color: #00A34C;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: .35s;
+}
+
+.hc-outline-btn:hover {
+    background: #00A34C;
+    color: #FFFFFF;
+}
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media (max-width: 992px) {
+    .hc-hero-content h1 {
+        font-size: 2.6rem;
+    }
+
+    .hc-cta-box {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hc-cta-text p {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .hc-hero {
+        padding: 80px 0 110px;
+    }
+
+    .hc-hero-content h1 {
+        font-size: 2.1rem;
+    }
+
+    .hc-packages {
+        margin-top: -60px;
+        padding-bottom: 80px;
+    }
+
+    .hc-cta {
+        padding: 60px 0;
+    }
+
+    .hc-cta-box {
+        padding: 36px 26px;
+    }
+
+    .hc-cta-text h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hc-cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hc-primary-btn,
+    .hc-outline-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

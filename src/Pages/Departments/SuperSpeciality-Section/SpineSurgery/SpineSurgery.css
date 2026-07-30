@@ -1,0 +1,2140 @@
+/*==================================================
+                SPINE SURGERY HERO
+==================================================*/
+
+.spine-hero {
+
+    position: relative;
+
+    min-height: 700px;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+}
+
+.spine-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(90deg,
+            rgba(16, 35, 75, .88),
+            rgba(16, 35, 75, .60));
+
+}
+
+.spine-hero .container {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.spine-hero-content {
+
+    color: #FFFFFF;
+
+    max-width: 760px;
+
+}
+
+
+/*==================================================
+                    BREADCRUMB
+==================================================*/
+
+.spine-breadcrumb {
+
+    margin-top: 90px;
+
+    margin-bottom: 25px;
+
+}
+
+.spine-breadcrumb .breadcrumb-item a {
+
+    color: rgba(255, 255, 255, .75);
+
+    text-decoration: none;
+
+}
+
+.spine-breadcrumb .breadcrumb-item.active {
+
+    color: #50C1EF;
+
+}
+
+.spine-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+
+    color: rgba(255, 255, 255, .45);
+
+}
+
+
+/*==================================================
+                    HERO BADGE
+==================================================*/
+
+.spine-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 10px 22px;
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, .12);
+
+    backdrop-filter: blur(14px);
+
+    color: #50C1EF;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+}
+
+
+/*==================================================
+                    HERO TITLE
+==================================================*/
+
+.spine-hero-content h1 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 4rem;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    color: #FFFFFF;
+
+    margin-bottom: 22px;
+
+}
+
+.spine-hero-content p {
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    color: rgba(255, 255, 255, .85);
+
+    margin-bottom: 35px;
+
+}
+
+
+/*==================================================
+                    HERO BUTTONS
+==================================================*/
+
+.spine-hero-buttons {
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+.spine-primary-btn {
+
+    padding: 16px 34px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: #00A34C;
+
+    color: #FFFFFF;
+
+    font-weight: 600;
+
+    transition: .35s ease;
+
+}
+
+.spine-primary-btn:hover {
+
+    background: #00863D;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(0, 163, 76, .30);
+
+}
+
+.spine-secondary-btn {
+
+    padding: 16px 34px;
+
+    border-radius: 50px;
+
+    border: 2px solid rgba(255, 255, 255, .35);
+
+    background: transparent;
+
+    color: #FFFFFF;
+
+    transition: .35s ease;
+
+}
+
+.spine-secondary-btn:hover {
+
+    background: #FFFFFF;
+
+    color: #10234B;
+
+}
+
+
+/*==================================================
+                QUICK INFO SECTION
+==================================================*/
+
+.spine-quick-info {
+
+    position: relative;
+
+    margin-top: -90px;
+
+    z-index: 10;
+
+}
+
+
+/*==================================================
+                INFO CARD
+==================================================*/
+
+.spine-info-card {
+
+    background: #FFFFFF;
+
+    border-radius: 24px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border: 1px solid #EAECEF;
+
+    box-shadow: 0 20px 45px rgba(16, 35, 75, .08);
+
+    transition: .35s ease;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+.spine-info-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 4px;
+
+    background: #00A34C;
+
+    transform: scaleX(0);
+
+    transition: .35s ease;
+
+}
+
+.spine-info-card:hover::before {
+
+    transform: scaleX(1);
+
+}
+
+.spine-info-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 25px 55px rgba(16, 35, 75, .15);
+
+}
+
+
+/*==================================================
+                INFO ICON
+==================================================*/
+
+.spine-info-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    border-radius: 50%;
+
+    background: #ECFFF4;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0 auto 22px;
+
+    transition: .35s ease;
+
+}
+
+.spine-info-icon i {
+
+    font-size: 32px;
+
+    color: #00A34C;
+
+}
+
+.spine-info-card:hover .spine-info-icon {
+
+    background: #00A34C;
+
+    transform: rotate(10deg);
+
+}
+
+.spine-info-card:hover .spine-info-icon i {
+
+    color: #FFFFFF;
+
+}
+
+
+/*==================================================
+                INFO CONTENT
+==================================================*/
+
+.spine-info-card h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    margin-bottom: 10px;
+
+}
+
+.spine-info-card p {
+
+    color: #667085;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin: 0;
+
+}
+
+/*==================================================
+                ABOUT SECTION
+==================================================*/
+
+.spine-about {
+
+    padding: 120px 0;
+
+    background: #FFFFFF;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.spine-about::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+
+    height: 320px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .06);
+
+    top: -140px;
+
+    right: -120px;
+
+}
+
+.spine-about::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+
+    height: 260px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 163, 76, .06);
+
+    bottom: -100px;
+
+    left: -100px;
+
+}
+
+.spine-about .container {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/*==================================================
+                ABOUT IMAGE
+==================================================*/
+
+.spine-about-image {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    box-shadow: 0 20px 50px rgba(16, 35, 75, .10);
+
+}
+
+.spine-about-image img {
+
+    width: 100%;
+
+    border-radius: 30px;
+
+    transition: .5s ease;
+
+}
+
+.spine-about-image:hover img {
+
+    transform: scale(1.06);
+
+}
+
+.spine-about-image::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 90px;
+
+    height: 90px;
+
+    left: -20px;
+
+    top: -20px;
+
+    border-radius: 20px;
+
+    border: 5px solid rgba(80, 193, 239, .25);
+
+    z-index: 2;
+
+}
+
+.spine-about-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+
+    height: 120px;
+
+    right: -25px;
+
+    bottom: -25px;
+
+    border-radius: 25px;
+
+    background: linear-gradient(135deg,
+            #00A34C,
+            #50C1EF);
+
+    opacity: .15;
+
+}
+
+
+/*==================================================
+                ABOUT CONTENT
+==================================================*/
+
+.spine-about-content {
+
+    padding-left: 40px;
+
+}
+
+.spine-section-tag {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 8px 20px;
+
+    background: #ECFFF4;
+
+    color: #00A34C;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+
+}
+
+.spine-about-content h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+
+    color: #10234B;
+
+    margin-bottom: 25px;
+
+}
+
+.spine-about-content p {
+
+    color: #667085;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+
+}
+
+
+/*==================================================
+                HIGHLIGHTS GRID
+==================================================*/
+
+.spine-highlights {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+    margin-top: 35px;
+
+}
+
+
+/*==================================================
+                HIGHLIGHT ITEM
+==================================================*/
+
+.spine-highlight-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    background: #F8FAFC;
+
+    padding: 16px 18px;
+
+    border-radius: 16px;
+
+    transition: .35s ease;
+
+    border: 1px solid transparent;
+
+}
+
+.spine-highlight-item i {
+
+    color: #00A34C;
+
+    font-size: 20px;
+
+    transition: .35s ease;
+
+    flex-shrink: 0;
+
+}
+
+.spine-highlight-item span {
+
+    color: #10234B;
+
+    font-weight: 600;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    transition: .35s ease;
+
+}
+
+
+/*==================================================
+                HOVER EFFECT
+==================================================*/
+
+.spine-highlight-item:hover {
+
+    background: #00A34C;
+
+    transform: translateX(8px);
+
+    box-shadow: 0 15px 35px rgba(0, 163, 76, .18);
+
+}
+
+.spine-highlight-item:hover i,
+
+.spine-highlight-item:hover span {
+
+    color: #FFFFFF;
+
+}
+
+
+/*==================================================
+            GLOBAL IMAGE HOVER
+==================================================*/
+
+.spine-about-image {
+
+    overflow: hidden;
+
+}
+
+.spine-about-image img {
+
+    transition: .5s ease;
+
+}
+
+.spine-about-image:hover img {
+
+    transform: scale(1.06);
+
+}
+
+/*==================================================
+        SPINE ADVANTAGES SECTION
+==================================================*/
+
+.spine-advantages {
+
+    padding: 120px 0;
+
+    background: #FFFFFF;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.spine-advantages::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+
+    height: 320px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .06);
+
+    top: -150px;
+
+    left: -120px;
+
+}
+
+.spine-advantages::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+
+    height: 250px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 163, 76, .06);
+
+    bottom: -100px;
+
+    right: -80px;
+
+}
+
+
+/*==================================================
+                IMAGE
+==================================================*/
+
+.spine-advantages-image {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    box-shadow: 0 20px 50px rgba(16, 35, 75, .10);
+
+}
+
+.spine-advantages-image img {
+
+    width: 100%;
+
+    border-radius: 30px;
+
+    transition: .5s ease;
+
+}
+
+.spine-advantages-image:hover img {
+
+    transform: scale(1.06);
+
+}
+
+.spine-advantages-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+
+    height: 120px;
+
+    right: -20px;
+
+    bottom: -20px;
+
+    border-radius: 25px;
+
+    background: linear-gradient(135deg,
+            #00A34C,
+            #50C1EF);
+
+    opacity: .12;
+
+}
+
+.spine-advantages-image::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 90px;
+
+    height: 90px;
+
+    left: -18px;
+
+    top: -18px;
+
+    border-radius: 20px;
+
+    border: 5px solid rgba(80, 193, 239, .25);
+
+    z-index: 2;
+
+}
+
+
+/*==================================================
+            CONTENT
+==================================================*/
+
+.spine-advantages-content {
+
+    padding-left: 40px;
+
+}
+
+.spine-advantages-content h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    line-height: 1.3;
+
+    margin: 20px 0;
+
+}
+
+.spine-advantages-content p {
+
+    color: #667085;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    margin-bottom: 35px;
+
+}
+
+
+/*==================================================
+            ADVANTAGE CARD
+==================================================*/
+
+.spine-advantage-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background: #F8FAFC;
+
+    border: 1px solid #EAECEF;
+
+    border-radius: 18px;
+
+    padding: 18px 20px;
+
+    height: 100%;
+
+    transition: .35s;
+
+}
+
+.spine-advantage-card i {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #ECFFF4;
+
+    color: #00A34C;
+
+    font-size: 20px;
+
+    flex-shrink: 0;
+
+    transition: .35s;
+
+}
+
+.spine-advantage-card span {
+
+    color: #10234B;
+
+    font-weight: 600;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+}
+
+.spine-advantage-card:hover {
+
+    background: #00A34C;
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(0, 163, 76, .18);
+
+}
+
+.spine-advantage-card:hover span {
+
+    color: #FFFFFF;
+
+}
+
+.spine-advantage-card:hover i {
+
+    background: #FFFFFF;
+
+    color: #00A34C;
+
+    transform: rotate(10deg);
+
+}
+
+
+/*==================================================
+        CONDITIONS SECTION
+==================================================*/
+
+.spine-conditions {
+
+    padding: 120px 0;
+
+    background: #F8FAFC;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.spine-conditions::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .08);
+
+    top: -160px;
+
+    right: -120px;
+
+}
+
+
+/*==================================================
+            CONDITION CARD
+==================================================*/
+
+.spine-condition-card {
+
+    background: #FFFFFF;
+
+    border-radius: 24px;
+
+    padding: 35px 30px;
+
+    text-align: center;
+
+    border: 1px solid #EAECEF;
+
+    box-shadow: 0 15px 40px rgba(16, 35, 75, .06);
+
+    transition: .4s;
+
+    height: 100%;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.spine-condition-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 4px;
+
+    top: 0;
+
+    left: 0;
+
+    background: #00A34C;
+
+    transform: scaleX(0);
+
+    transition: .35s;
+
+}
+
+.spine-condition-card:hover::before {
+
+    transform: scaleX(1);
+
+}
+
+.spine-condition-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 25px 55px rgba(16, 35, 75, .15);
+
+}
+
+
+/*==================================================
+            CONDITION ICON
+==================================================*/
+
+.spine-condition-icon {
+
+    width: 80px;
+
+    height: 80px;
+
+    margin: 0 auto 22px;
+
+    border-radius: 50%;
+
+    background: #ECFFF4;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: .35s;
+
+}
+
+.spine-condition-icon i {
+
+    font-size: 34px;
+
+    color: #00A34C;
+
+}
+
+.spine-condition-card:hover .spine-condition-icon {
+
+    background: #00A34C;
+
+    transform: rotate(10deg);
+
+}
+
+.spine-condition-card:hover .spine-condition-icon i {
+
+    color: #FFFFFF;
+
+}
+
+
+/*==================================================
+            CONDITION CONTENT
+==================================================*/
+
+.spine-condition-card h4 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    color: #10234B;
+
+    margin-bottom: 15px;
+
+}
+
+.spine-condition-card p {
+
+    color: #667085;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+
+}
+
+.spine-condition-card:hover h4 {
+
+    color: #00A34C;
+
+}
+
+/*==================================================
+                WHY CHOOSE SECTION
+==================================================*/
+
+.spine-features {
+
+    padding: 120px 0;
+
+    background: #FFFFFF;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.spine-features::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 340px;
+
+    height: 340px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .06);
+
+    top: -160px;
+
+    right: -120px;
+
+}
+
+.spine-features::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+
+    height: 260px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 163, 76, .06);
+
+    bottom: -120px;
+
+    left: -100px;
+
+}
+
+
+
+/*==================================================
+                FEATURE CARD
+==================================================*/
+
+.spine-feature-card {
+
+    background: #FFFFFF;
+
+    border-radius: 24px;
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    border: 1px solid #EAECEF;
+
+    box-shadow: 0 18px 45px rgba(16, 35, 75, .06);
+
+    transition: .4s ease;
+
+    height: 100%;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.spine-feature-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 4px;
+
+    background: #00A34C;
+
+    transform: scaleX(0);
+
+    transition: .35s;
+
+}
+
+.spine-feature-card:hover::before {
+
+    transform: scaleX(1);
+
+}
+
+.spine-feature-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 28px 60px rgba(16, 35, 75, .15);
+
+}
+
+
+
+/*==================================================
+                FEATURE ICON
+==================================================*/
+
+.spine-feature-icon {
+
+    width: 90px;
+
+    height: 90px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    background: #ECFFF4;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: .35s;
+
+}
+
+.spine-feature-icon i {
+
+    font-size: 38px;
+
+    color: #00A34C;
+
+}
+
+.spine-feature-card:hover .spine-feature-icon {
+
+    background: #00A34C;
+
+    transform: rotate(10deg);
+
+}
+
+.spine-feature-card:hover .spine-feature-icon i {
+
+    color: #FFFFFF;
+
+}
+
+.spine-feature-card h4 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: #10234B;
+
+    margin-bottom: 15px;
+
+}
+
+.spine-feature-card p {
+
+    color: #667085;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+
+}
+
+.spine-feature-card:hover h4 {
+
+    color: #00A34C;
+
+}
+
+
+
+/*==================================================
+            SYMPTOMS SECTION
+==================================================*/
+
+.spine-symptoms {
+
+    padding: 120px 0;
+
+    background: #F8FAFC;
+
+}
+
+.spine-symptom-list {
+
+    margin-top: 40px;
+
+}
+
+.spine-symptom-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #EAECEF;
+
+    border-radius: 18px;
+
+    padding: 18px 22px;
+
+    margin-bottom: 18px;
+
+    transition: .35s;
+
+    box-shadow: 0 10px 25px rgba(16, 35, 75, .05);
+
+}
+
+.spine-symptom-item i {
+
+    width: 46px;
+
+    height: 46px;
+
+    border-radius: 50%;
+
+    background: #ECFFF4;
+
+    color: #00A34C;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 20px;
+
+    transition: .35s;
+
+    flex-shrink: 0;
+
+}
+
+.spine-symptom-item span {
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #10234B;
+
+}
+
+.spine-symptom-item:hover {
+
+    background: #00A34C;
+
+    transform: translateX(8px);
+
+}
+
+.spine-symptom-item:hover span {
+
+    color: #FFFFFF;
+
+}
+
+.spine-symptom-item:hover i {
+
+    background: #FFFFFF;
+
+    color: #00A34C;
+
+}
+
+
+
+/*==================================================
+            SPECIALISTS
+==================================================*/
+
+.spine-specialists {
+
+    padding: 120px 0;
+
+    background: #FFFFFF;
+
+}
+
+.spine-doctor-card {
+
+    background: #FFFFFF;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    border: 1px solid #EAECEF;
+
+    box-shadow: 0 20px 45px rgba(16, 35, 75, .08);
+
+    transition: .4s;
+
+    height: 100%;
+
+}
+
+.spine-doctor-card:hover {
+
+    transform: translateY(-12px);
+
+    box-shadow: 0 30px 70px rgba(16, 35, 75, .15);
+
+}
+
+.spine-doctor-image {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.spine-doctor-image img {
+
+    width: 100%;
+
+    height: 420px;
+
+    object-fit: cover;
+
+    transition: .5s;
+
+}
+
+.spine-doctor-card:hover .spine-doctor-image img {
+
+    transform: scale(1.08);
+
+}
+
+.spine-experience {
+
+    position: absolute;
+
+    bottom: 20px;
+
+    left: 20px;
+
+    background: #00A34C;
+
+    color: #FFFFFF;
+
+    padding: 10px 18px;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+.spine-doctor-content {
+
+    padding: 35px;
+
+}
+
+.spine-doctor-designation {
+
+    display: inline-block;
+
+    background: #ECFFF4;
+
+    color: #00A34C;
+
+    padding: 8px 18px;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+
+}
+
+.spine-doctor-content h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    margin-bottom: 18px;
+
+}
+
+.spine-doctor-content p {
+
+    color: #667085;
+
+    line-height: 1.9;
+
+    margin-bottom: 30px;
+
+}
+
+.spine-doctor-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+.spine-doctor-card:hover .spine-doctor-designation {
+
+    background: #00A34C;
+
+    color: #FFFFFF;
+
+}
+
+.spine-doctor-card:hover h3 {
+
+    color: #00A34C;
+
+}
+
+
+
+/*==================================================
+                    CTA
+==================================================*/
+
+.spine-cta {
+
+    padding: 120px 0;
+
+    background: linear-gradient(135deg, #10234B, #1D3B73);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.spine-cta::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+
+    height: 420px;
+
+    border-radius: 50%;
+
+    background: rgba(80, 193, 239, .08);
+
+    top: -180px;
+
+    right: -120px;
+
+}
+
+.spine-cta::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+
+    height: 320px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 163, 76, .12);
+
+    bottom: -140px;
+
+    left: -120px;
+
+}
+
+.spine-cta .container {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:992px) {
+
+    .spine-features,
+    .spine-symptoms,
+    .spine-specialists,
+    .spine-cta {
+
+        padding: 90px 0;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .spine-doctor-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .spine-doctor-image img {
+
+        height: 340px;
+
+    }
+
+    .spine-doctor-content {
+
+        padding: 25px;
+
+    }
+
+    .spine-feature-card {
+
+        padding: 30px 22px;
+
+    }
+
+    .spine-symptom-item {
+
+        padding: 16px 18px;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .spine-feature-card {
+
+        padding: 25px 18px;
+
+    }
+
+    .spine-doctor-content h3 {
+
+        font-size: 24px;
+
+    }
+
+    .spine-symptom-item span {
+
+        font-size: 15px;
+
+    }
+
+}
+
+/*==================================================
+                PRIMARY BUTTON
+==================================================*/
+
+.spine-primary-btn {
+
+    padding: 16px 34px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: #00A34C;
+
+    color: #FFFFFF;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: .35s ease;
+
+}
+
+.spine-primary-btn:hover {
+
+    background: #00863D;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(0, 163, 76, .30);
+
+}
+
+
+
+/*==================================================
+                OUTLINE BUTTON
+==================================================*/
+
+.spine-outline-btn {
+
+    padding: 16px 34px;
+
+    border-radius: 50px;
+
+    border: 2px solid #00A34C;
+
+    background: transparent;
+
+    color: #00A34C;
+
+    font-weight: 600;
+
+    transition: .35s ease;
+
+}
+
+.spine-outline-btn:hover {
+
+    background: #00A34C;
+
+    color: #FFFFFF;
+
+}
+
+
+
+/*==================================================
+                DOCTOR BUTTONS
+==================================================*/
+
+.spine-doctor-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+.spine-doctor-buttons .spine-primary-btn {
+
+    flex: 1;
+
+}
+
+.spine-doctor-buttons .spine-outline-btn {
+
+    flex: 1;
+
+}
+
+
+
+/*==================================================
+                CTA CONTENT
+==================================================*/
+
+.spine-cta-content {
+
+    color: #FFFFFF;
+
+}
+
+.spine-cta-content h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 48px;
+
+    font-weight: 800;
+
+    color: #FFFFFF;
+
+    margin: 20px 0;
+
+}
+
+.spine-cta-content p {
+
+    color: rgba(255, 255, 255, .85);
+
+    line-height: 1.9;
+
+    font-size: 17px;
+
+    margin-bottom: 35px;
+
+}
+
+.spine-cta-buttons {
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+.spine-cta-buttons .spine-outline-btn {
+
+    border-color: rgba(255, 255, 255, .35);
+
+    color: #FFFFFF;
+
+}
+
+.spine-cta-buttons .spine-outline-btn:hover {
+
+    background: #FFFFFF;
+
+    color: #10234B;
+
+}
+
+
+
+/*==================================================
+                CTA GLASS BOX
+==================================================*/
+
+.spine-cta-box {
+
+    background: rgba(255, 255, 255, .10);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, .15);
+
+    border-radius: 30px;
+
+    padding: 45px;
+
+    color: #FFFFFF;
+
+    box-shadow: 0 25px 60px rgba(0, 0, 0, .18);
+
+    transition: .4s ease;
+
+}
+
+.spine-cta-box:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 35px 70px rgba(0, 0, 0, .25);
+
+}
+
+
+
+/*==================================================
+                CTA ICON
+==================================================*/
+
+.spine-cta-icon {
+
+    width: 90px;
+
+    height: 90px;
+
+    border-radius: 50%;
+
+    background: #00A34C;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    transition: .4s ease;
+
+}
+
+.spine-cta-icon i {
+
+    font-size: 42px;
+
+    color: #FFFFFF;
+
+}
+
+.spine-cta-box:hover .spine-cta-icon {
+
+    transform: rotate(10deg) scale(1.08);
+
+    box-shadow: 0 15px 35px rgba(0, 163, 76, .30);
+
+}
+
+
+
+/*==================================================
+                CTA BOX CONTENT
+==================================================*/
+
+.spine-cta-box h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    margin-bottom: 20px;
+
+}
+
+.spine-cta-box p {
+
+    color: rgba(255, 255, 255, .82);
+
+    line-height: 1.8;
+
+    margin-bottom: 28px;
+
+}
+
+
+
+/*==================================================
+                CTA FEATURES
+==================================================*/
+
+.spine-cta-features {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+
+}
+
+.spine-cta-features div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #FFFFFF;
+
+    font-weight: 500;
+
+}
+
+.spine-cta-features i {
+
+    color: #50C1EF;
+
+    font-size: 20px;
+
+}
+
+
+
+/*==================================================
+            IMAGE HOVER EFFECT
+==================================================*/
+
+.spine-about-image,
+.spine-advantages-image,
+.spine-doctor-image {
+
+    overflow: hidden;
+
+}
+
+.spine-about-image img,
+.spine-advantages-image img,
+.spine-doctor-image img {
+
+    transition: .5s ease;
+
+}
+
+.spine-about-image:hover img,
+.spine-advantages-image:hover img,
+.spine-doctor-image:hover img {
+
+    transform: scale(1.06);
+
+}
+
+
+
+/*==================================================
+            MOBILE
+==================================================*/
+
+@media(max-width:768px) {
+
+    .spine-primary-btn,
+    .spine-outline-btn {
+
+        width: 100%;
+
+    }
+
+    .spine-cta-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .spine-cta-content {
+
+        margin-bottom: 40px;
+
+    }
+
+    .spine-cta-content h2 {
+
+        font-size: 34px;
+
+    }
+
+    .spine-cta-box {
+
+        padding: 30px;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .spine-cta-icon {
+
+        width: 75px;
+
+        height: 75px;
+
+    }
+
+    .spine-cta-icon i {
+
+        font-size: 34px;
+
+    }
+
+}

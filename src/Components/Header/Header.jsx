@@ -227,16 +227,18 @@ const Header = () => {
                       <NavDropdown.Item as={Link} to="/Robotic-Joint-Replacement">
                         <small><strong>Robotic Joint Replacement</strong></small>
                       </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="#">
+                      <NavDropdown.Item as={Link} to="/plastic-surgery">
                         <small><strong>Plastic Surgery</strong></small>
                       </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="#">
+
+                      <NavDropdown.Item as={Link} to="/vascular-surgery">
                         <small><strong>Vascular Surgery</strong></small>
                       </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="#">
+
+                      <NavDropdown.Item as={Link} to="/Endocrine-Surgery">
                         <small><strong>Endocrine Surgery</strong></small>
                       </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="#">
+                      <NavDropdown.Item as={Link} to="/critical-care-medicine">
                         <small><strong>Critical Care Medicine</strong></small>
                       </NavDropdown.Item>
                     </div>
@@ -275,61 +277,40 @@ const Header = () => {
                         <small><strong>ENT</strong></small>
                       </NavDropdown.Item>
 
-                      <a href="/departments/dermatology" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/dermatology">
                         <small><strong>Dermatology</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/departments/psychiatry" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/psychiatry">
                         <small><strong>Psychiatry</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/departments/pulmonology" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/pulmonology">
                         <small><strong>Pulmonology</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/departments/radiology" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/radiology">
                         <small><strong>Radiology</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/departments/dentistry" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/dentistry">
                         <small><strong>Dentistry</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/departments/physiotherapy" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/physiotherapy">
                         <small><strong>Physiotherapy</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/departments/obg" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/obg">
                         <small><strong>OBG</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/departments/ivf" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/fertility-clinic">
                         <small><strong>Fertility Clinic</strong></small>
-                      </a>
+                      </NavDropdown.Item>
 
-                      <a href="/departments/blood-bank" className="dropdown-item">
+                      <NavDropdown.Item as={Link} to="/general-department/blood-bank">
                         <small><strong>Blood Bank</strong></small>
-                      </a>
-                      <NavDropdown.Item as={Link} to="#">
-                        <small><strong>Ophthamology</strong></small>
-                      </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="#">
-                        <small><strong>Obstetrics & Gynecology</strong></small>
-                      </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="#">
-                        <small><strong>Anesthesiology</strong></small>
-                      </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="#">
-                        <small><strong>Preventive Medicine</strong></small>
-                      </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="#">
-                        <small><strong>Cosmetology</strong></small>
-                      </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="#">
-                        <small><strong>Nutrition & Dietetics</strong></small>
-                      </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="#">
-                        <small><strong>Emergency Medicine</strong></small>
                       </NavDropdown.Item>
                     </div>
 
@@ -348,23 +329,23 @@ const Header = () => {
                 className="custom-dropdown about-dropdown"
               >
 
-                <NavDropdown.Item
+                {/* <NavDropdown.Item
                   href="/find-doctor"
                   className="dropdown-item-custom doctor-item"
                 >
                   <i className="bi bi-search-heart dropdown-icon"></i>
                   <span className="dropdown-text">Find Doctor</span>
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
 
                 <NavDropdown.Item
-                  href="/doctor-directory"
+                  href="/doctors-directory"
                   className="dropdown-item-custom directory-item"
                 >
                   <i className="bi bi-journal-medical dropdown-icon"></i>
                   <span className="dropdown-text">Doctors Directory</span>
                 </NavDropdown.Item>
 
-                <NavDropdown.Item
+                {/* <NavDropdown.Item
                   href="/doctor-schedule"
                   className="dropdown-item-custom schedule-item"
                 >
@@ -378,7 +359,7 @@ const Header = () => {
                 >
                   <i className="bi bi-calendar-check dropdown-icon"></i>
                   <span className="dropdown-text">Book Consultation</span>
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
 
 
               </NavDropdown>
@@ -397,7 +378,9 @@ const Header = () => {
               >
 
                 <NavDropdown.Item
-                  href="/find-doctor"
+                  href="https://bookappointment.pkdashospital.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="dropdown-item-custom doctor-item"
                 >
                   <i className="bi bi-calendar2-check dropdown-icon"></i>
@@ -405,7 +388,7 @@ const Header = () => {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item
-                  href="/doctor-directory"
+                  href="/health-checkups"
                   className="dropdown-item-custom directory-item"
                 >
                   <i className="bi bi-heart-pulse dropdown-icon"></i>
@@ -413,7 +396,7 @@ const Header = () => {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item
-                  href="/doctor-schedule"
+                  href="/insurance"
                   className="dropdown-item-custom schedule-item"
                 >
                   <i className="bi bi-shield-check dropdown-icon"></i>
@@ -421,7 +404,7 @@ const Header = () => {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item
-                  href="/book-consultation"
+                  href="/patient-care/central-laborotory"
                   className="dropdown-item-custom consultation-item"
                 >
                   <i className="bi bi-beaker dropdown-icon"></i>
@@ -429,28 +412,20 @@ const Header = () => {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item
-                  href="/book-consultation"
+                  href="/patient-care/testimonials"
                   className="dropdown-item-custom consultation-item"
                 >
                   <i className="bi bi-chat-quote dropdown-icon"></i>
                   <span className="dropdown-text">Testimonials</span>
                 </NavDropdown.Item>
 
-                <NavDropdown.Item
-                  href="/book-consultation"
-                  className="dropdown-item-custom consultation-item"
-                >
-                  <i className="bi bi-person-heart dropdown-icon"></i>
-                  <span className="dropdown-text">Patient Care</span>
-                </NavDropdown.Item>
-
-                <NavDropdown.Item
+                {/* <NavDropdown.Item
                   href="/book-consultation"
                   className="dropdown-item-custom consultation-item"
                 >
                   <i className="bi bi-hospital dropdown-icon"></i>
                   <span className="dropdown-text">Emergency Services</span>
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
 
                 <li className="dropdown-submenu">
                   <a
@@ -468,20 +443,26 @@ const Header = () => {
                   <ul className="submenu dropdown-menu">
 
                     <li>
-                      <a href="/satellite-clinic-1" className="dropdown-item">
+                      <a href="/satellite-clinic/pathiripala" className="dropdown-item">
                         Pathiripala
                       </a>
                     </li>
 
                     <li>
-                      <a href="/satellite-clinic-2" className="dropdown-item">
+                      <a href="/satellite-clinic/thiruvilwamala" className="dropdown-item">
                         Thiruvilwamala
                       </a>
                     </li>
 
                     <li>
-                      <a href="/satellite-clinic-3" className="dropdown-item">
+                      <a href="/satellite-clinic/ambalapara" className="dropdown-item">
                         Ambalapara
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="https://awesomecosmetology.com/" className="dropdown-item">
+                        AWESOME
                       </a>
                     </li>
 
@@ -516,7 +497,7 @@ const Header = () => {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item
-                  href="/doctor-directory"
+                  href="/news-events"
                   className="dropdown-item-custom directory-item"
                 >
                   <i className="bi bi-newspaper dropdown-icon"></i>
@@ -754,7 +735,7 @@ const Header = () => {
                           Oncology
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/neonatology" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/Neonatology" onClick={handleClose}>
                           Neonatology
                         </Nav.Link>
 
@@ -766,26 +747,25 @@ const Header = () => {
                           Robotic Joint Replacement
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/plastic-surgery" onClick={handleClose}>
                           Plastic Surgery
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/vascular-surgery" onClick={handleClose}>
                           Vascular Surgery
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/Endocrine-Surgery" onClick={handleClose}>
                           Endocrine Surgery
                         </Nav.Link>
 
-                        <Nav.Link href="/departments/cardiothoracic" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/critical-care-medicine" onClick={handleClose}>
                           Critical Care Medicine
                         </Nav.Link>
 
 
                       </Accordion.Body>
                     </Accordion.Item>
-
                     {/* General Departments */}
                     <Accordion.Item eventKey="1">
                       <Accordion.Header>General Departments</Accordion.Header>
@@ -812,68 +792,40 @@ const Header = () => {
                           ENT
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/departments/dermatology" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/dermatology" onClick={handleClose}>
                           Dermatology
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/departments/psychiatry" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/psychiatry" onClick={handleClose}>
                           Psychiatry
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/departments/pulmonology" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/pulmonology" onClick={handleClose}>
                           Pulmonology
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/departments/radiology" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/radiology" onClick={handleClose}>
                           Radiology
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/departments/dentistry" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/dentistry" onClick={handleClose}>
                           Dentistry
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/departments/physiotherapy" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/physiotherapy" onClick={handleClose}>
                           Physiotherapy
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/departments/obg" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/obg" onClick={handleClose}>
                           OBG
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/departments/ivf" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/fertility-clinic" onClick={handleClose}>
                           Fertility Clinic
                         </Nav.Link>
 
-                        <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
+                        <Nav.Link as={Link} to="/general-department/blood-bank" onClick={handleClose}>
                           Blood Bank
-                        </Nav.Link>
-
-                        <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
-                          Ophthamology
-                        </Nav.Link>
-
-                        <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
-                          Obstertics & Gynecology
-                        </Nav.Link>
-
-                        <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
-                          Anesthesiology
-                        </Nav.Link>
-
-                        <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
-                          Preventive Medicine
-                        </Nav.Link>
-
-                        <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
-                          Cosmetology
-                        </Nav.Link>
-
-                        <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
-                          Nutrition & Dietetics
-                        </Nav.Link>
-
-                        <Nav.Link as={Link} to="/departments/blood-bank" onClick={handleClose}>
-                          Emergency Medicine
                         </Nav.Link>
 
                       </Accordion.Body>
@@ -903,23 +855,23 @@ const Header = () => {
 
                   <Nav className="mobile-submenu">
 
-                    <Nav.Link
+                    {/* <Nav.Link
                       href="/find-doctor"
                       onClick={handleClose}
                     >
                       <i className="bi bi-search-heart me-2"></i>
                       Find Doctor
-                    </Nav.Link>
+                    </Nav.Link> */}
 
                     <Nav.Link
-                      href="/doctor-directory"
+                      href="/doctors-directory"
                       onClick={handleClose}
                     >
                       <i className="bi bi-journal-medical me-2"></i>
                       Doctors Directory
                     </Nav.Link>
 
-                    <Nav.Link
+                    {/* <Nav.Link
                       href="/doctor-schedule"
                       onClick={handleClose}
                     >
@@ -933,7 +885,7 @@ const Header = () => {
                     >
                       <i className="bi bi-calendar-check me-2"></i>
                       Book Consultation
-                    </Nav.Link>
+                    </Nav.Link> */}
 
                   </Nav>
 
@@ -951,7 +903,12 @@ const Header = () => {
 
                 <Accordion.Body className="p-0">
 
-                  <Nav.Link href="/find-doctor" onClick={handleClose}>
+                  <Nav.Link
+                    href="https://bookappointment.pkdashospital.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={handleClose}
+                  >
                     <i className="bi bi-calendar2-check me-2"></i>
                     Book Appointments
                   </Nav.Link>
@@ -961,30 +918,25 @@ const Header = () => {
                     Health Checkups
                   </Nav.Link>
 
-                  <Nav.Link href="/insurance-tpa" onClick={handleClose}>
+                  <Nav.Link href="/insurance" onClick={handleClose}>
                     <i className="bi bi-shield-check me-2"></i>
                     Insurance & TPA
                   </Nav.Link>
 
-                  <Nav.Link href="/central-laboratory" onClick={handleClose}>
+                  <Nav.Link href="/patient-care/central-laborotory" onClick={handleClose}>
                     <i className="bi bi-beaker me-2"></i>
                     Central Laboratory
                   </Nav.Link>
 
-                  <Nav.Link href="/testimonials" onClick={handleClose}>
+                  <Nav.Link href="/patient-care/testimonials" onClick={handleClose}>
                     <i className="bi bi-chat-quote me-2"></i>
                     Testimonials
                   </Nav.Link>
 
-                  <Nav.Link href="/patient-care" onClick={handleClose}>
-                    <i className="bi bi-person-heart me-2"></i>
-                    Patient Care
-                  </Nav.Link>
-
-                  <Nav.Link href="/emergency-services" onClick={handleClose}>
+                  {/* <Nav.Link href="/emergency-services" onClick={handleClose}>
                     <i className="bi bi-hospital me-2"></i>
                     Emergency Services
-                  </Nav.Link>
+                  </Nav.Link> */}
 
                   {/* Satellite Services */}
                   <Accordion flush>
@@ -1017,6 +969,15 @@ const Header = () => {
                           Ambalapara
                         </Nav.Link>
 
+                        <Nav.Link
+                          href="https://awesomecosmetology.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={handleClose}
+                        >
+                          AWESOME
+                        </Nav.Link>
+
                       </Accordion.Body>
                     </Accordion.Item>
                   </Accordion>
@@ -1047,7 +1008,7 @@ const Header = () => {
                     </Nav.Link>
 
                     <Nav.Link
-                      href="/doctor-directory"
+                      href="/news-events"
                       onClick={handleClose}
                     >
                       <i className="bi bi-newspaper dropdown-icon"></i>

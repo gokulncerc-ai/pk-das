@@ -1,10 +1,9 @@
 import React from 'react'
 import './RoboticJoint.css'
-// ------------Images------------------
-import robotic1 from "../../../../assets/Images/robotic1.avif";
-import robotic2 from "../../../../assets/Images/robotic2.avif";
-import robotic3 from "../../../../assets/Images/robotic3.avif";
-import doctor from "../../../../assets/Images/generaldoc1.webp";
+import robotic1 from "../../../../assets/Images/robohand/robotic1.avif";
+import robotic2 from "../../../../assets/Images/robohand/robotic2.avif";
+import robotic3 from "../../../../assets/Images/robohand/robotic3.avif";
+import doctor from "../../../../assets/Images/robohand/generaldoc1.webp";
 
 import {
     Container,

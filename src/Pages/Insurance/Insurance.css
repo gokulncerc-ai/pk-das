@@ -1,0 +1,401 @@
+/*==================================================
+                INSURANCE HERO
+==================================================*/
+.ins-hero {
+    position: relative;
+    /* Increased top padding from 100px to 160px to shift content downwards */
+    padding: 160px 0 140px;
+    background: linear-gradient(135deg,
+            #10234B 0%,
+            #1D3B73 100%);
+    overflow: hidden;
+}
+
+.ins-hero::before {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: rgba(80, 193, 239, .10);
+    top: -160px;
+    right: -100px;
+}
+
+.ins-hero::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(0, 163, 76, .12);
+    bottom: -120px;
+    left: -100px;
+}
+
+.ins-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.ins-hero-content {
+    color: #FFFFFF;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*==================================================
+                BREADCRUMB
+==================================================*/
+
+.ins-breadcrumb {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.ins-breadcrumb .breadcrumb {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ins-breadcrumb .breadcrumb-item a {
+    color: rgba(255, 255, 255, .75);
+    text-decoration: none;
+}
+
+.ins-breadcrumb .breadcrumb-item a:hover {
+    color: #50C1EF;
+}
+
+.ins-breadcrumb .breadcrumb-item.active {
+    color: #50C1EF;
+}
+
+.ins-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    content: "/";
+    display: inline-block;
+    padding: 0 10px;
+    color: rgba(255, 255, 255, .45);
+}
+
+/*==================================================
+                HERO BADGE
+==================================================*/
+
+.ins-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 22px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, .12);
+    color: #50C1EF;
+    backdrop-filter: blur(12px);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/*==================================================
+                HERO TITLE
+==================================================*/
+
+.ins-hero-content h1 {
+    font-family: "Manrope", sans-serif;
+    font-size: 3.4rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 22px;
+    color: #FFFFFF;
+}
+
+.ins-hero-content p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, .85);
+    margin-bottom: 0;
+}
+
+/*==================================================
+            PARTNERS SECTION
+==================================================*/
+
+.ins-partners {
+    position: relative;
+    margin-top: -80px;
+    z-index: 10;
+    padding: 0 0 120px;
+    background: #FFFFFF;
+}
+
+.ins-panel {
+    background: #FFFFFF;
+    border-radius: 28px;
+    box-shadow: 0 20px 50px rgba(16, 35, 75, .10);
+    border: 1px solid #EAECEF;
+    padding: 55px 45px;
+}
+
+.ins-section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.ins-section-heading span {
+    display: inline-block;
+    background: #ECFFF4;
+    color: #00A34C;
+    padding: 8px 22px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.ins-section-heading h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 34px;
+    font-weight: 800;
+    color: #10234B;
+    margin-bottom: 14px;
+}
+
+.ins-section-heading p {
+    max-width: 640px;
+    margin: 0 auto;
+    color: #667085;
+    line-height: 1.8;
+    font-size: 15.5px;
+}
+
+/*==================================================
+                PARTNER CARD
+==================================================*/
+
+.ins-partner-card {
+    display: flex;
+    flex-direction: column;
+    background: #F8FAFC;
+    border-radius: 18px;
+    border: 1px solid #EAECEF;
+    overflow: hidden;
+    height: 100%;
+    transition: .35s ease;
+}
+
+.ins-partner-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(16, 35, 75, .12);
+    border-color: #00A34C;
+}
+
+.ins-partner-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    padding: 26px;
+    height: 140px;
+}
+
+.ins-partner-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: grayscale(15%);
+    transition: .35s ease;
+}
+
+.ins-partner-card:hover .ins-partner-logo img {
+    filter: grayscale(0%);
+}
+
+.ins-partner-logo-placeholder {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #ECFFF4;
+    color: #00A34C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    transition: .35s ease;
+}
+
+.ins-partner-card:hover .ins-partner-logo-placeholder {
+    background: #00A34C;
+    color: #FFFFFF;
+}
+
+.ins-partner-desc {
+    padding: 16px 18px;
+    text-align: center;
+    border-top: 1px solid #EAECEF;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ins-partner-desc b {
+    color: #10234B;
+    font-weight: 700;
+    font-size: 14.5px;
+    line-height: 1.5;
+}
+
+/*==================================================
+                CTA SECTION
+==================================================*/
+
+.ins-cta {
+    padding: 90px 0;
+    background: #F8FAFC;
+    position: relative;
+    overflow: hidden;
+}
+
+.ins-cta-box {
+    background: #FFFFFF;
+    border-radius: 28px;
+    border: 1px solid #EAECEF;
+    box-shadow: 0 20px 50px rgba(16, 35, 75, .08);
+    padding: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.ins-cta-text h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: #10234B;
+    margin-bottom: 12px;
+}
+
+.ins-cta-text p {
+    color: #667085;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+    max-width: 520px;
+}
+
+.ins-cta-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.ins-primary-btn {
+    padding: 15px 32px;
+    border: none;
+    border-radius: 50px;
+    background: #00A34C;
+    color: #FFFFFF;
+    font-weight: 600;
+    white-space: nowrap;
+    text-decoration: none;
+    display: inline-block;
+    transition: .35s;
+}
+
+.ins-primary-btn:hover {
+    background: #00863D;
+    color: #FFFFFF;
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 163, 76, .30);
+}
+
+.ins-outline-btn {
+    padding: 15px 32px;
+    border-radius: 50px;
+    border: 2px solid #00A34C;
+    background: transparent;
+    color: #00A34C;
+    font-weight: 600;
+    white-space: nowrap;
+    text-decoration: none;
+    display: inline-block;
+    transition: .35s;
+}
+
+.ins-outline-btn:hover {
+    background: #00A34C;
+    color: #FFFFFF;
+}
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media (max-width: 992px) {
+    .ins-hero-content h1 {
+        font-size: 2.6rem;
+    }
+
+    .ins-panel {
+        padding: 40px 22px;
+    }
+
+    .ins-cta-box {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .ins-cta-text p {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .ins-hero {
+        padding: 80px 0 110px;
+    }
+
+    .ins-hero-content h1 {
+        font-size: 2.1rem;
+    }
+
+    .ins-partners {
+        margin-top: -60px;
+        padding-bottom: 80px;
+    }
+
+    .ins-section-heading h2 {
+        font-size: 26px;
+    }
+
+    .ins-cta {
+        padding: 60px 0;
+    }
+
+    .ins-cta-box {
+        padding: 36px 26px;
+    }
+
+    .ins-cta-text h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ins-cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ins-primary-btn,
+    .ins-outline-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
