@@ -44,6 +44,13 @@ import BloodBank from './Pages/GeneralDepartments/BloodBank/BloodBank.jsx';
 import FertilityClinic from './Pages/GeneralDepartments/Fertility-Clinic/FertilityClinic.jsx';
 import HealthCheckups from './Pages/Health-Checkups/Health-Checkups.jsx';
 import Insurance from './Pages/Insurance/Insurance.jsx';
+import DoctorsDirectory from './Pages/Doctors/DoctorsDirectory/DoctorsDirectory.jsx';
+import CentralLaborotory from './Pages/Patient-Care/Central-Laborotory/Central-Laborotory.jsx';
+import Testimonials from './Pages/Patient-Care/Testimonials/Testimonials.jsx';
+import Pathiripala from './Pages/Patient-Care/Satellite Services/Pathiripala/Pathiripala.jsx';
+import Thiruvilwamala from './Pages/Patient-Care/Satellite Services/Thiruvilwamala/Thiruvilwamala.jsx';
+import Ambalapara from './Pages/Patient-Care/Satellite Services/Ambalapara/Ambalapara.jsx';
+// import NewsEvents from './Pages/News-Events/News-Events.jsx';
 
 function App() {
   return (
@@ -78,6 +85,12 @@ function App() {
         <Route path='/general-department/fertility-clinic' element={<FertilityClinic />} />
         <Route path='/health-checkups' element={<HealthCheckups />} />
         <Route path='/insurance' element={<Insurance />} />
+        <Route path='/doctors-directory' element={<DoctorsDirectory />} />
+        <Route path='/patient-care/central-laborotory' element={<CentralLaborotory />} />
+        <Route path='/patient-care/testimonials' element={<Testimonials />} />
+        <Route path='/satellite-clinic/pathiripala' element={<Pathiripala />} />
+        <Route path='/satellite-clinic/thiruvilwamala' element={<Thiruvilwamala />} />
+        <Route path='/satellite-clinic/ambalapara' element={<Ambalapara />} />
         {/* ------------department route------------- */}
         <Route path='/Cardiology' element={<Cardiology />} />
         <Route path='/Nephrology' element={<Nephrology />} />

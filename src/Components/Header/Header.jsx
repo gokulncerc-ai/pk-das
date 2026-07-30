@@ -329,23 +329,23 @@ const Header = () => {
                 className="custom-dropdown about-dropdown"
               >
 
-                <NavDropdown.Item
+                {/* <NavDropdown.Item
                   href="/find-doctor"
                   className="dropdown-item-custom doctor-item"
                 >
                   <i className="bi bi-search-heart dropdown-icon"></i>
                   <span className="dropdown-text">Find Doctor</span>
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
 
                 <NavDropdown.Item
-                  href="/doctor-directory"
+                  href="/doctors-directory"
                   className="dropdown-item-custom directory-item"
                 >
                   <i className="bi bi-journal-medical dropdown-icon"></i>
                   <span className="dropdown-text">Doctors Directory</span>
                 </NavDropdown.Item>
 
-                <NavDropdown.Item
+                {/* <NavDropdown.Item
                   href="/doctor-schedule"
                   className="dropdown-item-custom schedule-item"
                 >
@@ -359,7 +359,7 @@ const Header = () => {
                 >
                   <i className="bi bi-calendar-check dropdown-icon"></i>
                   <span className="dropdown-text">Book Consultation</span>
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
 
 
               </NavDropdown>
@@ -404,7 +404,7 @@ const Header = () => {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item
-                  href="/book-consultation"
+                  href="/patient-care/central-laborotory"
                   className="dropdown-item-custom consultation-item"
                 >
                   <i className="bi bi-beaker dropdown-icon"></i>
@@ -412,28 +412,20 @@ const Header = () => {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item
-                  href="/book-consultation"
+                  href="/patient-care/testimonials"
                   className="dropdown-item-custom consultation-item"
                 >
                   <i className="bi bi-chat-quote dropdown-icon"></i>
                   <span className="dropdown-text">Testimonials</span>
                 </NavDropdown.Item>
 
-                <NavDropdown.Item
-                  href="/book-consultation"
-                  className="dropdown-item-custom consultation-item"
-                >
-                  <i className="bi bi-person-heart dropdown-icon"></i>
-                  <span className="dropdown-text">Patient Care</span>
-                </NavDropdown.Item>
-
-                <NavDropdown.Item
+                {/* <NavDropdown.Item
                   href="/book-consultation"
                   className="dropdown-item-custom consultation-item"
                 >
                   <i className="bi bi-hospital dropdown-icon"></i>
                   <span className="dropdown-text">Emergency Services</span>
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
 
                 <li className="dropdown-submenu">
                   <a
@@ -451,20 +443,26 @@ const Header = () => {
                   <ul className="submenu dropdown-menu">
 
                     <li>
-                      <a href="/satellite-clinic-1" className="dropdown-item">
+                      <a href="/satellite-clinic/pathiripala" className="dropdown-item">
                         Pathiripala
                       </a>
                     </li>
 
                     <li>
-                      <a href="/satellite-clinic-2" className="dropdown-item">
+                      <a href="/satellite-clinic/thiruvilwamala" className="dropdown-item">
                         Thiruvilwamala
                       </a>
                     </li>
 
                     <li>
-                      <a href="/satellite-clinic-3" className="dropdown-item">
+                      <a href="/satellite-clinic/ambalapara" className="dropdown-item">
                         Ambalapara
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="https://awesomecosmetology.com/" className="dropdown-item">
+                        AWESOME
                       </a>
                     </li>
 
@@ -499,7 +497,7 @@ const Header = () => {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item
-                  href="/doctor-directory"
+                  href="/news-events"
                   className="dropdown-item-custom directory-item"
                 >
                   <i className="bi bi-newspaper dropdown-icon"></i>
@@ -857,23 +855,23 @@ const Header = () => {
 
                   <Nav className="mobile-submenu">
 
-                    <Nav.Link
+                    {/* <Nav.Link
                       href="/find-doctor"
                       onClick={handleClose}
                     >
                       <i className="bi bi-search-heart me-2"></i>
                       Find Doctor
-                    </Nav.Link>
+                    </Nav.Link> */}
 
                     <Nav.Link
-                      href="/doctor-directory"
+                      href="/doctors-directory"
                       onClick={handleClose}
                     >
                       <i className="bi bi-journal-medical me-2"></i>
                       Doctors Directory
                     </Nav.Link>
 
-                    <Nav.Link
+                    {/* <Nav.Link
                       href="/doctor-schedule"
                       onClick={handleClose}
                     >
@@ -887,7 +885,7 @@ const Header = () => {
                     >
                       <i className="bi bi-calendar-check me-2"></i>
                       Book Consultation
-                    </Nav.Link>
+                    </Nav.Link> */}
 
                   </Nav>
 
@@ -925,25 +923,20 @@ const Header = () => {
                     Insurance & TPA
                   </Nav.Link>
 
-                  <Nav.Link href="/central-laboratory" onClick={handleClose}>
+                  <Nav.Link href="/patient-care/central-laborotory" onClick={handleClose}>
                     <i className="bi bi-beaker me-2"></i>
                     Central Laboratory
                   </Nav.Link>
 
-                  <Nav.Link href="/testimonials" onClick={handleClose}>
+                  <Nav.Link href="/patient-care/testimonials" onClick={handleClose}>
                     <i className="bi bi-chat-quote me-2"></i>
                     Testimonials
                   </Nav.Link>
 
-                  <Nav.Link href="/patient-care" onClick={handleClose}>
-                    <i className="bi bi-person-heart me-2"></i>
-                    Patient Care
-                  </Nav.Link>
-
-                  <Nav.Link href="/emergency-services" onClick={handleClose}>
+                  {/* <Nav.Link href="/emergency-services" onClick={handleClose}>
                     <i className="bi bi-hospital me-2"></i>
                     Emergency Services
-                  </Nav.Link>
+                  </Nav.Link> */}
 
                   {/* Satellite Services */}
                   <Accordion flush>
@@ -976,6 +969,15 @@ const Header = () => {
                           Ambalapara
                         </Nav.Link>
 
+                        <Nav.Link
+                          href="https://awesomecosmetology.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={handleClose}
+                        >
+                          AWESOME
+                        </Nav.Link>
+
                       </Accordion.Body>
                     </Accordion.Item>
                   </Accordion>
@@ -1006,7 +1008,7 @@ const Header = () => {
                     </Nav.Link>
 
                     <Nav.Link
-                      href="/doctor-directory"
+                      href="/news-events"
                       onClick={handleClose}
                     >
                       <i className="bi bi-newspaper dropdown-icon"></i>
