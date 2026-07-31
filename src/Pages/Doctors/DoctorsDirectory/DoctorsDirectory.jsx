@@ -11,7 +11,7 @@ import drMohammedAsharfKT from "../../../assets/Images/doctors/drMohammedAsharfK
 import drNarasimhaluOmdasBhandari from "../../../assets/Images/doctors/drNarasimhaluOmdasBhandari.jpeg";
 import Divya from "../../../assets/Images/doctors/Divya.webp";
 import drSuhasP from "../../../assets/Images/doctors/drSuhasP.jpeg";
-import Anjali from "../../../assets/Images/doctors/anjali.avif";
+import Anjali from "../../../assets/Images/doctors/Anjali.avif";
 import Simna from "../../../assets/Images/doctors/Simna.webp";
 import Shradha from "../../../assets/Images/doctors/Shradha.webp";
 import Lakshmi from "../../../assets/Images/doctors/Lakshmi.webp";
