@@ -110,7 +110,7 @@ section {
         linear-gradient(130deg,
             rgba(42, 58, 135, .92),
             rgba(0, 163, 76, .88)),
-        url("../../assets/images/trust/trust-banner.jpg");
+        url("../../assets/Images/trust/trust-banner.jpg");
 
     background-size: cover;
 
@@ -1168,7 +1168,7 @@ section {
 
         padding: 35px 28px;
         width: 100%;
-   
+
 
     }
 

@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
-import "./TheTrustees.css"
-import Header from '../../Components/Header/Header'
-import Footer from '../../Components/Footer/Footer'
+import "./TheTrustees.css";
 import { Container, Row, Col, Badge } from "react-bootstrap";
 // ---------Image importing------------
 import wideangle from "../../assets/Images/wideangle.webp"
 
 const TheTrustees = () => {
-     const keralaInstitutions = [
+    const keralaInstitutions = [
         {
             id: 1,
             name: "Nehru College of Engineering and Research Centre",
@@ -117,7 +115,7 @@ const TheTrustees = () => {
         },
     ];
 
-     const tamilNaduInstitutions = [
+    const tamilNaduInstitutions = [
         {
             id: 1,
             name: "Nehru College of Aeronautics and Applied Sciences",
