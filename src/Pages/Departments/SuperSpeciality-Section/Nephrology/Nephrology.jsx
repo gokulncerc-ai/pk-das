@@ -8,7 +8,6 @@ import nephrodoc2 from "../../../../assets/Images/nephrodoc2.jpg";
 import nephrodoc3 from "../../../../assets/Images/nephrodoc3.jpg";
 import nephrodoc4 from "../../../../assets/Images/nephrodoc4.jpg";
 import Header from '../../../../Components/Header/Header';
-import Footer from '../../../../Components/Footer/Footer';
 
 const servicesLeft = [
     "Acute as well as chronic hemodialysis",

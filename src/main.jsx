@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
+import 'font-awesome/css/font-awesome.min.css';
 import './Styles/Fonts/Fonts.css'
 import './Styles/Themes/Themes.css'
 import { BrowserRouter } from 'react-router-dom';
