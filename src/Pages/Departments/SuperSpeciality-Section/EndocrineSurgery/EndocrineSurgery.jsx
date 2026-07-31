@@ -4,8 +4,8 @@ import "./EndocrineSurgery.css";
 
 // TODO: update these image paths to match your project's assets folder
 import heroBg from "../../../../assets/Images/endocrine-surgery/hero-bg.webp";
-import aboutImg from "../../../../assets/images/endocrine-surgery/Breast_endocrine_surgery_care.avif";
-import doctorImg from "../../../../assets/images/endocrine-surgery/dr_shradha_srinivas.webp";
+import aboutImg from "../../../../assets/Images/endocrine-surgery/Breast_endocrine_surgery_care.avif";
+import doctorImg from "../../../../assets/Images/endocrine-surgery/dr_shradha_srinivas.webp";
 
 const quickInfo = [
     {

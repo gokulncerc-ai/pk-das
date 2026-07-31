@@ -4,15 +4,15 @@ import "./Central-Laborotory.css";
 
 // TODO: update these image paths to match your project's assets folder
 import aboutImg from "../../../assets/Images/central-lab/1.jpg";
-import pathologyImg from "../../../assets/images/central-lab/2.jpg";
-import microbiologyImg from "../../../assets/images/central-lab/3.jpg";
-import hematologyImg from "../../../assets/images/central-lab/4.jpg";
-import clinicalPathologyImg from "../../../assets/images/central-lab/5.jpg";
-import exfoliativeCytologyImg from "../../../assets/images/central-lab/6.jpg";
-import histoPathologyImg from "../../../assets/images/central-lab/7.jpg";
-import serologyImg from "../../../assets/images/central-lab/9.jpg";
-import immunologyImg from "../../../assets/images/central-lab/10.jpg";
-import molecularLabImg from "../../../assets/images/central-lab/11.jpg";
+import pathologyImg from "../../../assets/Images/central-lab/2.jpg";
+import microbiologyImg from "../../../assets/Images/central-lab/3.jpg";
+import hematologyImg from "../../../assets/Images/central-lab/4.jpg";
+import clinicalPathologyImg from "../../../assets/Images/central-lab/5.jpg";
+import exfoliativeCytologyImg from "../../../assets/Images/central-lab/6.jpg";
+import histoPathologyImg from "../../../assets/Images/central-lab/7.jpg";
+import serologyImg from "../../../assets/Images/central-lab/9.jpg";
+import immunologyImg from "../../../assets/Images/central-lab/10.jpg";
+import molecularLabImg from "../../../assets/Images/central-lab/11.jpg";
 
 const quickInfo = [
     {
