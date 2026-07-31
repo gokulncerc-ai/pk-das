@@ -7,20 +7,62 @@ import obgdoc1 from "../../../assets/Images/obg/obgdoc1.webp";
 import obgdoc2 from "../../../assets/Images/obg/obgdoc2.webp";
 import obgdoc3 from "../../../assets/Images/obg/obgdoc3.webp";
 import Header from '../../../Components/Header/Header';
-import Footer from '../../../Components/Footer/Footer';
 
 const services = [
-    { icon: "fa-heartbeat", title: "High-Risk Pregnancy Management Clinic" },
-    { icon: "fa-female", title: "Gynecological Laparoscopic Surgeries" },
-    { icon: "fa-clinic-medical", title: "Day Care Facilities" },
-    { icon: "fa-syringe", title: "Endometrial Sampling (Pipelle Biopsy & D&C)" },
-    { icon: "fa-heart", title: "Electronic Fetal Monitoring" },
-    { icon: "fa-baby-carriage", title: "Family Planning Clinic" },
-    { icon: "fa-user-md", title: "Diagnostic Laparoscopy & Hysteroscopy" },
-    { icon: "fa-notes-medical", title: "Infertility Workup & Treatment" },
-    { icon: "fa-microscope", title: "Cancer Detection (Pap Smear & Biopsy)" },
-    { icon: "fa-child", title: "Adolescent Clinic (PCOD & Menstrual Care)" },
-    { icon: "fa-procedures", title: "Advanced Gynecological Surgeries" },
+    {
+        icon: "bi-person-heart",
+        title: "High-Risk Pregnancy Management Clinic"
+    },
+
+    {
+        icon: "bi-person",
+        title: "Gynecological Laparoscopic Surgeries"
+    },
+
+    {
+        icon: "bi-hospital",
+        title: "Day Care Facilities"
+    },
+
+    {
+        icon: "bi-capsule",
+        title: "Endometrial Sampling (Pipelle Biopsy & D&C)"
+    },
+
+    {
+        icon: "bi-heart-pulse",
+        title: "Electronic Fetal Monitoring"
+    },
+
+    {
+        icon: "bi-person-plus",
+        title: "Family Planning Clinic"
+    },
+
+    {
+        icon: "bi-clipboard2-pulse",
+        title: "Diagnostic Laparoscopy & Hysteroscopy"
+    },
+
+    {
+        icon: "bi-search-heart",
+        title: "Infertility Workup & Treatment"
+    },
+
+    {
+        icon: "bi-microscope",
+        title: "Cancer Detection (Pap Smear & Biopsy)"
+    },
+
+    {
+        icon: "bi-person-standing",
+        title: "Adolescent Clinic (PCOD & Menstrual Care)"
+    },
+
+    {
+        icon: "bi-bandaid",
+        title: "Advanced Gynecological Surgeries"
+    }
 ];
 
 const doctors = [
@@ -77,7 +119,7 @@ const OBG = () => {
                         <Col md={4}>
                             <div className="gm-info-card">
                                 <div className="gm-info-icon">
-                                    <i className="fa fa-clock"></i>
+                                    <i className="bi bi-clock"></i>
                                 </div>
                                 <h3>24×7 Care</h3>
                                 <p>Round-the-clock obstetric and gynecological services</p>
@@ -86,7 +128,7 @@ const OBG = () => {
                         <Col md={4}>
                             <div className="gm-info-card">
                                 <div className="gm-info-icon">
-                                    <i className="fa fa-heartbeat"></i>
+                                      <i className="bi bi-heart-pulse"></i>
                                 </div>
                                 <h3>High-Risk Expertise</h3>
                                 <p>Precise management of complex pregnancy cases</p>
@@ -95,7 +137,7 @@ const OBG = () => {
                         <Col md={4}>
                             <div className="gm-info-card">
                                 <div className="gm-info-icon">
-                                    <i className="fa fa-user-md"></i>
+                                     <i className="bi bi-person-badge"></i>
                                 </div>
                                 <h3>Advanced Laparoscopy</h3>
                                 <p>Laparoscopy, hysteroscopy & minimally invasive care</p>
@@ -252,9 +294,9 @@ const OBG = () => {
                         <Col lg={6}>
                             <div className="gm-cta-box">
                                 <div className="gm-cta-icon">
-                                    <i className="fa fa-phone"></i>
+                                    <i className="bi bi-phone"></i>
                                 </div>
-                                <h3>Let's Help You!</h3>
+                                <h3 className="text-light">Let's Help You!</h3>
                                 <p>
                                     PK DAS Institute of Medical Sciences, Vaniamkulam,
                                     Ottapalam
@@ -279,7 +321,7 @@ const OBG = () => {
                 </Container>
             </section>
 
-            <Footer />
+
         </>
     );
 };

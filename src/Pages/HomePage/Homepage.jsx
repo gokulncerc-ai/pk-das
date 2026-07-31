@@ -92,7 +92,16 @@ const Homepage = () => {
                     <div className="hero-buttons">
 
 
-                        <button className="hero-appointment-btn">
+                        <button
+                            className="hero-appointment-btn"
+                            onClick={() =>
+                                window.open(
+                                    "https://bookappointment.pkdashospital.com/",
+                                    "_blank",
+                                    "noopener,noreferrer"
+                                )
+                            }
+                        >
                             Book Appointment
                         </button>
 
@@ -162,7 +171,7 @@ const Homepage = () => {
 
 
 
-          
+
 
 
 

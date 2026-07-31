@@ -7,7 +7,6 @@ import psychdoc1 from "../../../assets/Images/psychdoc1.avif";
 import psychdoc2 from "../../../assets/Images/psychdoc2.avif";
 import psychdoc3 from "../../../assets/Images/psychdoc3.avif";
 import Header from '../../../Components/Header/Header';
-import Footer from '../../../Components/Footer/Footer';
 
 const servicesRenderedLeft = [
     "Adult Psychiatry",
@@ -379,7 +378,7 @@ const Psychiatry = () => {
                 </Container>
             </section>
 
-            <Footer />
+          
         </>
     );
 };

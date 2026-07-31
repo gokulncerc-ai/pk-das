@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import "./Network.css"
 import cardiology from "../../assets/Images/cardiology.webp"
 import gasteronology from "../../assets/Images/gasteronology.webp"
@@ -10,10 +11,11 @@ import neurosurgery from "../../assets/Images/neurosurgery.webp"
 import kneereplacement from "../../assets/Images/kneereplacement.webp"
 import plasticsurgery from "../../assets/Images/plasticsurgery.webp"
 import spinesurgery from "../../assets/Images/spinesurgery.webp"
+import dermatology from "../../assets/Images/dermatology.webp";
 // --------another section for the image starts---------------
 import generalmedicine from "../../assets/Images/generalmedicine.webp"
 import generalsurgery from "../../assets/Images/generalsurgery.webp"
-import ophthalmology from "../../assets/Images/ophthalmology.webp"
+import ent1 from "../../assets/Images/ENT1.webp"
 import orthopedics from "../../assets/Images/orthopedics.webp"
 import pediatrics from "../../assets/Images/pediatrics.webp"
 import ent from "../../assets/Images/ent.webp"
@@ -121,7 +123,7 @@ const Network = () => {
             image: generalmedicine,
             description:
                 "For normal & complex disease. Subspecialties in sleep medicine, cancer etc.",
-            link: "/General-Medicine"
+            link: "/general-department/general-medicine"
         },
         {
             title: "General Surgery",
@@ -129,13 +131,15 @@ const Network = () => {
             image: generalsurgery,
             description:
                 "Surgical specialty that focuses on performing surgical procedures for a medical.",
+            link: "/general-department/general-surgery"
         },
         {
-            title: "Ophthalmology",
-            icon: "bi-eye",
-            image: ophthalmology,
+            title: "Dermatology",
+            icon: "bi-person",
+            image: dermatology,
             description:
-                "Deals with the anatomy, physiology and diseases of the eyes and their treatment.",
+                "Deals with the anatomy, physiology and diseases of the skin and their treatment",
+            link: "/general-department/dermatology"
         },
         {
             title: "Orthopedics",
@@ -143,13 +147,15 @@ const Network = () => {
             image: orthopedics,
             description:
                 "Treatment, prevention of disorders and injuries related to the musculoskeletal system.",
+            link: "/general-department/orthopedics"
         },
         {
             title: "Psychiatry",
-            icon: "bi-brain",
+            icon: "bi-heart-pulse",
             image: psychiatry,
             description:
                 "Helps for better mental health through compassionate psychiatric care.",
+            link: "/general-department/psychiatry"
         },
         {
             title: "ENT",
@@ -157,6 +163,7 @@ const Network = () => {
             image: ent,
             description:
                 "Treatment of all types of ear, nose and throat conditions.",
+            link: "/general-department/ENT"
         },
         {
             title: "Pediatrics",
@@ -164,6 +171,7 @@ const Network = () => {
             image: pediatrics,
             description:
                 "The best type of child related healthcare with experienced pediatricians.",
+            link: "/general-department/pediatrics"
         },
         {
             title: "OBG",
@@ -171,6 +179,7 @@ const Network = () => {
             image: obg,
             description:
                 "Focuses on the care of women during pregnancy, childbirth and beyond.",
+            link: "/general-department/obg"
         },
     ];
 
@@ -231,6 +240,7 @@ const Network = () => {
         },
     ];
 
+    const navigate = useNavigate();
     return (
         <>
             <section className="dept-section">
@@ -413,10 +423,10 @@ const Network = () => {
                                         and support patients in times of medical crises.
                                     </p>
 
-                                    <Button className="explore-btn">
+                                    {/* <Button className="explore-btn">
                                         Explore More
                                         <i className="bi bi-arrow-right ms-2"></i>
-                                    </Button>
+                                    </Button> */}
 
                                 </div>
 
@@ -755,12 +765,12 @@ const Network = () => {
 
 
 
-                                <Button className="premium-btn">
-
+                                <Button
+                                    className="premium-btn"
+                                    onClick={() => navigate("/About-P.K-Das")}
+                                >
                                     Learn More
-
                                     <i className="bi bi-arrow-right"></i>
-
                                 </Button>
 
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./BlogsComponent.css"
+import { useNavigate } from "react-router-dom";
 // ----------images imported------------
 import hairtransplant from "../../assets/Images/hairtransplant.webp"
 import hypertension from "../../assets/Images/hypertension.webp"
@@ -44,7 +45,7 @@ const BlogsComponent = () => {
             description:
                 "High blood pressure is increasing among young adults due to stress, sedentary lifestyle and unhealthy habits."
         },
-           {
+        {
             id: 4,
             image: hypertension,
             day: "08",
@@ -57,6 +58,7 @@ const BlogsComponent = () => {
         }
     ];
 
+    const navigate = useNavigate();
     return (
         <>
             <section className="blogs-section">
@@ -96,7 +98,7 @@ const BlogsComponent = () => {
                             className="text-lg-end mt-4 mt-lg-0"
                         >
 
-                            <Button className="blogs-view-btn">
+                            <Button className="blogs-view-btn" onClick={() => navigate("/About-P.K-Das")}>
 
                                 View All Articles
 
