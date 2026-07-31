@@ -55,6 +55,8 @@ import HealthAwareness from './Pages/HealthAwareness/HealthAwareness.jsx';
 import Blogs from './Pages/Blogs/Blogs.jsx';
 import Contact from './Pages/Contact/Contact.jsx';
 import Careers from './Pages/Careers/Careers.jsx';
+import Gallery from './Pages/Gallery/Gallery.jsx';
+import NewsAndEvents from './Pages/NewsAndEvents/NewsAndEvents.jsx';
 // import NewsEvents from './Pages/News-Events/News-Events.jsx';
 
 function App() {
@@ -116,6 +118,9 @@ function App() {
         <Route path='/Spine-Surgery' element={<SpineSurgery />} />
         <Route path="/Endocrine-Surgery" element={<EndocrineSurgery />} />
         <Route path="/critical-care-medicine" element={<CriticalCareMedicine />} />
+        {/* ------------Media And Events------------- */}
+        <Route path="/Gallery" element={<Gallery />} />
+        <Route path="/News-And-Events" element={<NewsAndEvents />} />
       </Routes>
       <Footer />
     </>

@@ -1,0 +1,2719 @@
+/*==================================================
+ Premium News Hero Section
+==================================================*/
+
+
+.premiumNewsHero {
+
+    position: relative;
+    padding: 130px 0 110px;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at top left,
+            rgba(0, 163, 76, 0.15),
+            transparent 35%),
+        radial-gradient(circle at bottom right,
+            rgba(80, 193, 239, 0.18),
+            transparent 40%),
+        #F8FAFC;
+
+}
+
+
+/*==================================================
+ Background Decorative Elements
+==================================================*/
+
+
+.premiumNewsHero::before {
+
+    content: "";
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    background: rgba(0, 163, 76, 0.08);
+
+    border-radius: 50%;
+
+    top: -120px;
+    right: -100px;
+
+    filter: blur(40px);
+
+}
+
+
+.premiumNewsHero::after {
+
+    content: "";
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    background: rgba(42, 58, 135, 0.08);
+
+    border-radius: 50%;
+
+    bottom: -100px;
+    left: -100px;
+
+    filter: blur(45px);
+
+}
+
+
+
+/*==================================================
+ Premium Badge
+==================================================*/
+
+
+.premiumBadge {
+
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+
+    background:
+
+        rgba(0, 163, 76, 0.10);
+
+
+    color: #00A34C;
+
+
+    border: none;
+
+
+    padding: 12px 24px;
+
+
+    border-radius: 50px;
+
+
+    font-family: "Inter", sans-serif;
+
+
+    font-size: .95rem;
+
+
+    font-weight: 600;
+
+
+    margin-bottom: 28px;
+
+
+}
+
+
+.premiumBadge i {
+
+    font-size: 1.1rem;
+
+}
+
+
+
+
+/*==================================================
+ Hero Heading
+==================================================*/
+
+
+.premiumHeroTitle {
+
+
+    font-family: "Manrope", sans-serif;
+
+
+    font-size: 4rem;
+
+
+    line-height: 1.15;
+
+
+    font-weight: 800;
+
+
+    color: #10234B;
+
+
+    margin-bottom: 25px;
+
+
+}
+
+
+.premiumHeroTitle span {
+
+
+    color: #00A34C;
+
+
+}
+
+
+
+
+/*==================================================
+ Hero Description
+==================================================*/
+
+
+.premiumHeroDescription {
+
+
+    max-width: 620px;
+
+
+    font-family: "Inter", sans-serif;
+
+
+    font-size: 1.08rem;
+
+
+    line-height: 1.9;
+
+
+    color: #667085;
+
+
+    margin-bottom: 45px;
+
+
+}
+
+
+
+
+/*==================================================
+ Statistics Cards
+==================================================*/
+
+
+.premiumStats {
+
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+
+}
+
+
+
+.premiumStatCard {
+
+
+    min-width: 170px;
+
+
+    padding: 25px 28px;
+
+
+    background:
+
+        rgba(255, 255, 255, 0.75);
+
+
+    backdrop-filter: blur(18px);
+
+
+    border-radius: 24px;
+
+
+    border: 1px solid rgba(234, 236, 239, .8);
+
+
+    box-shadow:
+
+        0 20px 50px rgba(16, 35, 75, .08);
+
+
+    transition: .4s ease;
+
+
+}
+
+
+
+.premiumStatCard:hover {
+
+
+    transform: translateY(-10px);
+
+
+    box-shadow:
+
+        0 30px 70px rgba(16, 35, 75, .14);
+
+
+}
+
+
+
+
+.premiumStatCard h3 {
+
+
+    font-family: "Manrope";
+
+
+    font-size: 2rem;
+
+
+    font-weight: 800;
+
+
+    color: #00A34C;
+
+
+    margin-bottom: 8px;
+
+
+}
+
+
+
+
+.premiumStatCard p {
+
+
+    color: #667085;
+
+
+    font-size: .95rem;
+
+
+    margin: 0;
+
+
+    font-weight: 500;
+
+
+}
+
+
+
+
+
+/*==================================================
+ Hero Image
+==================================================*/
+
+
+.premiumHeroImage {
+
+
+    position: relative;
+
+
+    z-index: 2;
+
+
+}
+
+
+
+
+.premiumHeroImage img {
+
+
+    width: 100%;
+
+
+    height: 560px;
+
+
+    object-fit: cover;
+
+
+    border-radius: 35px;
+
+
+    box-shadow:
+
+
+        0 35px 90px rgba(16, 35, 75, .20);
+
+
+    transition: .6s ease;
+
+
+}
+
+
+
+.premiumHeroImage:hover img {
+
+
+    transform: scale(1.03);
+
+
+}
+
+
+
+
+/*==================================================
+ Floating Cards
+==================================================*/
+
+
+.premiumFloatingCard {
+
+
+    position: absolute;
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 15px;
+
+
+    padding: 18px 22px;
+
+
+    background:
+
+
+        rgba(255, 255, 255, .92);
+
+
+    backdrop-filter: blur(20px);
+
+
+    border-radius: 22px;
+
+
+    box-shadow:
+
+
+        0 25px 60px rgba(16, 35, 75, .14);
+
+
+    animation: premiumFloat 5s ease-in-out infinite;
+
+
+}
+
+
+
+.floatingIcon {
+
+
+    width: 55px;
+
+
+    height: 55px;
+
+
+    display: flex;
+
+
+    justify-content: center;
+
+
+    align-items: center;
+
+
+    border-radius: 18px;
+
+
+    background:
+
+
+        linear-gradient(135deg,
+            #00A34C,
+            #50C1EF);
+
+
+    color: white;
+
+
+    font-size: 1.4rem;
+
+
+}
+
+
+
+.premiumFloatingCard h6 {
+
+
+    margin: 0 0 5px;
+
+
+    color: #10234B;
+
+
+    font-family: "Manrope";
+
+
+    font-weight: 800;
+
+
+    font-size: 1rem;
+
+
+}
+
+
+
+.premiumFloatingCard p {
+
+
+    margin: 0;
+
+
+    color: #667085;
+
+
+    font-size: .85rem;
+
+
+}
+
+
+
+
+.topCard {
+
+
+    top: 35px;
+
+
+    left: -55px;
+
+
+}
+
+
+
+
+.bottomCard {
+
+
+    bottom: 40px;
+
+
+    right: -45px;
+
+
+}
+
+
+
+
+
+/*==================================================
+ Floating Animation
+==================================================*/
+
+
+@keyframes premiumFloat {
+
+
+    0%,
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+
+    50% {
+
+        transform: translateY(-12px);
+
+    }
+
+
+}
+
+
+
+
+
+
+/*==================================================
+ Hero Responsive
+==================================================*/
+
+
+@media(max-width:1200px) {
+
+
+    .premiumHeroTitle {
+
+        font-size: 3.4rem;
+
+    }
+
+
+    .premiumHeroImage img {
+
+        height: 500px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:991px) {
+
+
+    .premiumNewsHero {
+
+        padding: 90px 0;
+
+    }
+
+
+    .premiumHeroTitle {
+
+        font-size: 2.8rem;
+
+    }
+
+
+
+    .premiumHeroImage {
+
+        margin-top: 40px;
+
+    }
+
+
+
+    .topCard {
+
+        left: 20px;
+
+    }
+
+
+
+    .bottomCard {
+
+        right: 20px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:576px) {
+
+
+    .premiumHeroTitle {
+
+        font-size: 2.25rem;
+
+    }
+
+
+    .premiumHeroDescription {
+
+        font-size: .98rem;
+
+    }
+
+
+
+    .premiumStats {
+
+        flex-direction: column;
+
+    }
+
+
+
+    .premiumStatCard {
+
+        width: 100%;
+
+    }
+
+
+
+    .premiumHeroImage img {
+
+        height: 400px;
+
+        border-radius: 25px;
+
+    }
+
+
+
+    .premiumFloatingCard {
+
+
+        position: relative;
+
+
+        top: auto;
+
+
+        left: auto;
+
+
+        right: auto;
+
+
+        bottom: auto;
+
+
+        margin-top: 20px;
+
+
+    }
+
+
+
+}
+
+/*==================================================
+ Premium Featured News Section
+==================================================*/
+
+
+.premiumFeaturedNews {
+
+    padding: 120px 0;
+
+    background: #F8FAFC;
+
+    position: relative;
+
+}
+
+
+
+/*==================================================
+ Section Header
+==================================================*/
+
+
+.premiumSectionHeader {
+
+
+    max-width: 760px;
+
+    margin: 0 auto 70px;
+
+    text-align: center;
+
+
+}
+
+
+
+.premiumSectionHeader .badge {
+
+
+    background: rgba(0, 163, 76, .10);
+
+    color: #ffffff;
+
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+
+}
+
+
+
+.premiumSectionHeader h2 {
+
+
+    font-family: "Manrope";
+
+    font-size: 3rem;
+
+    font-weight: 800;
+
+    color: #10234B;
+
+    line-height: 1.25;
+
+    margin-bottom: 20px;
+
+
+}
+
+
+
+.premiumSectionHeader h2 span {
+
+
+    color: #00A34C;
+
+
+}
+
+
+
+.premiumSectionHeader p {
+
+
+    color: #667085;
+
+    font-family: "Inter";
+
+    line-height: 1.8;
+
+    font-size: 1.05rem;
+
+}
+
+
+
+
+/*==================================================
+ Featured Article Card
+==================================================*/
+
+
+.premiumFeaturedCard {
+
+
+    background: #fff;
+
+    border-radius: 35px;
+
+    padding: 18px;
+
+    border: 1px solid #EAECEF;
+
+    box-shadow:
+
+        0 30px 80px rgba(16, 35, 75, .10);
+
+
+    transition: .45s ease;
+
+}
+
+
+
+.premiumFeaturedCard:hover {
+
+
+    transform: translateY(-12px);
+
+
+    box-shadow:
+
+        0 40px 90px rgba(16, 35, 75, .16);
+
+
+}
+
+
+
+/*==================================================
+ Featured Image
+==================================================*/
+
+
+.featuredImageWrapper {
+
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+}
+
+
+
+.featuredImageWrapper img {
+
+
+    width: 100%;
+
+
+    height: 520px;
+
+
+    object-fit: cover;
+
+
+    transition: .6s ease;
+
+
+}
+
+
+
+.premiumFeaturedCard:hover img {
+
+
+    transform: scale(1.06);
+
+
+}
+
+
+
+/*==================================================
+ Image Overlay
+==================================================*/
+
+
+.featuredImageWrapper::after {
+
+
+    content: "";
+
+
+    position: absolute;
+
+
+    inset: 0;
+
+
+    background:
+
+
+        linear-gradient(180deg,
+
+            transparent 35%,
+
+            rgba(16, 35, 75, .85));
+
+
+}
+
+
+
+/*==================================================
+ Overlay Content
+==================================================*/
+
+
+.featuredOverlay {
+
+
+    position: absolute;
+
+
+    left: 35px;
+
+
+    right: 35px;
+
+
+    bottom: 35px;
+
+
+    z-index: 2;
+
+
+    color: white;
+
+
+}
+
+
+
+.featuredOverlay .badge {
+
+
+    background: #00A34C;
+
+
+    color: white;
+
+
+    padding: 10px 20px;
+
+
+    border-radius: 50px;
+
+
+    margin-bottom: 18px;
+
+
+    font-weight: 600;
+
+
+}
+
+
+
+.featuredOverlay h3 {
+
+
+    font-family: "Manrope";
+
+
+    font-size: 2rem;
+
+
+    line-height: 1.4;
+
+
+    font-weight: 800;
+
+
+    margin-bottom: 22px;
+
+
+    color: white;
+
+
+}
+
+
+
+
+/*==================================================
+ Featured Meta
+==================================================*/
+
+
+.featuredMeta {
+
+
+    display: flex;
+
+
+    gap: 25px;
+
+
+    flex-wrap: wrap;
+
+
+}
+
+
+
+.featuredMeta span {
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 8px;
+
+
+    font-family: "Inter";
+
+
+    font-size: .95rem;
+
+
+    color: rgba(255, 255, 255, .85);
+
+
+}
+
+
+
+.featuredMeta i {
+
+
+    color: #50C1EF;
+
+
+}
+
+
+
+
+/*==================================================
+ Featured Description
+==================================================*/
+
+
+.featuredDescription {
+
+
+    padding: 25px 20px 15px;
+
+
+    color: #667085;
+
+
+    line-height: 1.9;
+
+
+    font-size: 1rem;
+
+
+}
+
+
+
+
+
+/*==================================================
+ Premium Read Button
+==================================================*/
+
+
+.premiumReadButton {
+
+
+    margin: 0 20px 20px;
+
+
+    border: none;
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 12px;
+
+
+    padding: 15px 32px;
+
+
+    border-radius: 50px;
+
+
+    background:
+
+
+        linear-gradient(135deg,
+
+            #00A34C,
+
+            #00863D);
+
+
+    color: white;
+
+
+    font-weight: 600;
+
+
+    transition: .35s;
+
+
+}
+
+
+
+.premiumReadButton:hover {
+
+
+    transform: translateX(8px);
+
+
+    box-shadow:
+
+        0 15px 35px rgba(0, 163, 76, .35);
+
+
+}
+
+
+
+
+/*==================================================
+ Trending Wrapper
+==================================================*/
+
+
+.trendingWrapper h4 {
+
+
+    font-family: "Manrope";
+
+
+    font-size: 1.6rem;
+
+
+    font-weight: 800;
+
+
+    color: #10234B;
+
+
+    margin-bottom: 28px;
+
+
+}
+
+
+
+
+
+/*==================================================
+ Trending Cards
+==================================================*/
+
+
+.premiumTrendingCard {
+
+
+    background: #fff;
+
+
+    border-radius: 26px;
+
+
+    padding: 18px;
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 18px;
+
+
+    margin-bottom: 20px;
+
+
+    border: 1px solid #EAECEF;
+
+
+    box-shadow:
+
+        0 18px 45px rgba(16, 35, 75, .08);
+
+
+    transition: .4s;
+
+
+}
+
+
+
+.premiumTrendingCard:hover {
+
+
+    transform: translateX(8px);
+
+
+    border-color: #00A34C;
+
+
+    box-shadow:
+
+        0 25px 60px rgba(16, 35, 75, .12);
+
+
+}
+
+
+
+.premiumTrendingCard img {
+
+
+    width: 110px;
+
+
+    height: 110px;
+
+
+    object-fit: cover;
+
+
+    border-radius: 20px;
+
+
+    flex-shrink: 0;
+
+
+}
+
+
+
+
+.premiumTrendingCard .badge {
+
+
+    background: #E8F8EF;
+
+
+    color: #ffffff;
+
+
+    border: none;
+
+
+    border-radius: 50px;
+
+
+    padding: 7px 14px;
+
+
+    font-size: .78rem;
+
+
+    margin-bottom: 10px;
+
+
+}
+
+
+
+.premiumTrendingCard h5 {
+
+
+    font-family: "Manrope";
+
+
+    font-weight: 800;
+
+
+    font-size: 1rem;
+
+
+    line-height: 1.5;
+
+
+    color: #10234B;
+
+
+    margin-bottom: 10px;
+
+
+}
+
+
+
+.premiumTrendingCard p {
+
+
+    margin: 0;
+
+
+    color: #667085;
+
+
+    font-size: .85rem;
+
+
+}
+
+
+
+.premiumTrendingCard p i {
+
+
+    color: #00A34C;
+
+
+    margin-right: 6px;
+
+
+}
+
+
+
+.premiumTrendingCard>i {
+
+
+    margin-left: auto;
+
+
+    font-size: 1.5rem;
+
+
+    color: #00A34C;
+
+
+    transition: .35s;
+
+
+}
+
+
+
+.premiumTrendingCard:hover>i {
+
+
+    transform: translateX(6px);
+
+
+}
+
+
+
+
+
+/*==================================================
+ Responsive
+==================================================*/
+
+
+@media(max-width:991px) {
+
+
+    .premiumSectionHeader h2 {
+
+
+        font-size: 2.5rem;
+
+
+    }
+
+
+    .featuredImageWrapper img {
+
+
+        height: 420px;
+
+
+    }
+
+
+}
+
+
+
+
+@media(max-width:576px) {
+
+
+    .premiumFeaturedNews {
+
+
+        padding: 80px 0;
+
+
+    }
+
+
+
+    .premiumSectionHeader h2 {
+
+
+        font-size: 2rem;
+
+
+    }
+
+
+
+    .featuredOverlay {
+
+
+        left: 20px;
+
+        right: 20px;
+
+        bottom: 20px;
+
+    }
+
+
+
+    .featuredOverlay h3 {
+
+
+        font-size: 1.35rem;
+
+
+    }
+
+
+
+    .premiumTrendingCard {
+
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+
+    }
+
+
+
+    .premiumTrendingCard img {
+
+
+        width: 100%;
+
+
+        height: 220px;
+
+
+    }
+
+
+}
+
+/*==================================================
+ Premium Global Animations
+==================================================*/
+
+
+.premiumNewsHero,
+.premiumFeaturedNews {
+
+    animation: sectionReveal .8s ease forwards;
+
+}
+
+
+@keyframes sectionReveal {
+
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(35px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+
+}
+
+
+
+
+
+/*==================================================
+ Smooth Card Entrance
+==================================================*/
+
+
+.premiumStatCard,
+.premiumFeaturedCard,
+.premiumTrendingCard {
+
+
+    animation: cardReveal .7s ease both;
+
+
+}
+
+
+
+@keyframes cardReveal {
+
+
+    from {
+
+
+        opacity: 0;
+
+
+        transform: translateY(25px);
+
+
+    }
+
+
+
+    to {
+
+
+        opacity: 1;
+
+
+        transform: translateY(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+/*==================================================
+ Premium Image Shine Effect
+==================================================*/
+
+
+.featuredImageWrapper,
+.premiumHeroImage {
+
+
+    overflow: hidden;
+
+
+}
+
+
+
+.featuredImageWrapper::before,
+.premiumHeroImage::before {
+
+
+    content: "";
+
+
+    position: absolute;
+
+
+    top: 0;
+
+    left: -120%;
+
+
+    width: 80%;
+
+
+    height: 100%;
+
+
+    background:
+
+
+        linear-gradient(120deg,
+
+            transparent,
+
+            rgba(255, 255, 255, .25),
+
+            transparent);
+
+
+    z-index: 3;
+
+
+    transition: .7s;
+
+
+}
+
+
+
+.featuredImageWrapper:hover::before,
+.premiumHeroImage:hover::before {
+
+
+    left: 120%;
+
+
+}
+
+
+
+
+/*==================================================
+ Premium Button Animation
+==================================================*/
+
+
+.premiumReadButton {
+
+
+    position: relative;
+
+    overflow: hidden;
+
+
+}
+
+
+
+.premiumReadButton::before {
+
+
+    content: "";
+
+
+    position: absolute;
+
+
+    inset: 0;
+
+
+    background:
+
+        linear-gradient(120deg,
+
+            transparent,
+
+            rgba(255, 255, 255, .25),
+
+            transparent);
+
+
+    transform: translateX(-120%);
+
+
+    transition: .6s;
+
+
+}
+
+
+
+.premiumReadButton:hover::before {
+
+
+    transform: translateX(120%);
+
+
+}
+
+
+
+
+
+/*==================================================
+ Floating Card Enhancement
+==================================================*/
+
+
+.premiumFloatingCard {
+
+
+    border: 1px solid rgba(255, 255, 255, .7);
+
+
+}
+
+
+
+.premiumFloatingCard:hover {
+
+
+    transform: translateY(-15px) scale(1.02);
+
+
+}
+
+
+
+
+
+/*==================================================
+ Trending Card Active Accent
+==================================================*/
+
+
+.premiumTrendingCard {
+
+
+    position: relative;
+
+
+    overflow: hidden;
+
+
+}
+
+
+
+.premiumTrendingCard::before {
+
+
+    content: "";
+
+
+    position: absolute;
+
+
+    left: 0;
+
+
+    top: 0;
+
+
+    width: 4px;
+
+
+    height: 0;
+
+
+    background: #00A34C;
+
+
+    transition: .4s;
+
+
+}
+
+
+
+.premiumTrendingCard:hover::before {
+
+
+    height: 100%;
+
+
+}
+
+
+
+
+
+/*==================================================
+ Tablet Optimization
+==================================================*/
+
+
+@media(max-width:1100px) {
+
+
+    .premiumFloatingCard {
+
+
+        padding: 15px;
+
+
+    }
+
+
+    .floatingIcon {
+
+
+        width: 48px;
+
+        height: 48px;
+
+
+    }
+
+
+    .premiumFloatingCard h6 {
+
+
+        font-size: .9rem;
+
+
+    }
+
+
+
+}
+
+
+
+
+/*==================================================
+ Mobile Optimization
+==================================================*/
+
+
+@media(max-width:768px) {
+
+
+
+    .premiumNewsHero {
+
+
+        text-align: center;
+
+
+    }
+
+
+
+    .premiumHeroDescription {
+
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+
+    }
+
+
+
+
+    .premiumStats {
+
+
+        justify-content: center;
+
+
+    }
+
+
+
+    .premiumFloatingCard {
+
+
+        width: 100%;
+
+
+        justify-content: center;
+
+
+        text-align: left;
+
+
+    }
+
+
+
+
+    .featuredMeta {
+
+
+        gap: 15px;
+
+
+    }
+
+
+
+
+    .premiumReadButton {
+
+
+        width: calc(100% - 40px);
+
+
+        justify-content: center;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+/*==================================================
+ Small Mobile
+==================================================*/
+
+
+@media(max-width:480px) {
+
+
+
+    .premiumNewsHero {
+
+
+        padding-top: 70px;
+
+        padding-bottom: 70px;
+
+
+    }
+
+
+
+
+    .premiumHeroTitle {
+
+
+        font-size: 2rem;
+
+
+    }
+
+
+
+
+    .premiumHeroImage img {
+
+
+        height: 330px;
+
+
+    }
+
+
+
+
+    .premiumSectionHeader p {
+
+
+        font-size: .95rem;
+
+
+    }
+
+
+
+
+    .premiumFeaturedCard {
+
+
+        padding: 12px;
+
+
+        border-radius: 25px;
+
+
+    }
+
+
+
+
+    .featuredImageWrapper {
+
+
+        border-radius: 22px;
+
+
+    }
+
+
+
+
+    .premiumTrendingCard {
+
+
+        padding: 15px;
+
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+/*==================================================
+ Accessibility Improvements
+==================================================*/
+
+
+button,
+.premiumTrendingCard,
+.premiumStatCard {
+
+
+    cursor: pointer;
+
+
+}
+
+
+
+img {
+
+
+    user-select: none;
+
+
+}
+
+
+
+
+/*==================================================
+ Premium Scroll Feel
+==================================================*/
+
+
+html {
+
+
+    scroll-behavior: smooth;
+
+
+}
+
+/*==================================================
+ Premium News Listing Section
+==================================================*/
+
+
+.premiumNewsListing {
+
+    padding: 50px 0;
+
+    background: #ffffff;
+
+    position: relative;
+
+}
+
+
+
+/*==================================================
+ Listing Wrapper
+==================================================*/
+
+
+.newsScrollContainer {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 35px;
+
+}
+
+
+
+
+/*==================================================
+ News List Card
+==================================================*/
+
+
+.premiumNewsListCard {
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 40px;
+
+
+    background:
+
+
+        linear-gradient(135deg,
+
+            rgba(255, 255, 255, .95),
+
+            rgba(248, 250, 252, .95));
+
+
+    border-radius: 35px;
+
+
+    padding: 25px;
+
+
+    border: 1px solid #EAECEF;
+
+
+    box-shadow:
+
+
+        0 25px 70px rgba(16, 35, 75, .08);
+
+
+    transition: .45s ease;
+
+
+    overflow: hidden;
+
+
+    position: relative;
+
+
+}
+
+
+
+
+
+.premiumNewsListCard::before {
+
+
+    content: "";
+
+
+    position: absolute;
+
+
+    left: 0;
+
+
+    top: 0;
+
+
+    width: 5px;
+
+
+    height: 0;
+
+
+    background:
+
+
+        linear-gradient(180deg,
+
+            #00A34C,
+
+            #50C1EF);
+
+
+    transition: .5s;
+
+
+}
+
+
+
+
+.premiumNewsListCard:hover::before {
+
+
+    height: 100%;
+
+
+}
+
+
+
+
+.premiumNewsListCard:hover {
+
+
+    transform: translateY(-10px);
+
+
+    box-shadow:
+
+
+        0 40px 90px rgba(16, 35, 75, .14);
+
+
+}
+
+
+
+
+/*==================================================
+ News Image
+==================================================*/
+
+
+.newsListImage {
+
+
+    width: 340px;
+
+
+    height: 240px;
+
+
+    overflow: hidden;
+
+
+    border-radius: 28px;
+
+
+    flex-shrink: 0;
+
+
+}
+
+
+
+
+.newsListImage img {
+
+
+    width: 100%;
+
+
+    height: 100%;
+
+
+    object-fit: cover;
+
+
+    transition: .6s ease;
+
+
+}
+
+
+
+
+.premiumNewsListCard:hover .newsListImage img {
+
+
+    transform: scale(1.08);
+
+
+}
+
+
+
+
+
+/*==================================================
+ Content Area
+==================================================*/
+
+
+.newsListContent {
+
+
+    padding-right: 20px;
+
+
+}
+
+
+
+
+.newsListContent .badge {
+
+
+    background:
+
+
+        rgba(0, 163, 76, .10);
+
+
+    color: #ffffff;
+
+
+    border: none;
+
+
+    padding: 9px 18px;
+
+
+    border-radius: 50px;
+
+
+    font-size: .85rem;
+
+
+    font-weight: 600;
+
+
+    margin-bottom: 15px;
+
+
+}
+
+
+
+
+
+/*==================================================
+ Meta
+==================================================*/
+
+
+.newsListMeta {
+
+
+    margin-bottom: 12px;
+
+
+}
+
+
+
+.newsListMeta span {
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 8px;
+
+
+    color: #667085;
+
+
+    font-size: .9rem;
+
+
+}
+
+
+
+
+.newsListMeta i {
+
+
+    color: #00A34C;
+
+
+}
+
+
+
+
+
+/*==================================================
+ Title
+==================================================*/
+
+
+.newsListContent h3 {
+
+
+    font-family: "Manrope";
+
+
+    font-size: 1.7rem;
+
+
+    line-height: 1.4;
+
+
+    font-weight: 800;
+
+
+    color: #10234B;
+
+
+    margin-bottom: 15px;
+
+
+}
+
+
+
+
+/*==================================================
+ Description
+==================================================*/
+
+
+.newsListContent p {
+
+
+    color: #667085;
+
+
+    line-height: 1.8;
+
+
+    margin-bottom: 25px;
+
+
+    font-size: 1rem;
+
+
+}
+
+
+
+
+/*==================================================
+ Read Button
+==================================================*/
+
+
+.newsListButton {
+
+
+    display: inline-flex;
+
+
+    align-items: center;
+
+
+    gap: 12px;
+
+
+    border: none;
+
+
+    background: transparent;
+
+
+    color: #00A34C;
+
+
+    font-weight: 700;
+
+
+    font-size: .95rem;
+
+
+    padding: 0;
+
+
+    transition: .35s;
+
+
+}
+
+
+
+.newsListButton i {
+
+
+    transition: .35s;
+
+
+}
+
+
+
+
+.newsListButton:hover {
+
+
+    color: #00863D;
+
+
+}
+
+
+
+.newsListButton:hover i {
+
+
+    transform: translateX(7px);
+
+
+}
+
+
+
+
+
+/*==================================================
+ Alternating Premium Layout
+==================================================*/
+
+
+.premiumNewsListCard:nth-child(even) {
+
+
+    flex-direction: row-reverse;
+
+
+}
+
+
+
+
+/*==================================================
+ Scroll Reveal Effect
+==================================================*/
+
+
+.premiumNewsListCard {
+
+
+    animation: listReveal .7s ease both;
+
+
+}
+
+
+
+@keyframes listReveal {
+
+
+    from {
+
+
+        opacity: 0;
+
+
+        transform: translateY(30px);
+
+
+    }
+
+
+
+    to {
+
+
+        opacity: 1;
+
+
+        transform: translateY(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+/*==================================================
+ Tablet Responsive
+==================================================*/
+
+
+@media(max-width:991px) {
+
+
+    .premiumNewsListCard,
+
+
+    .premiumNewsListCard:nth-child(even) {
+
+
+        flex-direction: column;
+
+
+        align-items: flex-start;
+
+
+    }
+
+
+
+
+    .newsListImage {
+
+
+        width: 100%;
+
+
+        height: 320px;
+
+
+    }
+
+
+
+
+    .newsListContent {
+
+
+        padding: 10px 5px;
+
+
+    }
+
+
+}
+
+
+
+
+
+/*==================================================
+ Mobile Responsive
+==================================================*/
+
+
+@media(max-width:576px) {
+
+
+    .premiumNewsListing {
+
+
+        padding: 80px 0;
+
+
+    }
+
+    .premiumSectionHeader {
+        margin-bottom: 50px;
+    }
+
+
+
+
+    .premiumNewsListCard {
+
+
+        padding: 18px;
+
+
+        border-radius: 25px;
+
+
+        gap: 25px;
+
+
+    }
+
+
+
+
+
+    .newsListImage {
+
+
+        height: 230px;
+
+
+        border-radius: 20px;
+
+
+    }
+
+
+
+
+
+    .newsListContent h3 {
+
+
+        font-size: 1.35rem;
+
+
+    }
+
+
+
+
+    .newsListContent p {
+
+
+        font-size: .95rem;
+
+
+    }
+
+
+
+}

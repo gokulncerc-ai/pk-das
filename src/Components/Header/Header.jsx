@@ -489,7 +489,7 @@ const Header = () => {
               >
 
                 <NavDropdown.Item
-                  href="/find-doctor"
+                  as={Link} to="/Gallery"
                   className="dropdown-item-custom doctor-item"
                 >
                   <i className="bi bi-images dropdown-icon"></i>
@@ -497,7 +497,7 @@ const Header = () => {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item
-                  href="/news-events"
+                  as={Link} to="/News-And-Events"
                   className="dropdown-item-custom directory-item"
                 >
                   <i className="bi bi-newspaper dropdown-icon"></i>
@@ -1003,7 +1003,7 @@ const Header = () => {
                   <Nav className="mobile-submenu">
 
                     <Nav.Link
-                      href="/find-doctor"
+                      as={Link} to="/Gallery"
                       onClick={handleClose}
                     >
                       <i className="bi bi-images dropdown-icon"></i>
@@ -1011,7 +1011,7 @@ const Header = () => {
                     </Nav.Link>
 
                     <Nav.Link
-                      href="/news-events"
+                      as={Link} to="/News-And-Events"
                       onClick={handleClose}
                     >
                       <i className="bi bi-newspaper dropdown-icon"></i>
