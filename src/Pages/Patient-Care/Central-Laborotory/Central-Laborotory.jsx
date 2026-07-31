@@ -284,11 +284,13 @@ const CentralLaborotory = () => {
                                     timely results from our expert team.
                                 </p>
                                 <div className="gm-cta-buttons">
-                                    <Link to="/appointment" className="gm-primary-btn">
-                                        Book a Test
-                                    </Link>
-                                    <a href="tel:+917510883999" className="gm-outline-btn">
-                                        Call Us Now
+                                    <a href="tel:04662344500" className="gm-outline-btn">
+                                        <i className="bi bi-telephone me-2"></i>
+                                        Landline: 0466 2344500
+                                    </a>
+                                    <a href="tel:+918089989932" className="gm-outline-btn">
+                                        <i className="bi bi-phone me-2"></i>
+                                        Mobile: +91 80899 89932
                                     </a>
                                 </div>
                             </div>

@@ -6,38 +6,57 @@ import pkdims from "../../assets/Images/pkdims.png";
 
 const Footer = () => {
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const quickLinks = [
     { label: "Home", path: "/" },
-    { label: "Make Appointments", path: "/book-appointment" },
-    { label: "Speciality Departments", path: "/departments/speciality" },
-    { label: "General Departments", path: "/departments/general" },
+    { label: "Make Appointments", path: "https://bookappointment.pkdashospital.com/", isExternal: true },
     { label: "Health Check", path: "/health-checkups" },
-    { label: "Social Responsibility", path: "/social-responsibility" },
+    { label: "Social Responsibility", path: "/Social-Responsibility" },
     { label: "Contact Us", path: "/contact" },
-    { label: "Careers", path: "https://hrms.thenehrugroup.com/careers/" }
+    { label: "Careers", path: "https://hrms.thenehrugroup.com/careers/", isExternal: true }
   ];
 
   const departments = [
-    { label: "Surgery", path: "/departments/surgery" },
-    { label: "Psychiatry", path: "/departments/psychiatry" },
-    { label: "Cardiology", path: "/departments/cardiology" },
-    { label: "Orthopedics", path: "/departments/orthopedics" },
-    { label: "Pediatric", path: "/departments/pediatric" },
-    { label: "Anesthesiology", path: "/departments/anesthesiology" },
-    { label: "Oncology", path: "/departments/oncology" },
-    { label: "Dermatology", path: "/departments/dermatology" }
+    { label: "Surgery", path: "/general-department/general-surgery" },
+    { label: "Psychiatry", path: "/general-department/psychiatry" },
+    { label: "Cardiology", path: "/Cardiology" },
+    { label: "Orthopedics", path: "/general-department/orthopedics" },
+    { label: "Pediatric", path: "/general-department/pediatrics" },
+    { label: "Anesthesiology", path: "/critical-care-medicine" },
+    { label: "Oncology", path: "/Oncology" },
+    { label: "Dermatology", path: "/general-department/dermatology" }
   ];
 
   const patientCare = [
-    { label: "Book Appointment", path: "/book-appointment" },
+    { label: "Book Appointment", path: "https://bookappointment.pkdashospital.com/", isExternal: true },
     { label: "Health Checkups", path: "/health-checkups" },
     { label: "Insurance", path: "/insurance" },
-    { label: "Patient Guide", path: "/patient-guide" },
-    { label: "Facilities", path: "/facilities" },
-    { label: "Testimonials", path: "/testimonials" },
-    { label: "Medical Records", path: "/medical-records" },
-    { label: "Online Payments", path: "/online-payments" }
+    { label: "Patient Guide", path: "/doctors-directory" },
+    { label: "Facilities", path: "/Infrastructure" },
+    { label: "Testimonials", path: "/patient-care/testimonials" },
+    { label: "Medical Records", path: "/patient-care/central-laborotory" },
+    { label: "Online Payments", path: "/contact" }
   ];
+
+  const renderLink = (item) => {
+    if (item.isExternal) {
+      return (
+        <a href={item.path} target="_blank" rel="noopener noreferrer">
+          <i className="bi bi-chevron-right"></i>
+          {item.label}
+        </a>
+      );
+    }
+    return (
+      <Link to={item.path} onClick={scrollToTop}>
+        <i className="bi bi-chevron-right"></i>
+        {item.label}
+      </Link>
+    );
+  };
 
   return (
     <footer className="footer-section">
@@ -46,7 +65,7 @@ const Footer = () => {
           {/* LEFT SECTION */}
           <Col lg={3} md={6}>
             <div className="footer-about">
-              <Link to="/">
+              <Link to="/" onClick={scrollToTop}>
                 <img
                   src={pkdims}
                   alt="PKDAS Hospital"
@@ -95,10 +114,7 @@ const Footer = () => {
               <ul>
                 {quickLinks.map((item, index) => (
                   <li key={index}>
-                    <Link to={item.path}>
-                      <i className="bi bi-chevron-right"></i>
-                      {item.label}
-                    </Link>
+                    {renderLink(item)}
                   </li>
                 ))}
               </ul>
@@ -112,10 +128,7 @@ const Footer = () => {
               <ul>
                 {departments.map((item, index) => (
                   <li key={index}>
-                    <Link to={item.path}>
-                      <i className="bi bi-chevron-right"></i>
-                      {item.label}
-                    </Link>
+                    {renderLink(item)}
                   </li>
                 ))}
               </ul>
@@ -129,10 +142,7 @@ const Footer = () => {
               <ul>
                 {patientCare.map((item, index) => (
                   <li key={index}>
-                    <Link to={item.path}>
-                      <i className="bi bi-chevron-right"></i>
-                      {item.label}
-                    </Link>
+                    {renderLink(item)}
                   </li>
                 ))}
               </ul>
@@ -150,15 +160,15 @@ const Footer = () => {
             </Col>
             <Col lg={6} md={12}>
               <div className="footer-bottom-links">
-                <Link to="/about">About Us</Link>
+                <Link to="/About-P.K-Das" onClick={scrollToTop}>About Us</Link>
                 <span>|</span>
-                <Link to="/services">Services</Link>
+                <Link to="/health-checkups" onClick={scrollToTop}>Services</Link>
                 <span>|</span>
-                <Link to="/privacy-policy">Privacy Policy</Link>
+                <Link to="/contact" onClick={scrollToTop}>Privacy Policy</Link>
                 <span>|</span>
-                <Link to="/terms-and-conditions">Terms & Conditions</Link>
+                <Link to="/contact" onClick={scrollToTop}>Terms & Conditions</Link>
                 <span>|</span>
-                <Link to="/sitemap">Sitemap</Link>
+                <Link to="/" onClick={scrollToTop}>Sitemap</Link>
               </div>
             </Col>
           </Row>
