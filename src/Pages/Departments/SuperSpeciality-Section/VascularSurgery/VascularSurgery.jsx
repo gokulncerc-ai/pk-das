@@ -4,7 +4,7 @@ import "./VascularSurgery.css";
 
 // TODO: update these image paths to match your project's assets folder
 import heroBg from "../../../../assets/images/vascular/hero-bg.avif";
-import aboutImg from "../../../../assets/images/vascular/vascular-care.webp";
+import aboutImg from "../../../../assets/Images/vascular/vascular-care.webp";
 import doctorImg from "../../../../assets/images/vascular/dr-simna-c.webp";
 
 const quickInfo = [
