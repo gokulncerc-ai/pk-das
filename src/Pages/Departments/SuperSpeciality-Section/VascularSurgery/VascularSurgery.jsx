@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import "./VascularSurgery.css";
 
 // TODO: update these image paths to match your project's assets folder
-import heroBg from "../../../../assets/images/vascular/hero-bg.avif";
+import heroBg from "../../../../assets/Images/vascular/hero-bg.avif";
 import aboutImg from "../../../../assets/Images/vascular/vascular-care.webp";
-import doctorImg from "../../../../assets/images/vascular/dr-simna-c.webp";
+import doctorImg from "../../../../assets/Images/vascular/dr-simna-c.webp";
 
 const quickInfo = [
     {
