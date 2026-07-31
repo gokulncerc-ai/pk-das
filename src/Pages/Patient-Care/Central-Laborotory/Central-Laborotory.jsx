@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import "./Central-Laborotory.css";
 
 // TODO: update these image paths to match your project's assets folder
-import aboutImg from "../../../assets/images/central-lab/1.jpg";
-import biochemistryImg from "../../../assets/images/central-lab/1.jpg";
+import aboutImg from "../../../assets/Images/central-lab/1.jpg";
 import pathologyImg from "../../../assets/images/central-lab/2.jpg";
 import microbiologyImg from "../../../assets/images/central-lab/3.jpg";
 import hematologyImg from "../../../assets/images/central-lab/4.jpg";
@@ -41,7 +40,7 @@ const quickInfo = [
 const labServices = [
     {
         title: "Biochemistry",
-        image: biochemistryImg,
+        image: aboutImg,
         type: "paragraph",
         content:
             "Biochemistry is the branch of science concerned with the application of chemistry to the study of biological processes at the cellular and molecular levels.",

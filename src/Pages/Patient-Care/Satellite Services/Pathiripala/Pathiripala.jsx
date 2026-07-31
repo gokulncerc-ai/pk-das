@@ -3,8 +3,8 @@ import "./Pathiripala.css";
 
 // TODO: update these image paths to match your project's assets folder
 import slide1Img from "../../../../assets/Images/slides/A22.png";
-import slide2Img from "../../../../assets/images/slides/A11.jfif";
-import aboutImg from "../../../../assets/images/slides/pathiripalaclinic.jpg";
+import slide2Img from "../../../../assets/Images/slides/A11.jfif";
+import aboutImg from "../../../../assets/Images/slides/pathiripalaclinic.jpg";
 
 const heroSlides = [
     {
