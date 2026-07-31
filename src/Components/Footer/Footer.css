@@ -511,6 +511,16 @@
 
 }
 
+.footer-links ul li a,
+.footer-bottom-links a {
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover,
+.footer-bottom-links a:hover {
+    text-decoration: none;
+}
+
 .footer-bottom-links span {
 
     color: rgba(255, 255, 255, .25);
@@ -648,7 +658,6 @@
     .footer-contact li,
 
     .footer-links ul li a,
-
     .footer-newsletter p {
 
         font-size: 14px;

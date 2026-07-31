@@ -1,0 +1,309 @@
+/*==================================================
+                PAGE HEADER
+==================================================*/
+
+.oa-page-header {
+    background: linear-gradient(135deg, #10234B 0%, #1D3B73 100%);
+    padding: 90px 0 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.oa-page-header::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: rgba(80, 193, 239, .10);
+    top: -140px;
+    right: -100px;
+}
+
+.oa-page-header::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: rgba(0, 163, 76, .12);
+    bottom: -120px;
+    left: -90px;
+}
+
+.oa-page-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.oa-breadcrumb {
+    margin-bottom: 16px;
+}
+
+.oa-breadcrumb .breadcrumb-item a {
+    color: rgba(255, 255, 255, .75);
+    text-decoration: none;
+}
+
+.oa-breadcrumb .breadcrumb-item.active {
+    color: #50C1EF;
+}
+
+.oa-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    color: rgba(255, 255, 255, .45);
+}
+
+.oa-page-header h1 {
+    font-family: "Manrope", sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/*==================================================
+                VIDEO GALLERY SECTION
+==================================================*/
+
+.oa-video-section {
+    padding: 100px 0;
+    background: #F8FAFC;
+}
+
+.oa-section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.oa-section-heading span {
+    display: inline-block;
+    background: #ECFFF4;
+    color: #00A34C;
+    padding: 8px 22px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.oa-section-heading h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: #10234B;
+    margin-bottom: 16px;
+}
+
+.oa-section-heading p {
+    max-width: 640px;
+    margin: auto;
+    color: #667085;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+/*==================================================
+                VIDEO CARD
+==================================================*/
+
+.oa-video-card {
+    position: relative;
+    border-radius: 22px;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    cursor: pointer;
+    box-shadow: 0 18px 45px rgba(16, 35, 75, .10);
+    transition: .4s ease;
+}
+
+.oa-video-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 28px 60px rgba(16, 35, 75, .18);
+}
+
+.oa-video-card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.oa-video-card:hover img {
+    transform: scale(1.08);
+}
+
+.oa-video-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+            rgba(16, 35, 75, .15) 0%,
+            rgba(16, 35, 75, .75) 100%);
+    transition: .35s ease;
+}
+
+.oa-video-card:hover .oa-video-overlay {
+    background: linear-gradient(180deg,
+            rgba(0, 163, 76, .25) 0%,
+            rgba(16, 35, 75, .82) 100%);
+}
+
+.oa-video-title {
+    position: absolute;
+    left: 22px;
+    right: 22px;
+    bottom: 20px;
+    z-index: 2;
+}
+
+.oa-video-title h5 {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.oa-video-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .92);
+    color: #00A34C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    z-index: 2;
+    transition: .35s ease;
+}
+
+.oa-video-card:hover .oa-video-play {
+    background: #00A34C;
+    color: #FFFFFF;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/*==================================================
+                VIDEO LIGHTBOX MODAL
+==================================================*/
+
+.oa-video-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(16, 35, 75, .85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    z-index: 1050;
+}
+
+.oa-video-modal-inner {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+}
+
+.oa-video-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, .35);
+}
+
+.oa-video-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.oa-video-modal-close {
+    position: absolute;
+    top: -48px;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, .12);
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .25s ease;
+}
+
+.oa-video-modal-close:hover {
+    background: #00A34C;
+}
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media (max-width: 992px) {
+    .oa-page-header {
+        padding: 75px 0 50px;
+    }
+
+    .oa-page-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .oa-section-heading h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .oa-page-header {
+        padding: 60px 0 40px;
+    }
+
+    .oa-page-header h1 {
+        font-size: 2rem;
+    }
+
+    .oa-video-section {
+        padding: 60px 0;
+    }
+
+    .oa-section-heading h2 {
+        font-size: 26px;
+    }
+
+    .oa-video-card {
+        aspect-ratio: 16 / 10;
+    }
+
+    .oa-video-modal-close {
+        top: -42px;
+    }
+}
+
+@media (max-width: 480px) {
+    .oa-page-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .oa-video-play {
+        width: 54px;
+        height: 54px;
+        font-size: 16px;
+    }
+
+    .oa-video-title h5 {
+        font-size: 16px;
+    }
+}

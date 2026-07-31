@@ -1,0 +1,431 @@
+/*==================================================
+                CONTACT HERO
+        (shared hero/breadcrumb/badge tokens used
+         across the site's gm- design system)
+==================================================*/
+
+.gm-hero {
+    position: relative;
+    min-height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.gm-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+            rgba(16, 35, 75, .85),
+            rgba(16, 35, 75, .60));
+}
+
+.gm-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.gm-hero-content {
+    color: #FFFFFF;
+    max-width: 760px;
+}
+
+.gm-breadcrumb {
+    margin-bottom: 25px;
+}
+
+.gm-breadcrumb .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gm-breadcrumb .breadcrumb-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.gm-breadcrumb .breadcrumb-item a {
+    color: rgba(255, 255, 255, .75);
+    text-decoration: none;
+}
+
+.gm-breadcrumb .breadcrumb-item a:hover {
+    color: #50C1EF;
+}
+
+.gm-breadcrumb .breadcrumb-item.active {
+    color: #50C1EF;
+}
+
+.gm-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    content: "/";
+    display: inline-block;
+    padding: 0 10px;
+    color: rgba(255, 255, 255, .45);
+}
+
+.gm-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 22px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, .12);
+    color: #50C1EF;
+    backdrop-filter: blur(12px);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.gm-hero-content h1 {
+    font-family: "Manrope", sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    color: #FFFFFF;
+}
+
+.gm-hero-content p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, .85);
+    margin-bottom: 0;
+}
+
+/*==================================================
+        COMPACT HERO VARIANT (no background image)
+==================================================*/
+
+.gm-hero--compact {
+    min-height: auto;
+    padding: 130px 0 90px;
+    background: linear-gradient(135deg,
+            #10234B 0%,
+            #1D3B73 100%);
+    display: block;
+}
+
+.gm-hero--compact .gm-overlay {
+    background: none;
+}
+
+.gm-hero--compact .gm-hero-content {
+    max-width: 780px;
+}
+
+/*==================================================
+                SHARED TOKENS
+==================================================*/
+
+.gm-primary-btn {
+    display: inline-block;
+    padding: 16px 34px;
+    border: none;
+    border-radius: 50px;
+    background: #00A34C;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: .35s;
+}
+
+.gm-primary-btn:hover {
+    background: #00863D;
+    color: #FFFFFF;
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 163, 76, .30);
+}
+
+.gm-section-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 20px;
+    background: #ECFFF4;
+    color: #00A34C;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+/*==================================================
+            CONTACT INFO + FORM PANEL
+==================================================*/
+
+.pt-contact {
+    background: #FFFFFF;
+    padding-top: 70px;
+}
+
+.pt-contact-wrapper {
+    border-radius: 26px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(16, 35, 75, .10);
+}
+
+.pt-contact-info {
+    height: 100%;
+    background: linear-gradient(135deg, #10234B 0%, #1D3B73 100%);
+    color: #FFFFFF;
+    padding: 55px 45px;
+}
+
+.pt-contact-info h3 {
+    font-family: "Manrope", sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.pt-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 26px;
+}
+
+.pt-contact-icon {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, .35);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.pt-contact-item h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 4px;
+    color: #FFFFFF;
+}
+
+.pt-contact-item p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, .75);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.contact-social-icons {
+    display: flex;
+    gap: 14px;
+    margin-top: 35px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+}
+
+.contact-social-icons a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, .35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    transition: .3s ease;
+}
+
+.contact-social-icons a:hover {
+    background: #00A34C;
+    border-color: #00A34C;
+    transform: translateY(-4px);
+}
+
+.pt-contact-form-wrapper {
+    height: 100%;
+    background: #F8FAFC;
+    padding: 55px 45px;
+}
+
+.pt-contact-form-wrapper h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: #10234B;
+    margin-bottom: 10px;
+}
+
+.pt-contact-form-desc {
+    color: #667085;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.pt-contact-form label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #FFFFFF;
+    border: 1px solid #EAECEF;
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin-bottom: 16px;
+}
+
+.pt-contact-form label i {
+    color: #00A34C;
+    font-size: 15px;
+    flex-shrink: 0;
+}
+
+.pt-contact-form input,
+.pt-contact-form textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    color: #10234B;
+    background: transparent;
+    font-family: inherit;
+}
+
+.pt-contact-form-textarea {
+    align-items: flex-start;
+}
+
+.pt-contact-form-textarea textarea {
+    resize: vertical;
+}
+
+/*==================================================
+            DEPARTMENT NUMBERS
+==================================================*/
+
+.contact-numbers-wrapper {
+    margin-top: 60px;
+}
+
+.contact-numbers-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.contact-numbers-list li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: #F8FAFC;
+    border: 1px solid #EAECEF;
+    border-radius: 14px;
+    padding: 16px 20px;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.contact-numbers-list li a:hover {
+    background: #ECFFF4;
+    border-color: #00A34C;
+    transform: translateY(-3px);
+}
+
+.contact-number-label {
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #10234B;
+}
+
+.contact-number-value {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #00A34C;
+    white-space: nowrap;
+}
+
+/*==================================================
+                MAP
+==================================================*/
+
+.pt-map {
+    width: 100%;
+    height: 420px;
+    margin-top: 60px;
+}
+
+.pt-map iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+}
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media (max-width: 992px) {
+    .gm-hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .pt-contact-info,
+    .pt-contact-form-wrapper {
+        padding: 40px 30px;
+    }
+
+    .contact-numbers-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gm-hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .gm-hero-content p {
+        font-size: 16px;
+    }
+
+    .pt-contact {
+        padding-top: 40px;
+    }
+
+    .contact-numbers-list {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-numbers-wrapper {
+        margin-top: 40px;
+    }
+
+    .pt-map {
+        height: 320px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gm-hero-content h1 {
+        font-size: 1.9rem;
+    }
+
+    .contact-numbers-list li a {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+}

@@ -50,6 +50,11 @@ import Testimonials from './Pages/Patient-Care/Testimonials/Testimonials.jsx';
 import Pathiripala from './Pages/Patient-Care/Satellite Services/Pathiripala/Pathiripala.jsx';
 import Thiruvilwamala from './Pages/Patient-Care/Satellite Services/Thiruvilwamala/Thiruvilwamala.jsx';
 import Ambalapara from './Pages/Patient-Care/Satellite Services/Ambalapara/Ambalapara.jsx';
+import OutreachActivities from './Pages/OutreachActivities/OutreachActivities.jsx';
+import HealthAwareness from './Pages/HealthAwareness/HealthAwareness.jsx';
+import Blogs from './Pages/Blogs/Blogs.jsx';
+import Contact from './Pages/Contact/Contact.jsx';
+import Careers from './Pages/Careers/Careers.jsx';
 // import NewsEvents from './Pages/News-Events/News-Events.jsx';
 
 function App() {
@@ -91,6 +96,11 @@ function App() {
         <Route path='/satellite-clinic/pathiripala' element={<Pathiripala />} />
         <Route path='/satellite-clinic/thiruvilwamala' element={<Thiruvilwamala />} />
         <Route path='/satellite-clinic/ambalapara' element={<Ambalapara />} />
+        <Route path='/outreach-activities' element={<OutreachActivities />} />
+        <Route path='/health-awareness' element={<HealthAwareness />} />
+        <Route path='/blogs' element={<Blogs />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/careers' element={<Careers />} />
         {/* ------------department route------------- */}
         <Route path='/Cardiology' element={<Cardiology />} />
         <Route path='/Nephrology' element={<Nephrology />} />

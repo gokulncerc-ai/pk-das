@@ -505,7 +505,7 @@ const Header = () => {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item
-                  href="/doctor-schedule"
+                  href="/blogs"
                   className="dropdown-item-custom schedule-item"
                 >
                   <i className="bi bi-journal-text dropdown-icon"></i>
@@ -513,15 +513,15 @@ const Header = () => {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item
-                  href="/book-consultation"
+                  href="/health-awareness"
                   className="dropdown-item-custom consultation-item"
                 >
                   <i className="bi bi-shield-check dropdown-icon"></i>
-                  <span className="dropdown-text">Health Insurance</span>
+                  <span className="dropdown-text">Health Awareness</span>
                 </NavDropdown.Item>
 
                 <NavDropdown.Item
-                  href="/book-consultation"
+                  href="/outreach-activities"
                   className="dropdown-item-custom consultation-item"
                 >
                   <i className="bi bi-people-fill dropdown-icon"></i>
@@ -539,12 +539,15 @@ const Header = () => {
 
               </Nav.Link>
 
-              <Button className="appointment-btn">
-
+              <Button
+                as="a"
+                href="https://bookappointment.pkdashospital.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="appointment-btn"
+              >
                 <i className="bi bi-calendar-check me-2"></i>
-
                 Book Appointment
-
               </Button>
 
             </Nav>
@@ -1016,7 +1019,7 @@ const Header = () => {
                     </Nav.Link>
 
                     <Nav.Link
-                      href="/doctor-schedule"
+                      href="/blogs"
                       onClick={handleClose}
                     >
                       <i className="bi bi-journal-text dropdown-icon"></i>
@@ -1024,7 +1027,7 @@ const Header = () => {
                     </Nav.Link>
 
                     <Nav.Link
-                      href="/book-consultation"
+                      href="/health-awareness"
                       onClick={handleClose}
                     >
                       <i className="bi bi-shield-check dropdown-icon"></i>
@@ -1032,11 +1035,11 @@ const Header = () => {
                     </Nav.Link>
 
                     <Nav.Link
-                      href="/book-consultation"
+                      href="/outreach-activities"
                       onClick={handleClose}
                     >
                       <i className="bi bi-people-fill dropdown-icon"></i>
-                      Outreach Activites
+                      Outreach Activities
                     </Nav.Link>
 
                   </Nav>
